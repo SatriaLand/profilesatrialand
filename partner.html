@@ -1,0 +1,298 @@
+<!-- /*
+* Template Name: Property
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>
+      Satria Land &mdash; Properti Terpercaya
+    </title>
+    <style>
+        .carousel-item img {
+          object-fit: contain;  /* Agar gambar tidak terdistorsi */
+          height: 150px;        /* Menetapkan tinggi gambar */
+          margin: 0 auto;       /* Menjaga gambar agar tetap di tengah */
+        }
+      
+        .partners-section h2 {
+          font-size: 2em;
+          color: #333;
+        }
+      </style>
+      
+  </head>
+  <body>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+        <div class="container">
+          <div class="menu-bg-wrap">
+            <div class="site-navigation">
+              <a href="index.html" class="logo m-0 float-start">Satria Land</a>
+  
+              <ul
+                class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
+              >
+                <li class="active"><a href="index.html">Beranda</a></li>
+                <li class="has-children">
+                  <a href="properties.html">Properti</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Cluster</a></li>
+                    <li><a href="#">Minimalis</a></li>
+                    <li><a href="#">Subsisdi</a></li>
+                    <li><a href="#">Luxury</a></li>
+                    <!--
+                    <li class="has-children">
+                      <a href="#">Palembang</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Kenten</a></li>
+                        <li><a href="#">Sukabangun</a></li>
+                        <li><a href="#">Plaju</a></li>
+                      </ul>
+                    </li>
+                    -->
+                  </ul>
+                </li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="blog.html#blog">Blog</a></li>
+                <li><a href="about.html#tentang">Tentang</a></li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+              </ul>
+  
+              <a
+                href="#"
+                class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+                data-toggle="collapse"
+                data-target="#main-navbar"
+              >
+                <span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div
+      class="hero page-inner overlay"
+      style="background-image: url('images/hero_bg_1.jpg')"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">Mitra</h1>
+
+            <nav
+              aria-label="breadcrumb"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ol class="breadcrumb text-center justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                <li
+                  class="breadcrumb-item active text-white-50"
+                  aria-current="page"
+                >
+                  Mitra
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Partners Carousel Section -->
+<section class="partners-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" id="mitra">Mitra Kami</h2>
+      
+      <!-- Carousel -->
+      <div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Logo Bank BTN Syariah.png" class="d-block w-100" alt="Partner 1">
+          </div>
+          <div class="carousel-item ">
+            <img src="images/Logo Bank Mandiri.png" class="d-block w-100" alt="Partner 2">
+          </div>
+          <div class="carousel-item ">
+            <img src="images/Logo Bank BSI.png" class="d-block w-100" alt="Partner 3">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Logo SJI.png" class="d-block w-100" alt="Partner 4">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Logo SBI.png" class="d-block w-100" alt="Partner 5">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Logo SIR.png" class="d-block w-100" alt="Partner 6">
+          </div>
+          <!-- Add more partners as needed -->
+        </div>
+  
+        <!-- Controls for the carousel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#partnersCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Contact</h3>
+              <address><a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
+                Jl. Kol H Burlian No.104 Rt.24 Rw.09, Kota Palembang, Sumatera Selatan
+              </a></address>
+              <ul class="list-unstyled links">
+                <li><a href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">+6285946930091 - Admin Adit</a></li>
+                <li><a href="https://wa.me/6285381994369?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">+6285381994369 - Admin Awin</a></li>
+                <li>
+                  <a href="mailto:satrialandpalembang@gmail.com">satrialandpalembang@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Sources</h3>
+              <ul class="list-unstyled float-start links">
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="about.html#visi">Visi dan Misi</a></li>
+              </ul>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">Partners</a></li>
+                <li><a href="blog.html#blog">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Links</h3>
+              <ul class="list-unstyled links">
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+              </ul>
+              <!--
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-pinterest"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-dribbble"></span></a>
+                </li>
+              </ul>
+              -->
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+              **==========
+            -->
+
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              . All Rights Reserved. &mdash; Designed with love by
+              <a href="https://untree.co">Untree.co</a>
+              <!-- License information: https://untree.co/license/ -->
+            </p>
+            <div>
+              Distributed by
+              <a href="https://themewagon.com/" target="_blank">themewagon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

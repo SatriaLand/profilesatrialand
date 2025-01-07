@@ -1,0 +1,529 @@
+<!-- /*
+* Template Name: Property
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>
+        Satria Land &mdash; Property Terpercaya
+    </title>
+    <style>
+       .blog-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.blog-post {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.post-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+@media (max-width: 768px) {
+    .blog-content {
+        width: 90%;
+    }
+
+    .post-title {
+        font-size: 28px;
+    }
+
+    .post-meta {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+  /* CSS untuk tombol panah ke atas */
+#scrollTopBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #000; /* Latar belakang hitam */
+        color: white; /* Warna panah putih */
+        border: none;
+        padding: 5px; /* Ukuran tombol lebih besar */
+        font-size: 20px; /* Ukuran panah */
+        cursor: pointer;
+        display: none; /* Mulai dengan disembunyikan */
+        border-radius: 50%; /* Bulat */
+        width: 45px; /*Lebar tombol */
+        height: 45px;/* Tinggi tombol sama dengan lebar untuk bulat sempurna */
+        text-align: center;
+        line-height: 20px; /* Menjaga panah di tengah */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+  
+      #scrollTopBtn:hover {
+        background-color: #333; /* Warna latar belakang lebih gelap saat hover */
+      }
+  
+      /* Styling untuk halaman agar ada scroll */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+  
+      .content {
+        height: 1500px;
+      }
+  
+      h1, p {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+      <div class="container">
+        <div class="menu-bg-wrap">
+          <div class="site-navigation">
+            <a href="index.html" class="logo m-0 float-start">Satria Land</a>
+
+            <ul
+              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
+            >
+              <li><a href="index.html">Beranda</a></li>
+              <li class="has-children">
+                <a href="properties.html">Properti</a>
+                <ul class="dropdown">
+                  <li><a href="#">Buy Property</a></li>
+                  <li><a href="#">Sell Property</a></li>
+                  <li class="has-children">
+                    <a href="#">Palembang</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Sub Menu One</a></li>
+                      <li><a href="#">Sub Menu Two</a></li>
+                      <li><a href="#">Sub Menu Three</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="services.html">Layanan</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">Tentang</a></li>
+              <li class="active"><a href="contact.html">Hubungi Kami</a></li>
+            </ul>
+
+            <a
+              href="#"
+              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+              data-toggle="collapse"
+              data-target="#main-navbar"
+            >
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="hero page-inner overlay"
+      style="background-image: url('images/hero_bg_1.jpg')"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">Blog</h1>
+
+            <nav
+              aria-label="breadcrumb"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ol class="breadcrumb text-center justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                <li
+                  class="breadcrumb-item active text-white-50"
+                  aria-current="page"
+                >
+                  Blog
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-content">
+        <div class="blog-post">
+            <h1 class="post-title" id="blog3">Tren Pasar Properti 2025 yang Perlu Anda Ketahui</h1>
+            <div class="post-meta">
+                <span class="author">Oleh: Admin | Rey</span> | 
+                <span class="date">Januari 2025</span>
+            </div>
+    
+            <!-- Gambar terkait -->
+            <div class="post-image">
+                <img src="images/blog3.jpg" alt="Tren Pasar Properti 2025" class="img-fluid" />
+            </div>
+    
+            <div class="post-content">
+                <p>Pasar properti Indonesia terus berkembang dan mengalami perubahan setiap tahunnya. Tren pasar properti pada tahun 2025 diprediksi akan sangat dipengaruhi oleh sejumlah faktor yang melibatkan ekonomi, teknologi, dan perubahan gaya hidup masyarakat. Jika Anda berencana berinvestasi di sektor properti, penting untuk memahami tren pasar yang akan datang. Berikut adalah beberapa tren pasar properti yang perlu Anda ketahui untuk 2025.</p>
+    
+                <h2>1. Teknologi dan Digitalisasi di Pasar Properti</h2>
+                <p>Teknologi digital kini menjadi bagian integral dari hampir semua aspek kehidupan, termasuk dalam dunia properti. Pada tahun 2025, kita akan melihat lebih banyak penggunaan teknologi dalam transaksi properti, mulai dari virtual tours, augmented reality (AR), hingga platform online untuk transaksi properti. Teknologi ini tidak hanya memudahkan proses pembelian atau penyewaan properti, tetapi juga memberikan informasi yang lebih transparan kepada konsumen.</p>
+    
+                <h2>2. Pertumbuhan Properti Berkelanjutan (Sustainable Properties)</h2>
+                <p>Kesadaran terhadap isu lingkungan semakin meningkat di seluruh dunia, dan Indonesia tidak terkecuali. Di masa depan, properti yang ramah lingkungan atau berkelanjutan akan menjadi tren yang semakin populer. Properti dengan fitur efisiensi energi, desain ramah lingkungan, dan penggunaan bahan bangunan yang berkelanjutan akan semakin banyak dicari. Pengembang properti yang mampu menghadirkan proyek ramah lingkungan berpotensi menarik minat lebih banyak konsumen yang peduli dengan keberlanjutan dan dampak lingkungan.</p>
+    
+                <h2>3. Permintaan untuk Hunian di Perkotaan yang Meningkat</h2>
+                <p>Permintaan untuk hunian di kawasan perkotaan diperkirakan akan terus meningkat pada tahun 2025. Kota-kota besar seperti Jakarta, Surabaya, dan Bandung akan terus menjadi pusat ekonomi dan bisnis utama, sehingga permintaan akan properti residensial, kantor, dan komersial di kawasan ini diperkirakan akan terus tumbuh. Namun, dengan terbatasnya lahan di kota-kota besar, harga properti akan terus meningkat, dan ini bisa menjadi tantangan bagi para pembeli properti pertama kali.</p>
+    
+                <h2>4. Properti untuk Work-from-Home (WFH) dan Lifestyle</h2>
+                <p>Dengan semakin banyak orang yang mencari keseimbangan antara pekerjaan dan kehidupan pribadi, properti yang menawarkan ruang fleksibel untuk bekerja dari rumah (WFH) akan semakin diminati. Properti dengan desain yang mendukung gaya hidup fleksibel, seperti apartemen dengan ruang kerja atau rumah dengan ruang multifungsi, akan semakin dicari. Selain itu, area hunian dengan fasilitas lengkap seperti gym, ruang hijau, dan area rekreasi juga akan semakin dicari oleh konsumen.</p>
+    
+                <h2>5. Perkembangan Pasar Properti Sekunder dan Menengah</h2>
+                <p>Pasar properti di Indonesia tidak hanya berfokus pada properti baru. Properti sekunder atau bekas, terutama di kalangan generasi milenial dan Gen Z, juga akan semakin menarik. Banyak orang muda yang mencari properti yang lebih terjangkau namun tetap berada di lokasi strategis. Oleh karena itu, properti dengan harga menengah di lokasi yang terjangkau namun dekat dengan pusat bisnis atau transportasi publik akan menjadi tren. Selain itu, pasar properti menengah juga diprediksi akan semakin berkembang karena meningkatnya daya beli kelas menengah.</p>
+    
+                <h2>6. Kebijakan Pemerintah dan Pembiayaan Properti</h2>
+                <p>Pemerintah Indonesia diperkirakan akan terus meluncurkan kebijakan yang mendukung sektor properti, termasuk penyediaan fasilitas pembiayaan yang lebih mudah bagi pembeli rumah pertama. Selain itu, suku bunga KPR yang relatif stabil dan program subsidi rumah bagi masyarakat berpenghasilan rendah juga akan menjadi faktor yang mendorong permintaan properti. Pembiayaan yang lebih terjangkau dan akses yang lebih mudah akan mendorong lebih banyak orang untuk membeli properti, terutama di segmen perumahan.</p>
+    
+                <h2>7. Peningkatan Properti untuk Investasi</h2>
+                <p>Investasi properti akan semakin menarik bagi banyak orang di tahun 2025, terutama dengan semakin meningkatnya minat terhadap properti komersial seperti apartemen, rumah kos, dan pusat perbelanjaan. Masyarakat semakin sadar bahwa properti bisa menjadi sumber pendapatan pasif yang menguntungkan. Properti untuk investasi yang terletak di lokasi strategis dan memiliki potensi penyewaan yang baik akan terus diminati oleh para investor.</p>
+    
+                <p>Kesimpulannya, pasar properti pada tahun 2025 diprediksi akan berkembang seiring dengan kemajuan teknologi, perubahan gaya hidup, dan kebijakan pemerintah yang mendukung. Untuk itu, penting bagi Anda untuk selalu mengikuti tren pasar properti agar bisa membuat keputusan yang lebih baik, apakah Anda membeli untuk tempat tinggal atau berinvestasi. Dengan memahami tren ini, Anda dapat lebih siap dalam menghadapi tantangan dan memanfaatkan peluang yang ada di pasar properti pada tahun 2025.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+        <!-- Related Posts -->
+        <div class="related-posts">
+            <h3>Artikel Terkait</h3>
+            <div class="related-posts-container">
+                <div class="related-post">
+                    <img src="images/blog1.jpg" alt="Tips Properti" />
+                    <h4><a href="blog1.html">Panduan Memilih Properti yang Tepat: Tips dari Ahli Properti</a></h4>
+                </div>
+                <div class="related-post">
+                    <img src="images/blog2.jpg" alt="Pasar Properti" />
+                    <h4><a href="blog2.html">Tips Memilih Investasi Properti yang Menguntungkan</a></h4>
+                </div>
+                <div class="related-post">
+                    <img src="https://via.placeholder.com/400x200" alt="Panduan Investasi" />
+                    <h4><a href="blog4.html">Panduan Investasi Properti untuk Pemula</a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+<!--
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-4 mb-5 mb-lg-0"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="contact-info">
+              <div class="address mt-2">
+                <i class="icon-room"></i>
+                <h4 class="mb-2">Location:</h4>
+                <p>
+                  43 Raymouth Rd. Baltemoer,<br />
+                  London 3910
+                </p>
+              </div>
+
+              <div class="open-hours mt-4">
+                <i class="icon-clock-o"></i>
+                <h4 class="mb-2">Open Hours:</h4>
+                <p>
+                  Sunday-Friday:<br />
+                  11:00 AM - 2300 PM
+                </p>
+              </div>
+
+              <div class="email mt-4">
+                <i class="icon-envelope"></i>
+                <h4 class="mb-2">Email:</h4>
+                <p>info@Untree.co</p>
+              </div>
+
+              <div class="phone mt-4">
+                <i class="icon-phone"></i>
+                <h4 class="mb-2">Call:</h4>
+                <p>+1 1234 55488 55</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <form action="#">
+              <div class="row">
+                <div class="col-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="col-6 mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="col-12 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="col-12 mb-3">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="7"
+                    class="form-control"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+
+                <div class="col-12">
+                  <input
+                    type="submit"
+                    value="Send Message"
+                    class="btn btn-primary"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+    <!-- /.untree_co-section -->
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Contact</h3>
+              <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+              <ul class="list-unstyled links">
+                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+                <li>
+                  <a href="mailto:info@mydomain.com">info@mydomain.com</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Sources</h3>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Creative</a></li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Links</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Our Vision</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-pinterest"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-dribbble"></span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+              **==========
+            -->
+
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              . All Rights Reserved. &mdash; Designed with love by
+              <a href="https://untree.co">Untree.co</a>
+              <!-- License information: https://untree.co/license/ -->
+            </p>
+            <div>
+              Distributed by
+              <a href="https://themewagon.com/" target="_blank">themewagon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+      // Ambil elemen tombol panah ke atas
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+  
+      // Fungsi untuk menampilkan tombol ketika pengguna menggulir
+      window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          scrollTopBtn.style.display = "block"; // Menampilkan tombol
+        } else {
+          scrollTopBtn.style.display = "none"; // Menyembunyikan tombol
+        }
+      };
+  
+      // Fungsi untuk scroll ke atas ketika tombol ditekan
+      scrollTopBtn.addEventListener("click", function() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
+  </body>
+</html>
