@@ -1,0 +1,23 @@
+{
+  "name": "profilesatrialand",
+  "version": "1.0.0",
+  "description": "Template Properti",
+  "keywords": [
+    "properti"
+  ],
+  "homepage": "https://github.com/SatriaLand/profilesatrialand#readme",
+  "bugs": {
+    "url": "https://github.com/SatriaLand/profilesatrialand/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SatriaLand/profilesatrialand.git"
+  },
+  "license": "ISC",
+  "author": "Satria",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

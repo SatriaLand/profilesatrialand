@@ -1,15 +1,8 @@
-<!-- /*
-* Template Name: Property
-* Template Author: Untree.co
-* Template URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Untree.co" />
     <link rel="shortcut icon" href="favicon.png" />
 
     <meta name="description" content="" />
@@ -32,6 +25,41 @@
     <title>
       Property &mdash; Free Bootstrap 5 Website Template by Untree.co
     </title>
+    <style>
+      /* CSS untuk tombol panah ke atas */
+      #scrollTopBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #005555; /* Latar belakang hitam */
+        color: white; /* Warna panah putih */
+        border: none;
+        padding: 5px; /* Ukuran tombol lebih besar */
+        font-size: 20px; /* Ukuran panah */
+        cursor: pointer;
+        display: none; /* Mulai dengan disembunyikan */
+        border-radius: 50%; /* Bulat */
+        width: 45px; /*Lebar tombol */
+        height: 45px;/* Tinggi tombol sama dengan lebar untuk bulat sempurna */
+        text-align: center;
+        line-height: 20px; /* Menjaga panah di tengah */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+  
+      #scrollTopBtn:hover {
+        background-color: #333; /* Warna latar belakang lebih gelap saat hover */
+      }
+  
+      /* Styling untuk halaman agar ada scroll */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+  
+      .content {
+        height: 1500px;
+      }
+    </style>
   </head>
   <body>
     <div class="site-mobile-menu site-navbar-target">
@@ -47,30 +75,33 @@
       <div class="container">
         <div class="menu-bg-wrap">
           <div class="site-navigation">
-            <a href="index.html" class="logo m-0 float-start">Property</a>
+            <a href="index.html" class="logo m-0 float-start">Satria Land</a>
 
             <ul
               class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
             >
-              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="index.html">Beranda</a></li>
               <li class="has-children">
-                <a href="properties.html">Properties</a>
+                <a href="properties.html#properti">Properti</a>
                 <ul class="dropdown">
-                  <li><a href="#">Buy Property</a></li>
-                  <li><a href="#">Sell Property</a></li>
                   <li class="has-children">
-                    <a href="#">Dropdown</a>
+                    <a href="#">Bangunan</a>
                     <ul class="dropdown">
-                      <li><a href="#">Sub Menu One</a></li>
-                      <li><a href="#">Sub Menu Two</a></li>
-                      <li><a href="#">Sub Menu Three</a></li>
+                      <li><a href="properties.html#properti">Carissma Mansion</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children">
+                    <a href="#">Tanah</a>
+                    <ul class="dropdown">
+                      <li><a href="">Demang Mansion</a></li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="about.html">About</a></li>
-              <li class="active"><a href="contact.html">Contact Us</a></li>
+              <li><a href="services.html#layanan">Layanan</a></li>
+              <li><a href="blog.html#blog">Blog</a></li>
+              <li><a href="about.html#tentang">Tentang</a></li>
+              <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
             </ul>
 
             <a
@@ -126,14 +157,19 @@
           <div class="col-lg-7">
             <div class="img-property-slide-wrap">
               <div class="img-property-slide">
-                <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-                <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
-                <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
+                <img src="images/t1.jpg" alt="Image" class="img-fluid" />
+                <img src="images/t2.jpg" alt="Image" class="img-fluid" />
+                <img src="images/t3.jpg" alt="Image" class="img-fluid" />
+                <img src="images/t4.jpg" alt="Image" class="img-fluid" />
+                <img src="images/t5.jpg" alt="Image" class="img-fluid" />
+                <img src="images/t6.jpg" alt="Image" class="img-fluid" />
+                <img src="images/t7.jpg" alt="Image" class="img-fluid" />
+                <img src="images/t8.jpg" alt="Image" class="img-fluid" />
               </div>
             </div>
           </div>
           <div class="col-lg-4">
-            <h2 class="heading text-primary">Carissma Mansion, Type Sapphire</h2>
+            <h2 class="heading text-primary">Carissma Mansion, Type Emerald</h2>
             <p class="meta">Sukabangun 2, Palembang</p>
             <p class="text-black-50">
               Cluster CARISSMA MANSION terletak di SUKABANGUN 2 yang merupakan jantung kota Palembang.
@@ -148,41 +184,26 @@
             </p>
 
             <div class="d-block agent-box p-5">
-              <div class="img mb-4">
-                <img
-                  src="images/person_2-min.jpg"
-                  alt="Image"
-                  class="img-fluid"
-                />
-              </div>
               <div class="text">
-                <h3 class="mb-0">Reynaldi Aditya</h3>
-                <div class="meta mb-3">Tim Marketing</div>
-                <p>
-                  Untuk informasi lebih lanjut mengenai perumahan, Anda dapat menghubungi kontak di bawah ini.
-                </p>
-                <ul class="list-unstyled social dark-hover d-flex">
-                  <li class="me-1">
-                    <a href="#"><span class="icon-instagram"></span></a>
-                  </li>
-                  <li class="me-1">
-                    <a href="#"><span class="icon-whatsapp"></span></a>
-                  </li>
-                  <li class="me-1">
-                    <a href="#"><span class="icon-facebook"></span></a>
-                  </li>
-                  <!--
-                  <li class="me-1">
-                    <a href="#"><span class="icon-linkedin"></span></a>
-                  </li>
-                  -->
+                <h3 class="mb-4">Kontak WhatsApp</h3>
+                <ul class="list-unstyled">
+                  <li><a href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Adit%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6285946930091 - Adit</a></li>
+                  <li><a href="https://wa.me/6285289525252?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Aidil%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6285289525252 - Aidil</a></li>
+                  <li><a href="https://wa.me/6282176609317?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Andi%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6282176609317 - Andi</a></li>
+                  <li><a href="https://wa.me/6282291113806?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Anggi%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6282291113806 - Anggi</a></li>
+                  <li><a href="https://wa.me/6285381994369?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Erwin%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6285381994369 - Erwin</a></li>
+                  <li><a href="https://wa.me/6288276368428?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Ryan%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6288276368428 - Ryan</a></li>
                 </ul>
               </div>
             </div>
+            
+            
           </div>
         </div>
       </div>
     </div>
+
+    <button id="scrollTopBtn" title="Go to top">↑</button>
 
     <div class="site-footer">
       <div class="container">
@@ -190,12 +211,19 @@
           <div class="col-lg-4">
             <div class="widget">
               <h3>Contact</h3>
-              <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+              <address><a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
+                Jl. Kol H Burlian No.104 Rt.24 Rw.09, Kota Palembang, Sumatera Selatan
+              </a></address>
               <ul class="list-unstyled links">
-                <li><a href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">+6285946930091</a></li>
-                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+                
+                <li><a href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">+6285946930091-Adit</a></li>
+                <li><a href="https://wa.me/6282291113806?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">+6282291113806-Anggi</a></li>
+                <li><a href="https://wa.me/6285381994369?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">+6285381994369-Erwin</a></li>
+                
                 <li>
-                  <a href="mailto:satrialand@gmail.com">satrialand@gmail.com</a>
+                  <a href="mailto:satrialandpalembang@gmail.com?subject=Pertanyaan%20Tentang%20Properti&body=Halo%2C%0A%0ASaya%20mendengar%20tentang%20Satria%20Land%20dan%20ingin%20memperoleh%20informasi%20lebih%20lanjut%20tentang%20properti%20yang%20tersedia.%0A%0AMohon%20bantuan%20untuk%20mendapatkan%20detail%20lebih%20lanjut.%0A%0ATerima%20Kasih.">
+                    satrialandpalembang@gmail.com
+                  </a>                  
                 </li>
               </ul>
             </div>
@@ -206,20 +234,14 @@
             <div class="widget">
               <h3>Sources</h3>
               <ul class="list-unstyled float-start links">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Vision</a></li>
-                <li><a href="#">Mission</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy</a></li>
+                <li><a href="about.html#tentang">Tentang Kami</a></li>
+                <li><a href="services.html#layanan">Layanan</a></li>
+                <li><a href="about.html#visi">Visi dan Misi</a></li>
               </ul>
               <ul class="list-unstyled float-start links">
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Creative</a></li>
+                <li><a href="partner.html#mitra">Mitra</a></li>
+                <li><a href="blog.html#blog">Blog</a></li>
+                <li><a href="faq.html#faq">FAQ</a></li>
               </ul>
             </div>
             <!-- /.widget -->
@@ -229,30 +251,8 @@
             <div class="widget">
               <h3>Links</h3>
               <ul class="list-unstyled links">
-                <li><a href="#">Our Vision</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-
-              <ul class="list-unstyled social">
-                <li>
-                  <a href="#"><span class="icon-instagram"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-facebook"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-linkedin"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-pinterest"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-dribbble"></span></a>
-                </li>
+                <li><a href="about.html#tentang">Tentang Kami</a></li>
+                <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
               </ul>
             </div>
             <!-- /.widget -->
@@ -263,26 +263,14 @@
 
         <div class="row mt-5">
           <div class="col-12 text-center">
-            <!-- 
-              **==========
-              NOTE: 
-              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
-              **==========
-            -->
-
+           
             <p>
               Copyright &copy;
               <script>
                 document.write(new Date().getFullYear());
               </script>
-              . All Rights Reserved. &mdash; Designed with love by
-              <a href="https://untree.co">Untree.co</a>
-              <!-- License information: https://untree.co/license/ -->
+              . All Rights Reserved. &mdash; Satria Land
             </p>
-            <div>
-              Distributed by
-              <a href="https://themewagon.com/" target="_blank">themewagon</a>
-            </div>
           </div>
         </div>
       </div>
@@ -304,5 +292,26 @@
     <script src="js/navbar.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+      // Ambil elemen tombol panah ke atas
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+  
+      // Fungsi untuk menampilkan tombol ketika pengguna menggulir
+      window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          scrollTopBtn.style.display = "block"; // Menampilkan tombol
+        } else {
+          scrollTopBtn.style.display = "none"; // Menyembunyikan tombol
+        }
+      };
+  
+      // Fungsi untuk scroll ke atas ketika tombol ditekan
+      scrollTopBtn.addEventListener("click", function() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
   </body>
 </html>

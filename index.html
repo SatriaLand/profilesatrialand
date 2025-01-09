@@ -1,15 +1,8 @@
-<!-- /*
-* Template Name: Property
-* Template Author: Untree.co
-* Template URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Untree.co" />
     <link rel="shortcut icon" href="favicon.png" />
 
     <meta name="description" content="" />
@@ -38,7 +31,7 @@
         position: fixed;
         bottom: 20px;
         right: 20px;
-        background-color: #000; /* Latar belakang hitam */
+        background-color: #005555; /* Latar belakang hitam */
         color: white; /* Warna panah putih */
         border: none;
         padding: 5px; /* Ukuran tombol lebih besar */
@@ -94,28 +87,26 @@
             >
               <li class="active"><a href="index.html">Beranda</a></li>
               <li class="has-children">
-                <a href="properties.html">Properti</a>
+                <a href="#">Properti</a>
                 <ul class="dropdown">
-                  <li><a href="#">Cluster</a></li>
-                  <li><a href="#">Minimalis</a></li>
-                  <li><a href="#">Subsisdi</a></li>
-                  <li><a href="#">Luxury</a></li>
-                  <!--
                   <li class="has-children">
-                    <a href="#">Palembang</a>
+                    <a href="#">Bangunan</a>
                     <ul class="dropdown">
-                      <li><a href="#">Kenten</a></li>
-                      <li><a href="#">Sukabangun</a></li>
-                      <li><a href="#">Plaju</a></li>
+                      <li><a href="properties.html#properti">Carissma Mansion</a></li>
                     </ul>
                   </li>
-                  -->
+                  <li class="has-children">
+                    <a href="#">Tanah</a>
+                    <ul class="dropdown">
+                      <li><a href="">Demang Mansion</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
-              <li><a href="services.html">Layanan</a></li>
+              <li><a href="services.html#layanan">Layanan</a></li>
               <li><a href="blog.html#blog">Blog</a></li>
               <li><a href="about.html#tentang">Tentang</a></li>
-              <li><a href="contact.html">Hubungi Kami</a></li>
+              <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
             </ul>
 
             <a
@@ -150,8 +141,21 @@
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-9 text-center">
-            <h1 class="heading" data-aos="fade-up">
-              Pilihan property terpercaya Anda
+            <h1 
+                class="heading" 
+                data-aos="fade-up" 
+                style="
+                    font-size: 3rem;
+                    font-weight: bold;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    background: #ffffff;
+                    -webkit-background-clip: text; /* Untuk Chrome & Safari */
+                    background-clip: text;         /* Properti standar untuk kompatibilitas */
+                    -webkit-text-fill-color: transparent; /* Untuk membuat teks transparan */
+                "
+            >
+                Find Your Place, Feel at Home.
             </h1>
             <!--
             <form
@@ -202,7 +206,7 @@
                   </a>
 
                   <div class="property-content">
-                    <div class="price mb-2"><span>Rp. 600.000.000</span></div>
+                    <div class="price mb-2"><span>Rp. 550.000.000</span></div>
                     <div>
                       <span class="d-block mb-2 text-black-50"
                         >Carissma Mansion, Type Sapphire</span
@@ -236,7 +240,7 @@
 
                 <div class="property-item">
                   <a href="property2.html" class="img">
-                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                    <img src="images/t1.jpg" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
@@ -273,31 +277,27 @@
                 <!-- .item -->
 
                 <div class="property-item">
-                  <a href="property-single.html" class="img">
+                  <a href="property3.html" class="img">
                     <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div class="price mb-2"><span>Rp. 250.000.000</span></div>
                     <div>
                       <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
+                        >Demang Mansion, Tanah Kavling</span
                       >
-                      <span class="city d-block mb-3">California, USA</span>
+                      <span class="city d-block mb-3">Kancil Putih, Palembang</span>
 
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
+                          <span class="icon-stack-exchange me-2"></span>
+                          <span class="caption">8 x 15</span>
                         </span>
                       </div>
 
                       <a
-                        href="property-single.html"
+                        href="property3.html"
                         class="btn btn-primary py-2 px-3"
                         >Lihat Detail</a
                       >
@@ -305,7 +305,7 @@
                   </div>
                 </div>
                 <!-- .item -->
-
+                <!--
                 <div class="property-item">
                   <a href="property-single.html" class="img">
                     <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
@@ -338,8 +338,9 @@
                     </div>
                   </div>
                 </div>
+                -->
                 <!-- .item -->
-
+                <!--
                 <div class="property-item">
                   <a href="property-single.html" class="img">
                     <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
@@ -372,8 +373,9 @@
                     </div>
                   </div>
                 </div>
+                -->
                 <!-- .item -->
-
+                <!--
                 <div class="property-item">
                   <a href="property-single.html" class="img">
                     <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
@@ -406,8 +408,9 @@
                     </div>
                   </div>
                 </div>
+                -->
                 <!-- .item -->
-
+                <!--
                 <div class="property-item">
                   <a href="property-single.html" class="img">
                     <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
@@ -440,8 +443,9 @@
                     </div>
                   </div>
                 </div>
+                -->
                 <!-- .item -->
-
+                <!--
                 <div class="property-item">
                   <a href="property-single.html" class="img">
                     <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
@@ -474,8 +478,9 @@
                     </div>
                   </div>
                 </div>
+                -->
                 <!-- .item -->
-
+                <!--
                 <div class="property-item">
                   <a href="property-single.html" class="img">
                     <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
@@ -508,6 +513,7 @@
                     </div>
                   </div>
                 </div>
+                -->
                 <!-- .item -->
               </div>
 
@@ -985,8 +991,11 @@
                 Jl. Kol H Burlian No.104 Rt.24 Rw.09, Kota Palembang, Sumatera Selatan
               </a></address>
               <ul class="list-unstyled links">
-                <li><a href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">+6285946930091 - Admin</a></li>
-                <li><a href="https://wa.me/6285381994369?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">+6285381994369 - Admin</a></li>
+                
+                <li><a href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">+6285946930091-Adit</a></li>
+                <li><a href="https://wa.me/6282291113806?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">+6282291113806-Anggi</a></li>
+                <li><a href="https://wa.me/6285381994369?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">+6285381994369-Erwin</a></li>
+                
                 <li>
                   <a href="mailto:satrialandpalembang@gmail.com?subject=Pertanyaan%20Tentang%20Properti&body=Halo%2C%0A%0ASaya%20mendengar%20tentang%20Satria%20Land%20dan%20ingin%20memperoleh%20informasi%20lebih%20lanjut%20tentang%20properti%20yang%20tersedia.%0A%0AMohon%20bantuan%20untuk%20mendapatkan%20detail%20lebih%20lanjut.%0A%0ATerima%20Kasih.">
                     satrialandpalembang@gmail.com
@@ -1052,26 +1061,14 @@
 
         <div class="row mt-5">
           <div class="col-12 text-center">
-            <!-- 
-              **==========
-              NOTE: 
-              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
-              **==========
-            -->
-
+           
             <p>
               Copyright &copy;
               <script>
                 document.write(new Date().getFullYear());
               </script>
-              . All Rights Reserved. &mdash; Designed with love by
-              <a href="https://untree.co">Untree.co</a>
-              <!-- License information: https://untree.co/license/ -->
+              . All Rights Reserved. &mdash; Satria Land
             </p>
-            <div>
-              Distributed by
-              <a href="https://themewagon.com/" target="_blank">themewagon</a>
-            </div>
           </div>
         </div>
       </div>
