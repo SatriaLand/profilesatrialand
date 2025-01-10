@@ -15,9 +15,10 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="fonts/icomoon/style.css" />
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
@@ -65,50 +66,63 @@
         height: 1500px;
       }
 
-      /* Kontainer utama */
-.vid-property-slide-wrap {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
+      
+      /* Kontainer Luar */
+      .outer-container {
+        width: 100%; /* Lebar elemen ini akan memenuhi 100% lebar kontainer induk, yaitu body */
+        max-width: 1100px; /* Elemen tidak akan lebih lebar dari 1100px. Ini membatasi elemen agar tidak terlalu besar meskipun berada di layar yang lebih besar */
+        height: 70vh; /* Tinggi elemen diatur menjadi 70% dari tinggi viewport (layar yang terlihat), yang memastikan tingginya fleksibel tergantung ukuran layar */
+        padding: 15px; /* Memberikan jarak 15px di dalam elemen di semua sisi agar konten tidak terlalu rapat dengan tepi kontainer */
+        background-color: #fff; /* Memberikan latar belakang putih pada elemen */
+        border-radius: 10px; /* Sudut-sudut elemen akan melengkung dengan radius 10px, memberikan efek rounded */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada kotak, memberi efek kedalaman pada elemen, dengan warna bayangan abu-abu (rgba(0, 0, 0, 0.1)) dan pergeseran bayangan 4px secara vertikal dan 8px secara horizontal */
+        overflow: hidden; /* Mencegah konten yang melebihi batas elemen keluar, ini berarti jika ada konten di luar container, akan dipotong */
+        margin-bottom: 20px; /* Memberikan jarak 20px di bagian bawah kontainer, memisahkannya dari elemen yang ada di bawahnya (seperti konten blog) */
+      }
 
-.vid-property-slide {
+      /* Swiper Container */
+.swiper-container {
+  width: 100%;
+  height: 70vh;  /* Sesuaikan tinggi sesuai dengan keinginan */
   display: flex;
-  transition: transform 0.5s ease;
+  flex-direction: row;
+  justify-content: center; /* Menjaga elemen video tetap terpusat */
 }
 
-.video-slide {
-  flex: 0 0 100%; /* Setiap video mengambil seluruh lebar kontainer */
-  margin-right: 10px;
+/* Slide untuk video */
+.swiper-slide {
+  width: 100%;          /* Mengatur lebar per slide */
+  max-width: 640px;     /* Atur lebar video jika perlu */
+  margin-right: 20px;   /* Jarak antar video */
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-video {
-  width: 100%;
-  height: auto;
-  display: block;
+.swiper-slide iframe {
+  width: 100%;          /* Memastikan iframe mengisi seluruh slide */
+  height: 100%;         /* Menjaga aspect ratio tetap proporsional */
+  border-radius: 10px;
 }
 
-/* Tombol Navigasi */
-button {
-  position: absolute;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 18px;
-}
 
-button.prev {
-  left: 10px;
-}
+      /* Pagination Dot */
+      .swiper-pagination {
+        position: absolute;
+        bottom: 100px; /* Tambahkan sedikit jarak di bawah dot */
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+      @media (max-width: 768px) {
+        .outer-container {
+          height: 50vh;
+          padding: 10px;
+        }
 
-button.next {
-  right: 10px;
-}
-
+        .swiper-container {
+          height: 100%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -201,63 +215,45 @@ button.next {
       </div>
     </div>
 
-    <div class="section">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-7">
-            <div class="vid-property-slide-wrap">
-                <div class="vid-property-slide">
-                  <div class="video-slide">
-                    <iframe src="https://drive.google.com/uc?export=download&id=1etmMj8pbZAGX8B-Qf3brjKvi7TA-yrQx" 
-                      width="640" height="360" frameborder="0" allowfullscreen>
-                    </iframe>
-                  </div>
-                  <div class="video-slide">
-                    <iframe src="https://drive.google.com/uc?export=download&id=1RaWY8fWIRuBi4usLYOIUleFycxBmBhgQ" 
-                      width="640" height="360" frameborder="0" allowfullscreen>
-                    </iframe>
-                  </div>
-                  <div class="video-slide">
-                    <iframe src="https://drive.google.com/uc?export=download&id=1YPTenfnCCxA1YVvoLZA0L8HlQqSAVI9D" 
-                      width="640" height="360" frameborder="0" allowfullscreen>
-                    </iframe>
-                  </div>
-                  <div class="video-slide">
-                    <iframe src="https://drive.google.com/uc?export=download&id=1LaprQukCw9-uudQkyPllMI1jYjAw0zVd" 
-                      width="640" height="360" frameborder="0" allowfullscreen>
-                    </iframe>
-                  </div>
-                </div>
-              </div>
-                            
-              <!-- Tombol Next dan Prev -->
-              <button class="prev">←</button>
-              <button class="next">→</button>              
+    <div class="outer-container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
-          <div class="col-lg-4">
-            <h2 class="heading text-primary">Demang Mansion, Tanah Kavling</h2>
-            <p class="meta">Kancil Putih, Palembang</p>
-            <p class="text-black-50">
-              Demang Mansion terletak di Jalan Kancil Putih - Demang Lebar Daun yang merupakan salah satu kawasan elit kota Palembang. Tepatnya 10 menit dari PS Mall, Palembang Icon, dan Bandara internasional Sultan Mahmud Badaruddin II. Demang Mansion merupakan kawasan Cluster dan Kavling mewah siap bangun.
-            </p>
-
-            <div class="d-block agent-box p-5">
-              <div class="text">
-                <h3 class="mb-4">Kontak WhatsApp</h3>
-                <ul class="list-unstyled">
-                  <li><a href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Adit%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6285946930091 - Adit</a></li>
-                  <li><a href="https://wa.me/6285289525252?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Aidil%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6285289525252 - Aidil</a></li>
-                  <li><a href="https://wa.me/6282176609317?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Andi%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6282176609317 - Andi</a></li>
-                  <li><a href="https://wa.me/6282291113806?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Anggi%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6282291113806 - Anggi</a></li>
-                  <li><a href="https://wa.me/6285381994369?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Erwin%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6285381994369 - Erwin</a></li>
-                  <li><a href="https://wa.me/6288276368428?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Ryan%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6288276368428 - Ryan</a></li>
-                </ul>
-              </div>
-            </div>
-            
-            
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/3JZ_D3ELwOQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/M7lc1UVf-VE"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.youtube.com/embed/2Vv-BfVoq4g"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
+
+        <!-- Pagination Dots -->
+        <div class="swiper-pagination"></div>
       </div>
     </div>
 
@@ -274,10 +270,10 @@ button.next {
                 </a></address>
                 <ul class="list-unstyled links">
                   
-                  <li><a href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">+6285946930091-Adit</a></li>
-                  <li><a href="https://wa.me/6282291113806?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">+6282291113806-Anggi</a></li>
-                  <li><a href="https://wa.me/6285381994369?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">+6285381994369-Erwin</a></li>
-                  
+                  <li><a href="https://wa.me/6285266366309?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">085266366309-Kantor</a></li>
+                <li><a href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">085946930091-Adit</a></li>
+                <li><a href="https://wa.me/6282291113806?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">082291113806-Anggi</a></li>
+                <li><a href="https://wa.me/6285381994369?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">085381994369-Awin</a></li>
                   <li>
                     <a href="mailto:satrialandpalembang@gmail.com?subject=Pertanyaan%20Tentang%20Properti&body=Halo%2C%0A%0ASaya%20mendengar%20tentang%20Satria%20Land%20dan%20ingin%20memperoleh%20informasi%20lebih%20lanjut%20tentang%20properti%20yang%20tersedia.%0A%0AMohon%20bantuan%20untuk%20mendapatkan%20detail%20lebih%20lanjut.%0A%0ATerima%20Kasih.">
                       satrialandpalembang@gmail.com
@@ -344,53 +340,26 @@ button.next {
       </div>
     </div>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/custom.js"></script>  
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-  const prevButton = document.querySelector('.prev');
-  const nextButton = document.querySelector('.next');
-  const slideContainer = document.querySelector('.vid-property-slide');
-  
-  let currentSlide = 0;
-  const totalSlides = document.querySelectorAll('.video-slide').length;
-
-  // Fungsi untuk navigasi ke slide sebelumnya
-  function prevSlide() {
-    if (currentSlide > 0) {
-      currentSlide--;
-    } else {
-      currentSlide = totalSlides - 1; // Kembali ke slide terakhir
-    }
-    updateSlidePosition();
-  }
-
-  // Fungsi untuk navigasi ke slide berikutnya
-  function nextSlide() {
-    if (currentSlide < totalSlides - 1) {
-      currentSlide++;
-    } else {
-      currentSlide = 0; // Kembali ke slide pertama
-    }
-    updateSlidePosition();
-  }
-
-  // Fungsi untuk mengupdate posisi slide
-  function updateSlidePosition() {
-    const offset = -currentSlide * 100; // Geser sesuai dengan index slide
-    slideContainer.style.transform = `translateX(${offset}%)`;
-  }
-
-  prevButton.addEventListener('click', prevSlide);
-  nextButton.addEventListener('click', nextSlide);
+     const swiper = new Swiper('.swiper-container', {
+  loop: true,  // Membuat video kembali ke awal ketika sudah mencapai yang terakhir
+  direction: 'horizontal', // Tentukan untuk mengarah horizontal
+  pagination: {
+    el: '.swiper-pagination', // Pagination untuk navigasi
+    clickable: true,          // Agar pagination clickable
+  },
+  slidesPerView: 1,           // Hanya satu video per slide
+  spaceBetween: 20,           // Jarak antar slide
 });
+
     </script>
     <script>
       // Ambil elemen tombol panah ke atas
@@ -412,6 +381,15 @@ button.next {
           behavior: "smooth"
         });
       });
+
+      let slideIndex = 0;
+
+function moveSlide(n) {
+  const slides = document.querySelectorAll('.video-slide');
+  slideIndex = (slideIndex + n + slides.length) % slides.length;
+  document.querySelector('.vid-property-slide').style.transform = `translateX(${-slideIndex * 640}px)`;
+}
+
     </script>
   </body>
 </html>
