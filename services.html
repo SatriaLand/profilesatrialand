@@ -59,7 +59,73 @@
       .content {
         height: 1500px;
       }
-  
+      
+      .features-1 .row {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center; /* Horizontal alignment */
+          gap: 20px; /* Space between boxes */
+        }
+    
+        .features-1 .box-feature {
+          background: #fffefe;
+          border-radius: 8px;
+          padding: 30px;
+          width: 280px;
+          text-align: center;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        /* Responsif untuk layar lebih kecil */
+        @media (max-width: 992px) {
+          .features-1 .box-feature {
+            width: 45%; /* Lebar 45% untuk layar medium, seperti tablet */
+          }
+        }
+
+        @media (max-width: 768px) {
+          .features-1 .box-feature {
+            width: 100%; /* Lebar penuh untuk layar kecil, seperti smartphone */
+          }
+        }
+        
+        @media (max-width: 576px) {
+        .box-feature h3 {
+          font-size: 16px; /* Ukuran judul lebih kecil di layar kecil */
+        }
+        .box-feature p {
+          font-size: 14px; /* Ukuran paragraf lebih kecil */
+        }
+        }
+
+        .features-1 .box-feature h3, .features-1 .box-feature .h3 {
+          font-size: 18px; /* Better readability */
+          margin: 10px 0;
+        }
+    
+        .features-1 .box-feature [class^="flaticon-"] {
+          color: #e7bc4c;
+          font-size: 60px;
+          margin-bottom: 20px;
+          display: block;
+          line-height: 1;
+        }
+    
+        .features-1 .box-feature:hover {
+          transform: translateY(-5px); /* Hover effect */
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .box-feature span {
+        font-size: 50px;
+        color: #00204a;
+        margin-bottom: 20px;
+        display: block;
+        }
+        .features-1 .row > div {
+        margin-bottom: 30px;
+        }
+
     </style>
   </head>
   <body>
@@ -75,9 +141,10 @@
     <nav class="site-nav">
       <div class="container">
         <div class="menu-bg-wrap">
-          <div class="site-navigation">
-            <a href="index.html" class="logo m-0 float-start">Satria Land</a>
-
+          <div class="site-navigation m-0">
+            <a href="index.html">
+            <img src="images/Logo2.png" alt="Satria Land" style="height: 45px;">
+          </a>
             <ul
               class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
             >
@@ -147,46 +214,9 @@
       </div>
     </div>
 
-    <section class="features-1" style="margin-top: 50px;">
-      <style>
-        .features-1 .row {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center; /* Horizontal alignment */
-          gap: 20px; /* Space between boxes */
-        }
-    
-        .features-1 .box-feature {
-          background: #fff;
-          border-radius: 8px;
-          padding: 30px;
-          width: 280px;
-          text-align: center;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow */
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-    
-        .features-1 .box-feature h3, .features-1 .box-feature .h3 {
-          font-size: 18px; /* Better readability */
-          margin: 10px 0;
-        }
-    
-        .features-1 .box-feature [class^="flaticon-"] {
-          color: #00204a;
-          font-size: 60px;
-          margin-bottom: 20px;
-          display: block;
-          line-height: 1;
-        }
-    
-        .features-1 .box-feature:hover {
-          transform: translateY(-5px); /* Hover effect */
-          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-      </style>
-    
+    <section class="features-1" style="">
       <div class="container">
-        <h2 class="section-title text-center mb-5" id="layanan">Layanan Kami</h2>
+        <h1 class="section-title text-center mb-5" id="layanan">Layanan Kami</h1>
         <div class="row">
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="box-feature">
@@ -219,7 +249,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>  
     </section>
           <!--
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
@@ -427,12 +457,11 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="widget">
-              <h3>Contact</h3>
-              <address><a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
-                Jl. Kol H Burlian No.104 Rt.24 Rw.09, Kota Palembang, Sumatera Selatan
-              </a></address>
               <ul class="list-unstyled links">
-                
+              <h3>Contact</h3>
+                <li><a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
+                  Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br> Kota Palembang, <br>Sumatera Selatan
+                </a></li>
                 <li><a href="https://wa.me/6285266366309?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">085266366309-Kantor</a></li>
                 <li><a href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">085946930091-Adit</a></li>
                 <li><a href="https://wa.me/6282291113806?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">082291113806-Anggi</a></li>
@@ -449,13 +478,11 @@
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <div class="widget">
-              <h3>Sources</h3>
               <ul class="list-unstyled float-start links">
+                <h3>Sources</h3>
                 <li><a href="about.html#tentang">Tentang Kami</a></li>
                 <li><a href="services.html#layanan">Layanan</a></li>
                 <li><a href="about.html#visi">Visi dan Misi</a></li>
-              </ul>
-              <ul class="list-unstyled float-start links">
                 <li><a href="partner.html#mitra">Mitra</a></li>
                 <li><a href="blog.html#blog">Blog</a></li>
                 <li><a href="faq.html#faq">FAQ</a></li>
@@ -464,12 +491,22 @@
             <!-- /.widget -->
           </div>
           <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
+          <div class="col-lg-3">
             <div class="widget">
-              <h3>Links</h3>
               <ul class="list-unstyled links">
-                <li><a href="about.html#tentang">Tentang Kami</a></li>
+                <h3>Links</h3>
                 <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
+              </ul>
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
               </ul>
             </div>
             <!-- /.widget -->
