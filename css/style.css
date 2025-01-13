@@ -98,6 +98,29 @@ hr {
 hr:not([size]) {
   height: 1px; }
 
+/*Font Lato */
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+p {
+  font-family: 'Lato';
+  font-size: 20px;
+}
+
+/*Font Sans */
+@font-face {
+  font-family: 'Sans';
+  src: url('fonts/PT_Sans/PTSans-Bold.ttf') format('truetype');
+}
+
+/*Font Young Serif */
+@font-face {
+  font-family: 'Young Serif';
+  src: url('fonts/Young_Serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -9609,9 +9632,20 @@ body {
     opacity: 1;
     visibility: visible; }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .logo {
+ h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Work Sans", sans-serif;
   color: #00204a; }
+
+h1, .h1, .logo {
+  font-family: 'Sans';
+  font-size: 35px;
+}
+
+h2, .h2 {
+  font-family: 'Young Serif';
+  font-size: 26px;
+}
+
 
 a {
   -webkit-transition: .3s all ease;
@@ -9653,7 +9687,7 @@ textarea {
   transform: translate(-50%, -50%); }
 
 .menu-bg-wrap {
-  background-color: #005555;
+  background-color: #262626;
   padding: 20px 30px;
   position: relative;
   float: left;
