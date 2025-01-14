@@ -49,16 +49,6 @@
       #scrollTopBtn:hover {
         background-color: #E7BC4C; /* Warna latar belakang lebih gelap saat hover */
       }
-  
-      /* Styling untuk halaman agar ada scroll */
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-  
-      .content {
-        height: 1500px;
-      }
     </style>
   </head>
   <body>
@@ -167,9 +157,13 @@
                 placeholder="Your ZIP code or City. e.g. New York"
               />
             -->
-              <button type="submit" class="btn btn-primary"
-                style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-              >Penawaran Hari Ini</button>
+            <a
+            href="index.html#propertiterlaris"
+            target="_blank"
+            class="btn btn-primary text-white py-3 px-4" 
+            style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
+            >Penawaran Hari Ini</a
+          >
             </form>
             
           </div>
@@ -181,14 +175,14 @@
       <div class="container">
         <div class="row mb-5 align-items-center">
           <div class="col-lg-6">
-            <h2 class="font-weight-bold text-primary heading">
+            <h2 class="font-weight-bold text-primary heading" id="propertiterlaris">
               Properti Terlaris
             </h2>
           </div>
           <div class="col-lg-6 text-lg-end">
             <p>
               <a
-                href="#"
+                href="properties.html"
                 target="_blank"
                 class="btn btn-primary text-white py-3 px-4" 
                 style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
@@ -223,15 +217,12 @@
                           <span class="icon-bath me-2"></span>
                           <span class="caption">2 baths</span>
                         </span>
-                        <span class="d-block d-flex align-items-center me-4">
-                          <span class="icon-home me-2"></span>
-                          <span class="caption">smart home</span>
-                        </span>
                       </div>
 
                       <a
                         href="property1.html#carissmasapphire"
                         class="btn btn-primary py-2 px-3"
+                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
                         >Lihat Detail</a
                       >
                     </div>
@@ -261,15 +252,12 @@
                           <span class="icon-bath me-2"></span>
                           <span class="caption">2 baths</span>
                         </span>
-                        <span class="d-block d-flex align-items-center me-4">
-                          <span class="icon-home me-2"></span>
-                          <span class="caption">smart home</span>
-                        </span>
                       </div>
 
                       <a
                         href="property2.html"
                         class="btn btn-primary py-2 px-3"
+                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
                         >Lihat Detail</a
                       >
                     </div>
@@ -300,6 +288,7 @@
                       <a
                         href="property3.html"
                         class="btn btn-primary py-2 px-3"
+                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
                         >Lihat Detail</a
                       >
                     </div>
@@ -559,17 +548,6 @@
             </div>
           </div>
           
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
-            <div class="box-feature">
-              <span class="flaticon-building"></span>
-              <h3 class="mb-3">Tanah Kavling</h3>
-              <p>
-                Temukan properti terbaik yang tersedia untuk dijual, dari rumah impian hingga investasi yang menguntungkan.
-              </p>
-              <p><a href="#" class="learn-more">Learn More</a></p>
-            </div>
-          </div>
-          
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
             <div class="box-feature">
               <span class="flaticon-house-1"></span>
@@ -594,141 +572,7 @@
       </div>
     </section>
   -->
-    <!--
-    <div class="section sec-testimonials">
-      <div class="container">
-        <div class="row mb-5 align-items-center">
-          <div class="col-md-6">
-            <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
-              Kata Pelanggan
-            </h2>
-          </div>
-          <div class="col-md-6 text-md-end">
-            <div id="testimonial-nav">
-              <span class="prev" data-controls="prev">Sebelumnya</span>
 
-              <span class="next" data-controls="next">Selanjutnya</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4"></div>
-        </div>
-        <div class="testimonial-slider-wrap">
-          <div class="testimonial-slider">
-            <div class="item">
-              <div class="testimonial">
-                <img
-                  src="images/person_1-min.jpg"
-                  alt="Image"
-                  class="img-fluid rounded-circle w-25 mb-4"
-                />
-                <div class="rate">
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                </div>
-                <h3 class="h5 text-primary mb-4">James Smith</h3>
-                <blockquote>
-                  <p>
-                    &ldquo;Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.&rdquo;
-                  </p>
-                </blockquote>
-                <p class="text-black-50">Designer, Co-founder</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="testimonial">
-                <img
-                  src="images/person_2-min.jpg"
-                  alt="Image"
-                  class="img-fluid rounded-circle w-25 mb-4"
-                />
-                <div class="rate">
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                </div>
-                <h3 class="h5 text-primary mb-4">Mike Houston</h3>
-                <blockquote>
-                  <p>
-                    &ldquo;Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.&rdquo;
-                  </p>
-                </blockquote>
-                <p class="text-black-50">Designer, Co-founder</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="testimonial">
-                <img
-                  src="images/person_3-min.jpg"
-                  alt="Image"
-                  class="img-fluid rounded-circle w-25 mb-4"
-                />
-                <div class="rate">
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                </div>
-                <h3 class="h5 text-primary mb-4">Cameron Webster</h3>
-                <blockquote>
-                  <p>
-                    &ldquo;Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.&rdquo;
-                  </p>
-                </blockquote>
-                <p class="text-black-50">Designer, Co-founder</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="testimonial">
-                <img
-                  src="images/person_4-min.jpg"
-                  alt="Image"
-                  class="img-fluid rounded-circle w-25 mb-4"
-                />
-                <div class="rate">
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                </div>
-                <h3 class="h5 text-primary mb-4">Dave Smith</h3>
-                <blockquote>
-                  <p>
-                    &ldquo;Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.&rdquo;
-                  </p>
-                </blockquote>
-                <p class="text-black-50">Designer, Co-founder</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    -->
     <div class="section section-4 bg-light">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
@@ -741,19 +585,19 @@
             </p>
           </div>
         </div>
-        <div class="row justify-content-between mb-5">
-          <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
+        <div class="row justify-content-between mb-5 flex-column">
+          <div class="col-lg-7 order-lg-1">
             <div class="img-about dots">
               <img src="images/hero_bg_3.jpg" alt="Image" class="img-fluid" />
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 order-1">
             <div class="d-flex feature-h">
               <span class="wrap-icon me-3">
                 <span class="icon-home2"></span>
               </span>
               <div class="feature-text">
-                <h3 class="heading">Properti Terbaik</h3>
+                <h2 class="heading">Properti Terbaik</h2>
                   <p class="text-black-50">
                     Kami menyediakan berbagai pilihan properti terbaik yang telah terkurasi dengan cermat, mulai dari hunian nyaman, apartemen modern, hingga ruang komersial yang strategis. 
                     Dengan lokasi-lokasi unggulan, kami memastikan bahwa setiap properti yang kami tawarkan dapat memenuhi berbagai kebutuhan, baik untuk tempat tinggal maupun investasi jangka panjang.
@@ -766,7 +610,7 @@
                 <span class="icon-person"></span>
               </span>
               <div class="feature-text">
-                <h3 class="heading">Agen Terbaik</h3>
+                <h2 class="heading">Agen Terbaik</h2>
                 <p class="text-black-50">
                   Tim agen kami terdiri dari profesional berpengalaman yang siap membantu Anda menemukan properti impian. 
                   Dengan pengetahuan mendalam tentang pasar properti, kami memastikan setiap transaksi berjalan lancar dan sesuai dengan kebutuhan Anda.
@@ -779,7 +623,7 @@
                 <span class="icon-security"></span>
               </span>
               <div class="feature-text">
-                <h3 class="heading">Properti Terpercaya</h3>
+                <h2 class="heading">Properti Terpercaya</h2>
                 <p class="text-black-50">
                   Kami hanya menawarkan properti yang telah diverifikasi dan memenuhi standar kualitas tertinggi. 
                   Setiap properti yang kami daftarkan telah melalui proses seleksi ketat, memberikan Anda jaminan keamanan dan kenyamanan dalam setiap transaksi.
@@ -790,76 +634,144 @@
         </div>
       </div>
     </div>
-        <!--
-        <div class="row section-counter mt-5">
-          <div
-            class="col-6 col-sm-6 col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"
-                ><span class="countup text-primary">3298</span></span
-              >
-              <span class="caption text-black-50"># of Buy Properties</span>
-            </div>
-          </div>
-          <div
-            class="col-6 col-sm-6 col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"
-                ><span class="countup text-primary">2181</span></span
-              >
-              <span class="caption text-black-50"># of Sell Properties</span>
-            </div>
-          </div>
-          <div
-            class="col-6 col-sm-6 col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"
-                ><span class="countup text-primary">9316</span></span
-              >
-              <span class="caption text-black-50"># of All Properties</span>
-            </div>
-          </div>
-          <div
-            class="col-6 col-sm-6 col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="600"
-          >
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"
-                ><span class="countup text-primary">7191</span></span
-              >
-              <span class="caption text-black-50"># of Agents</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="section">
-      <div class="row justify-content-center footer-cta" data-aos="fade-up">
-        <div class="col-lg-7 mx-auto text-center">
-          <h2 class="mb-4">Be a part of our growing real state agents</h2>
-          <p>
-            <a
-              href="#"
-              target="_blank"
-              class="btn btn-primary text-white py-3 px-4"
-              >Apply for Real Estate agent</a
-            >
-          </p>
+
+      <!-- Testimoni Pelanggan -->
+
+      <div class="section sec-testimonials">
+        <div class="container">
+          <div class="row mb-5 align-items-center">
+            <div class="col-md-6">
+              <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
+                Kata Pelanggan
+              </h2>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <div id="testimonial-nav">
+                <span class="prev" data-controls="prev">Sebelumnya</span>
+  
+                <span class="next" data-controls="next">Selanjutnya</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-4"></div>
+          </div>
+          <div class="testimonial-slider-wrap">
+            <div class="testimonial-slider">
+              <div class="item">
+                <div class="testimonial">
+                  <img
+                    src="images/person_1-min.jpg"
+                    alt="Image"
+                    class="img-fluid rounded-circle w-25 mb-4"
+                  />
+                  <div class="rate">
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                  </div>
+                  <h3 class="h5 text-primary mb-4">James Smith</h3>
+                  <blockquote>
+                    <p>
+                      &ldquo;Far far away, behind the word mountains, far from the
+                      countries Vokalia and Consonantia, there live the blind
+                      texts. Separated they live in Bookmarksgrove right at the
+                      coast of the Semantics, a large language ocean.&rdquo;
+                    </p>
+                  </blockquote>
+                  <p class="text-black-50">Designer, Co-founder</p>
+                </div>
+              </div>
+  
+              <div class="item">
+                <div class="testimonial">
+                  <img
+                    src="images/person_2-min.jpg"
+                    alt="Image"
+                    class="img-fluid rounded-circle w-25 mb-4"
+                  />
+                  <div class="rate">
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                  </div>
+                  <h3 class="h5 text-primary mb-4">Mike Houston</h3>
+                  <blockquote>
+                    <p>
+                      &ldquo;Far far away, behind the word mountains, far from the
+                      countries Vokalia and Consonantia, there live the blind
+                      texts. Separated they live in Bookmarksgrove right at the
+                      coast of the Semantics, a large language ocean.&rdquo;
+                    </p>
+                  </blockquote>
+                  <p class="text-black-50">Designer, Co-founder</p>
+                </div>
+              </div>
+  
+              <div class="item">
+                <div class="testimonial">
+                  <img
+                    src="images/person_3-min.jpg"
+                    alt="Image"
+                    class="img-fluid rounded-circle w-25 mb-4"
+                  />
+                  <div class="rate">
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                  </div>
+                  <h3 class="h5 text-primary mb-4">Cameron Webster</h3>
+                  <blockquote>
+                    <p>
+                      &ldquo;Far far away, behind the word mountains, far from the
+                      countries Vokalia and Consonantia, there live the blind
+                      texts. Separated they live in Bookmarksgrove right at the
+                      coast of the Semantics, a large language ocean.&rdquo;
+                    </p>
+                  </blockquote>
+                  <p class="text-black-50">Designer, Co-founder</p>
+                </div>
+              </div>
+  
+              <div class="item">
+                <div class="testimonial">
+                  <img
+                    src="images/person_4-min.jpg"
+                    alt="Image"
+                    class="img-fluid rounded-circle w-25 mb-4"
+                  />
+                  <div class="rate">
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                  </div>
+                  <h3 class="h5 text-primary mb-4">Dave Smith</h3>
+                  <blockquote>
+                    <p>
+                      &ldquo;Far far away, behind the word mountains, far from the
+                      countries Vokalia and Consonantia, there live the blind
+                      texts. Separated they live in Bookmarksgrove right at the
+                      coast of the Semantics, a large language ocean.&rdquo;
+                    </p>
+                  </blockquote>
+                  <p class="text-black-50">Designer, Co-founder</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  -->
+
     <!--
     <div class="section section-5 bg-light" id="our-agents">
       <div class="container">
@@ -987,31 +899,34 @@
     <div class="site-footer">
       <div class="container">
         <div class="row">
+          <!-- Bagian Contact -->
           <div class="col-lg-4">
             <div class="widget">
-              <ul class="list-unstyled links">
               <h3>Contact</h3>
-                <li><a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
-                  Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br> Kota Palembang, <br>Sumatera Selatan
-                </a></li>
-                <li><a href="https://wa.me/6285266366309?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">085266366309-Kantor</a></li>
-                <li><a href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">085946930091-Adit</a></li>
-                <li><a href="https://wa.me/6282291113806?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">082291113806-Anggi</a></li>
-                <li><a href="https://wa.me/6285381994369?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">085381994369-Awin</a></li>
+              <ul class="list-unstyled links">
                 <li>
-                  <a href="mailto:satrialandpalembang@gmail.com?subject=Pertanyaan%20Tentang%20Properti&body=Halo%2C%0A%0ASaya%20mendengar%20tentang%20Satria%20Land%20dan%20ingin%20memperoleh%20informasi%20lebih%20lanjut%20tentang%20properti%20yang%20tersedia.%0A%0AMohon%20bantuan%20untuk%20mendapatkan%20detail%20lebih%20lanjut.%0A%0ATerima%20Kasih.">
+                  <a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
+                    Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br>Kota Palembang, <br>Sumatera Selatan
+                  </a>
+                </li>
+                <li><a href="https://wa.me/6285266366309" target="_blank">085266366309 - Kantor</a></li>
+                <li><a href="https://wa.me/6285946930091" target="_blank">085946930091 - Adit</a></li>
+                <li><a href="https://wa.me/6282291113806" target="_blank">082291113806 - Anggi</a></li>
+                <li><a href="https://wa.me/6285381994369" target="_blank">085381994369 - Awin</a></li>
+                <li>
+                  <a href="mailto:satrialandpalembang@gmail.com">
                     satrialandpalembang@gmail.com
-                  </a>                  
+                  </a>
                 </li>
               </ul>
             </div>
-            <!-- /.widget -->
           </div>
-          <!-- /.col-lg-4 -->
+    
+          <!-- Bagian Sources -->
           <div class="col-lg-4">
             <div class="widget">
-              <ul class="list-unstyled float-start links">
-                <h3>Sources</h3>
+              <h3>Sources</h3>
+              <ul class="list-unstyled links">
                 <li><a href="about.html#tentang">Tentang Kami</a></li>
                 <li><a href="services.html#layanan">Layanan</a></li>
                 <li><a href="about.html#visi">Visi dan Misi</a></li>
@@ -1020,31 +935,26 @@
                 <li><a href="faq.html#faq">FAQ</a></li>
               </ul>
             </div>
-            <!-- /.widget -->
           </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-3">
+    
+          <!-- Bagian Links dan Social Media -->
+          <div class="col-lg-4">
             <div class="widget">
+              <h3>Links</h3>
               <ul class="list-unstyled links">
-                <h3>Links</h3>
                 <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
               </ul>
-              <ul class="list-unstyled social">
-                <li>
-                  <a href="#"><span class="icon-instagram"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-facebook"></span></a>
-                </li>
+              <ul class="list-unstyled social d-flex gap-3">
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
               </ul>
             </div>
-            <!-- /.widget -->
           </div>
-          <!-- /.col-lg-4 -->
         </div>
+      </div>
+    </div>
+    
         <!-- /.row -->
 
         <div class="row mt-5">

@@ -31,7 +31,7 @@
         position: fixed;
         bottom: 20px;
         right: 20px;
-        background-color: #005555; /* Latar belakang hitam */
+        background-color: #333; /* Latar belakang hitam */
         color: white; /* Warna panah putih */
         border: none;
         padding: 5px; /* Ukuran tombol lebih besar */
@@ -47,37 +47,40 @@
       }
   
       #scrollTopBtn:hover {
-        background-color: #333; /* Warna latar belakang lebih gelap saat hover */
-      }
-  
-      /* Styling untuk halaman agar ada scroll */
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-  
-      .content {
-        height: 1500px;
+        background-color: #E7BC4C; /* Warna latar belakang lebih gelap saat hover */
       }
       
       .features-1 .row {
           display: flex;
           flex-wrap: wrap;
           justify-content: center; /* Horizontal alignment */
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
           gap: 20px; /* Space between boxes */
         }
     
         .features-1 .box-feature {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
           background: #fffefe;
           border-radius: 8px;
           padding: 30px;
           width: 280px;
+          max-width: 100%;
           text-align: center;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow */
           transition: transform 0.3s ease, box-shadow 0.3s ease;
+          margin: 0 auto;
+          min-height: 360px;
         }
         
         /* Responsif untuk layar lebih kecil */
+        
+
+        @media (min-width: 1200px) {
+        .features-1 .box-feature {
+        max-width: 1070px; } }
+
         @media (max-width: 992px) {
           .features-1 .box-feature {
             width: 45%; /* Lebar 45% untuk layar medium, seperti tablet */
@@ -86,11 +89,14 @@
 
         @media (max-width: 768px) {
           .features-1 .box-feature {
-            width: 100%; /* Lebar penuh untuk layar kecil, seperti smartphone */
+            width: 90%; /* Lebar penuh untuk layar kecil, seperti smartphone */
           }
         }
         
         @media (max-width: 576px) {
+        .features-1 .box-feature {
+        width: 90%; /* Pastikan di layar ponsel sangat kecil, tetap lebar dengan memberi 90% */
+        }
         .box-feature h3 {
           font-size: 16px; /* Ukuran judul lebih kecil di layar kecil */
         }
@@ -218,7 +224,7 @@
       <div class="container">
         <h1 class="section-title text-center mb-5" id="layanan">Layanan Kami</h1>
         <div class="row">
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="300">
             <div class="box-feature">
               <span class="flaticon-house"></span>
               <h3 class="mb-3">Properti Kami</h3>
@@ -228,22 +234,22 @@
               <p><a href="properties.html" class="learn-more">Learn More</a></p>
             </div>
           </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="600">
             <div class="box-feature">
               <span class="flaticon-house-1"></span>
               <h3 class="mb-3">Tanah Kavling</h3>
               <p>
-                Kami menawarkan berbagai pilihan tanah kavling dengan lokasi strategis dan potensi investasi yang menjanjikan.
+                Kami menawarkan berbagai pilihan tanah kavling dengan lokasi strategis dan potensi investasi yang menjanjikan untuk anda.
               </p>
               <p><a href="#our-agents" class="learn-more">Learn More</a></p>
             </div>
           </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="400">
             <div class="box-feature">
               <span class="flaticon-house-3"></span>
               <h3 class="mb-3">Jasa Notaris</h3>
               <p>
-                Kami bekerja sama dengan notaris profesional untuk mengurus legalisasi properti Anda, mulai dari akta jual beli hingga sertifikat dengan aman.
+                Bekerja sama dengan notaris profesional untuk mengurus legalisasi properti Anda, akta jual beli hingga sertifikat dengan aman.
               </p>
               <p><a href="#our-agents" class="learn-more">Learn More</a></p>
             </div>
