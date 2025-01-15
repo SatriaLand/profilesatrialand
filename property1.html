@@ -49,6 +49,191 @@
       #scrollTopBtn:hover {
         background-color: #E7BC4C; /* Warna latar belakang lebih gelap saat hover */
       }
+
+      .container {
+        display: flex;
+        flex-direction: column; /* Default to vertical layout */
+        max-width: 1400px; /* Increased max width */
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .container {
+          flex-direction: column; /* Vertical layout for tablets */
+          margin: auto;
+          gap: 20px;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        .container {
+          flex-direction: row; /* Horizontal layout for larger screens */
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .slider-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto; /* Ensure the container takes the full height */
+        max-height: 500px; /* Reduced height */
+        margin-top: 20px;
+        margin-bottom: 20px; /* Add margin to create gap */
+        position: relative; /* Ensure relative positioning */
+      }
+
+      .dots {
+        position: absolute;
+        bottom: 20px; /* Adjust to your preference */
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 2;
+        padding-bottom: 10px;
+      }
+
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .dot.active,
+      .dot:hover {
+        background-color: #717171;
+      }
+
+      @media (min-width: 320px) and (max-width: 375px) {
+        .dot {
+            height: 15px;
+            width: 15px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .dot {
+          height: 10px;
+          width: 10px;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .dot {
+          height: 12px;
+          width: 12px;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        .dot {
+          height: 15px;
+          width: 15px;
+        }
+      }
+
+      .slider {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .slider img {
+        width: auto; /* Slightly reduced width */
+        height: auto; /* Maintain the aspect ratio */
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      @media (min-width: 1024px) and (max-width: 1280px){
+        .slider img {
+            width: auto;
+            height: auto;
+            max-width: 90%;
+            max-height: 90%;
+        }
+      }
+
+      .content-wrapper {
+        flex: 1; /* Make the content area the same size as the slider */
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-height: 600px; /* Increased height */
+      }
+
+      .tabs {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #ccc;
+        background-color: #f0f0f0;
+        flex-wrap: wrap; /* Allow tabs to wrap onto new lines on smaller screens */
+      }
+
+      .tab {
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: #ddd;
+        border-radius: 8px 8px 0 0;
+        transition: background-color 0.3s, transform 0.3s;
+        flex-grow: 1;
+        text-align: center;
+        min-width: 100px;
+        flex-basis: 25%; /* Distribute tabs evenly across the width */
+        box-sizing: border-box;
+      }
+
+      .tab:hover {
+        background-color: #eee;
+        transform: translateY(-2px);
+      }
+
+      .tab.active {
+        background-color: #e7bc4c;
+        color: #fff;
+        border-bottom: none;
+      }
+
+      .content {
+        display: none;
+        padding: 20px;
+        border-top: none;
+        max-height: 500px; /* Set max height for the content area */
+        overflow-y: auto; /* Enable vertical scrolling */
+      }
+
+      .content.active {
+        display: block;
+      }
+
+      @media (max-width: 767px) {
+        .tab {
+          padding: 8px 10px;
+          font-size: 14px;
+          min-width: 0; /* Allow tabs to shrink as needed */
+          flex-grow: 1;
+        }
+        .content {
+          padding: 10px;
+          max-height: 300px; /* Adjust max height for smaller screens */
+        }
+      }
     </style>
   </head>
   <body>
@@ -141,54 +326,105 @@
       </div>
     </div>
 
-    <div class="section">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-7">
-            <div class="img-property-slide-wrap">
-              <div class="img-property-slide">
-                <img src="images/t3.jpg" alt="Image" class="img-fluid" />
-                <img src="images/t9.png" alt="Image" class="img-fluid" />
-                <img src="#" alt="Image" class="img-fluid" />
-                <img src="#" alt="Image" class="img-fluid" />
-                <img src="#" alt="Image" class="img-fluid" />
-                <img src="#" alt="Image" class="img-fluid" />
-                <img src="#" alt="Image" class="img-fluid" />
-                <img src="#" alt="Image" class="img-fluid" />
-              </div>
-            </div>
+    <div class="container mb-3">
+      <div class="slider-container ">
+        <div class="slider">
+          <img src="images/blog1.jpg" alt="Slide 1" class="slide" />
+          <img
+            src="images/blog2.jpg"
+            alt="Slide 2"
+            class="slide"
+            style="display: none"
+          />
+          <img
+            src="images/blog3.jpg"
+            alt="Slide 3"
+            class="slide"
+            style="display: none"
+          />
+          <div class="dots">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
           </div>
-          <div class="col-lg-4">
-            <h2 class="heading text-primary">Carissma Mansion, Type Sapphire</h2>
-            <p class="meta">Sukabangun 2, Palembang</p>
-            <p class="text-black-50">
-              Cluster CARISSMA MANSION terletak di SUKABANGUN 2 yang merupakan jantung kota Palembang.
-              Tepatnya 10 menit dari PTC Mall, 10 menit ke Indogrosir dan Bandara Internasional Sultan Mahmud Badaruddin 2.
-            </p>
-            <p class="text-black-50">
-              Satu langkah dengan fasilitas umum seperti Sekolaah Insan Mandiri Cendikia, SMPN 46, Sekolah bertaraf Internasional SMAN 17,
-              Sekolah bertaraf ineternasional HighScope Indonesia dan dilengkap dengan one-gate system security dengan desain modern dan terkemuka.
-            </p>
-            <p class="text-black-50">
-              Kami menggabungkan konsep modern dan luxury, untuk menciptakan desain yang indah untuk menjadi rumah impian keluarga Anda.
-            </p>
-
-            <div class="d-block agent-box p-5">
-              <div class="text">
-                <h3 class="mb-4">Kontak WhatsApp</h3>
-                <ul class="list-unstyled">
-                  <li><a href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Adit%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6285946930091 - Adit</a></li>
-                  <li><a href="https://wa.me/6285289525252?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Aidil%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6285289525252 - Aidil</a></li>
-                  <li><a href="https://wa.me/6282176609317?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Andi%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6282176609317 - Andi</a></li>
-                  <li><a href="https://wa.me/6282291113806?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Anggi%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6282291113806 - Anggi</a></li>
-                  <li><a href="https://wa.me/6285381994369?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Erwin%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6285381994369 - Erwin</a></li>
-                  <li><a href="https://wa.me/6288276368428?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Ryan%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6288276368428 - Ryan</a></li>
-                </ul>
-              </div>
-            </div>
-            
-            
-          </div>
+        </div>
+      </div>
+      <div class="content-wrapper mb-3 mt-3">
+        <div class="tabs">
+          <div class="tab" onclick="openTab(event, 'tab1')">Pasta</div>
+          <div class="tab" onclick="openTab(event, 'tab2')">Burger</div>
+          <div class="tab" onclick="openTab(event, 'tab3')">Salad</div>
+        </div>
+        <div id="tab1" class="content">
+          <h2>Pasta</h2>
+          <p>
+            This is the content of the Pasta tab. Here's a simple and delicious
+            recipe for Spaghetti Carbonara:
+          </p>
+          <ul>
+            <li>200g spaghetti</li>
+            <li>100g pancetta</li>
+            <li>2 large eggs</li>
+            <li>50g Pecorino cheese, grated</li>
+            <li>50g Parmesan cheese, grated</li>
+            <li>2 cloves garlic, peeled and left whole</li>
+            <li>Salt and black pepper</li>
+            <li>A small bunch of fresh flat-leaf parsley, chopped</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra
+            ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </p>
+        </div>
+        <div id="tab2" class="content">
+          <h2>Burger</h2>
+          <p>
+            This is the content of the Burger tab. Here's a classic homemade
+            burger recipe:
+          </p>
+          <ul>
+            <li>500g ground beef</li>
+            <li>1 small onion, finely chopped</li>
+            <li>1 egg</li>
+            <li>1/2 cup breadcrumbs</li>
+            <li>1 tbsp Worcestershire sauce</li>
+            <li>Salt and black pepper</li>
+            <li>4 burger buns</li>
+            <li>Lettuce, tomato, cheese, and condiments of your choice</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra
+            ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </p>
+        </div>
+        <div id="tab3" class="content">
+          <h2>Salad</h2>
+          <p>
+            This is the content of the Salad tab. Here's a refreshing Greek
+            Salad recipe:
+          </p>
+          <ul>
+            <li>1 cucumber, chopped</li>
+            <li>2 large tomatoes, chopped</li>
+            <li>1 red onion, thinly sliced</li>
+            <li>1 green bell pepper, chopped</li>
+            <li>200g feta cheese, crumbled</li>
+            <li>A handful of Kalamata olives</li>
+            <li>Olive oil, to drizzle</li>
+            <li>Lemon juice, to taste</li>
+            <li>Salt and black pepper</li>
+            <li>A small bunch of fresh oregano, chopped</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra
+            ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </p>
         </div>
       </div>
     </div>
@@ -198,31 +434,34 @@
     <div class="site-footer">
       <div class="container">
         <div class="row">
+          <!-- Bagian Contact -->
           <div class="col-lg-4">
             <div class="widget">
-              <ul class="list-unstyled links">
               <h3>Contact</h3>
-                <li><a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
-                  Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br> Kota Palembang, <br>Sumatera Selatan
-                </a></li>
-                <li><a href="https://wa.me/6285266366309?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">085266366309-Kantor</a></li>
-                <li><a href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">085946930091-Adit</a></li>
-                <li><a href="https://wa.me/6282291113806?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">082291113806-Anggi</a></li>
-                <li><a href="https://wa.me/6285381994369?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">085381994369-Awin</a></li>
+              <ul class="list-unstyled links">
                 <li>
-                  <a href="mailto:satrialandpalembang@gmail.com?subject=Pertanyaan%20Tentang%20Properti&body=Halo%2C%0A%0ASaya%20mendengar%20tentang%20Satria%20Land%20dan%20ingin%20memperoleh%20informasi%20lebih%20lanjut%20tentang%20properti%20yang%20tersedia.%0A%0AMohon%20bantuan%20untuk%20mendapatkan%20detail%20lebih%20lanjut.%0A%0ATerima%20Kasih.">
+                  <a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
+                    Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br>Kota Palembang, <br>Sumatera Selatan
+                  </a>
+                </li>
+                <li><a href="https://wa.me/6285266366309" target="_blank">085266366309 - Kantor</a></li>
+                <li><a href="https://wa.me/6285946930091" target="_blank">085946930091 - Adit</a></li>
+                <li><a href="https://wa.me/6282291113806" target="_blank">082291113806 - Anggi</a></li>
+                <li><a href="https://wa.me/6285381994369" target="_blank">085381994369 - Awin</a></li>
+                <li>
+                  <a href="mailto:satrialandpalembang@gmail.com">
                     satrialandpalembang@gmail.com
-                  </a>                  
+                  </a>
                 </li>
               </ul>
             </div>
-            <!-- /.widget -->
           </div>
-          <!-- /.col-lg-4 -->
+    
+          <!-- Bagian Sources -->
           <div class="col-lg-4">
             <div class="widget">
-              <ul class="list-unstyled float-start links">
-                <h3>Sources</h3>
+              <h3>Sources</h3>
+              <ul class="list-unstyled links">
                 <li><a href="about.html#tentang">Tentang Kami</a></li>
                 <li><a href="services.html#layanan">Layanan</a></li>
                 <li><a href="about.html#visi">Visi dan Misi</a></li>
@@ -231,48 +470,26 @@
                 <li><a href="faq.html#faq">FAQ</a></li>
               </ul>
             </div>
-            <!-- /.widget -->
           </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-3">
+    
+          <!-- Bagian Links dan Social Media -->
+          <div class="col-lg-4">
             <div class="widget">
+              <h3>Links</h3>
               <ul class="list-unstyled links">
-                <h3>Links</h3>
                 <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
               </ul>
-              <ul class="list-unstyled social">
-                <li>
-                  <a href="#"><span class="icon-instagram"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-facebook"></span></a>
-                </li>
+              <ul class="list-unstyled social d-flex gap-3">
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
               </ul>
             </div>
-            <!-- /.widget -->
-          </div>
-          <!-- /.col-lg-4 -->
-        </div>
-        <!-- /.row -->
-
-        <div class="row mt-5">
-          <div class="col-12 text-center">
-           
-            <p>
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              . All Rights Reserved. &mdash; Satria Land
-            </p>
           </div>
         </div>
       </div>
-      <!-- /.container -->
     </div>
+    
         <!-- /.row -->
 
         <div class="row mt-5">
@@ -325,6 +542,49 @@
           top: 0,
           behavior: "smooth"
         });
+      });
+
+      let slideIndex = 0;
+      const slides = document.getElementsByClassName("slide");
+      const dots = document.getElementsByClassName("dot");
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        if (n >= slides.length) slideIndex = 0;
+        if (n < 0) slideIndex = slides.length - 1;
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex].style.display = "block";
+        dots[slideIndex].className += " active";
+      }
+
+      function openTab(event, tabId) {
+        const contents = document.getElementsByClassName("content");
+        for (let i = 0; i < contents.length; i++) {
+          contents[i].style.display = "none";
+          contents[i].classList.remove("active");
+        }
+
+        const tabs = document.getElementsByClassName("tab");
+        for (let i = 0; i < tabs.length; i++) {
+          tabs[i].classList.remove("active");
+        }
+
+        document.getElementById(tabId).style.display = "block";
+        document.getElementById(tabId).classList.add("active");
+        event.currentTarget.classList.add("active");
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        showSlides(slideIndex);
+        document.querySelector(".tab").click(); // Open the first tab by default
       });
     </script>
   </body>
