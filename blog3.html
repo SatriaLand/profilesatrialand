@@ -26,75 +26,104 @@
         Satria Land &mdash; Property Terpercaya
     </title>
     <style>
-       .blog-content {
-    width: 80%;
-    margin: 0 auto;
-    padding: 40px 0;
+       /* Blog Content */
+.blog-content {
+  padding: 40px;
 }
 
 .blog-post {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.post-title {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #333;
+.blog-post .post-title {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-.post-meta {
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 20px;
+.blog-post .post-meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
 }
 
-.post-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
+.blog-post .post-image img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
 }
 
-.post-content p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 20px;
+.blog-post .post-content {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.blog-post .read-more a {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
-h2 {
-    font-size: 24px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #222;
+/* Related Posts Section */
+.related-posts {
+  margin-top: 60px;
 }
 
+.related-posts h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.related-posts-container {
+  display: flex;
+  gap: 20px;
+}
+
+.related-post {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.related-post img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.related-post h4 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.related-post a {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+.related-posts-container > .related-post:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
-    .blog-content {
-        width: 90%;
-    }
+  .related-posts-container {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .post-title {
-        font-size: 28px;
-    }
-
-    .post-meta {
-        font-size: 12px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
+  .related-post {
+    width: 100%;
+  }
 }
   /* CSS untuk tombol panah ke atas */
   #scrollTopBtn {
@@ -252,7 +281,7 @@ h2 {
         <!-- Related Posts -->
         <div class="related-posts">
             <h3>Artikel Terkait</h3>
-            <div class="related-posts-container">
+            <div class="related-posts-container" style="justify-content: center; align-items: center;">
                 <div class="related-post">
                     <img src="images/blog1.jpg" alt="Tips Properti" />
                     <h4><a href="blog1.html">Panduan Memilih Properti yang Tepat: Tips dari Ahli Properti</a></h4>
@@ -262,7 +291,7 @@ h2 {
                     <h4><a href="blog2.html">Tips Memilih Investasi Properti yang Menguntungkan</a></h4>
                 </div>
                 <div class="related-post">
-                    <img src="https://via.placeholder.com/400x200" alt="Panduan Investasi" />
+                    <img src="images/blog4.jpg" alt="Panduan Investasi" />
                     <h4><a href="blog4.html">Panduan Investasi Properti untuk Pemula</a></h4>
                 </div>
             </div>
@@ -366,31 +395,34 @@ h2 {
     <div class="site-footer">
       <div class="container">
         <div class="row">
+          <!-- Bagian Contact -->
           <div class="col-lg-4">
             <div class="widget">
-              <ul class="list-unstyled links">
               <h3>Contact</h3>
-                <li><a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
-                  Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br> Kota Palembang, <br>Sumatera Selatan
-                </a></li>
-                <li><a href="https://wa.me/6285266366309?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">085266366309-Kantor</a></li>
-                <li><a href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">085946930091-Adit</a></li>
-                <li><a href="https://wa.me/6282291113806?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">082291113806-Anggi</a></li>
-                <li><a href="https://wa.me/6285381994369?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20(Rey)%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F" target="_blank">085381994369-Awin</a></li>
+              <ul class="list-unstyled links">
                 <li>
-                  <a href="mailto:satrialandpalembang@gmail.com?subject=Pertanyaan%20Tentang%20Properti&body=Halo%2C%0A%0ASaya%20mendengar%20tentang%20Satria%20Land%20dan%20ingin%20memperoleh%20informasi%20lebih%20lanjut%20tentang%20properti%20yang%20tersedia.%0A%0AMohon%20bantuan%20untuk%20mendapatkan%20detail%20lebih%20lanjut.%0A%0ATerima%20Kasih.">
+                  <a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
+                    Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br>Kota Palembang, <br>Sumatera Selatan
+                  </a>
+                </li>
+                <li><a href="https://wa.me/6285266366309" target="_blank">085266366309 - Kantor</a></li>
+                <li><a href="https://wa.me/6285946930091" target="_blank">085946930091 - Adit</a></li>
+                <li><a href="https://wa.me/6282291113806" target="_blank">082291113806 - Anggi</a></li>
+                <li><a href="https://wa.me/6285381994369" target="_blank">085381994369 - Awin</a></li>
+                <li>
+                  <a href="mailto:satrialandpalembang@gmail.com">
                     satrialandpalembang@gmail.com
-                  </a>                  
+                  </a>
                 </li>
               </ul>
             </div>
-            <!-- /.widget -->
           </div>
-          <!-- /.col-lg-4 -->
+    
+          <!-- Bagian Sources -->
           <div class="col-lg-4">
             <div class="widget">
-              <ul class="list-unstyled float-start links">
-                <h3>Sources</h3>
+              <h3>Sources</h3>
+              <ul class="list-unstyled links">
                 <li><a href="about.html#tentang">Tentang Kami</a></li>
                 <li><a href="services.html#layanan">Layanan</a></li>
                 <li><a href="about.html#visi">Visi dan Misi</a></li>
@@ -399,31 +431,26 @@ h2 {
                 <li><a href="faq.html#faq">FAQ</a></li>
               </ul>
             </div>
-            <!-- /.widget -->
           </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-3">
+    
+          <!-- Bagian Links dan Social Media -->
+          <div class="col-lg-4">
             <div class="widget">
+              <h3>Links</h3>
               <ul class="list-unstyled links">
-                <h3>Links</h3>
                 <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
               </ul>
-              <ul class="list-unstyled social">
-                <li>
-                  <a href="#"><span class="icon-instagram"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-facebook"></span></a>
-                </li>
+              <ul class="list-unstyled social d-flex gap-3">
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
               </ul>
             </div>
-            <!-- /.widget -->
           </div>
-          <!-- /.col-lg-4 -->
         </div>
+      </div>
+    </div>
+    
         <!-- /.row -->
 
         <div class="row mt-5">
@@ -434,13 +461,10 @@ h2 {
               <script>
                 document.write(new Date().getFullYear());
               </script>
-              . All Rights Reserved. &mdash; Satria Land
+              &mdash; Satria Land
             </p>
           </div>
         </div>
-      </div>
-      <!-- /.container -->
-    </div>
     <!-- /.site-footer -->
 
     <!-- Preloader -->

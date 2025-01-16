@@ -218,8 +218,17 @@
         overflow-y: auto; /* Enable vertical scrolling */
       }
 
-      .content.active {
-        display: block;
+      @media (max-width: 1024px) {
+        .tab {
+          padding: 8px 10px;
+          font-size: 14px;
+          min-width: 0; /* Allow tabs to shrink as needed */
+          flex-grow: 1;
+        }
+        .content {
+          padding: 10px;
+          max-height: 300px; /* Adjust max height for smaller screens */
+        }
       }
 
       @media (max-width: 767px) {
@@ -351,31 +360,26 @@
       </div>
       <div class="content-wrapper mb-3 mt-3">
         <div class="tabs">
-          <div class="tab" onclick="openTab(event, 'tab1')">Pasta</div>
-          <div class="tab" onclick="openTab(event, 'tab2')">Burger</div>
-          <div class="tab" onclick="openTab(event, 'tab3')">Salad</div>
+          <div class="tab" onclick="openTab(event, 'tab1')">Tentang</div>
+          <div class="tab" onclick="openTab(event, 'tab2')">Simulasi</div>
+          <div class="tab" onclick="openTab(event, 'tab3')">Contact</div>
         </div>
         <div id="tab1" class="content">
-          <h2>Pasta</h2>
-          <p>
-            This is the content of the Pasta tab. Here's a simple and delicious
-            recipe for Spaghetti Carbonara:
+          <h2>Tentang</h2>
+          <p class="text-black-50">
+            Cluster CARISSMA MANSION terletak di SUKABANGUN 2 yang merupakan jantung kota Palembang,
+            tepatnya 10 menit dari PTC Mall, 10 menit ke Indogrosir dan Bandara Internasional Sultan Mahmud Badaruddin II.
           </p>
-          <ul>
-            <li>200g spaghetti</li>
-            <li>100g pancetta</li>
-            <li>2 large eggs</li>
-            <li>50g Pecorino cheese, grated</li>
-            <li>50g Parmesan cheese, grated</li>
-            <li>2 cloves garlic, peeled and left whole</li>
-            <li>Salt and black pepper</li>
-            <li>A small bunch of fresh flat-leaf parsley, chopped</li>
-          </ul>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra
-            ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
+            Satu langkah dengan fasilitas umum seperti Sekolah Insan Mandiri Cendikia, SMPN 46, sekolah bertaraf Internasional
+            SMAN 17, Sekolah bertaraf Internasional HighScope Indonesia dan di lengkapi dengan one-gate system security
+            dengan design modern dan terkemuka.
+          </p>
+          <p>
+            Kami menggabungkan konsep modern dan luxury, untuk menciptakan desain yang indah untuk menjadi rumah impian keluarga Anda.
+          </p>
+          <p>
+            Setiap ruangan dan site plan didesain dengan sangat teliti agar menciptakan gaya hidup yang praktis dan nyaman.
           </p>
         </div>
         <div id="tab2" class="content">
@@ -500,13 +504,10 @@
               <script>
                 document.write(new Date().getFullYear());
               </script>
-              . All Rights Reserved. &mdash; Satria Land
+              &mdash; Satria Land
             </p>
           </div>
         </div>
-      </div>
-      <!-- /.container -->
-    </div>
     <!-- /.site-footer -->
 
     <!-- Preloader -->

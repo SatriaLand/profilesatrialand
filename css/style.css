@@ -49,7 +49,11 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff; }
+  --bs-body-bg: #fff; 
+  color-scheme: light;
+  --bs-font-lato: 'Lato';
+  --bs-font-young-serif: 'Young Serif';
+  --bs-font-sans: 'Sans'}
 
 *,
 *::before,
@@ -209,10 +213,10 @@ sup {
   top: -.5em; }
 
 a {
-  color: #e7bc4c;
+  color: #181818;
   text-decoration: underline; }
   a:hover {
-    color: #001a3b; }
+    color: #e7bc4c; }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
@@ -2542,20 +2546,20 @@ textarea.form-control-lg {
   border-color: #e7bc4c; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #001b3f;
-    border-color: #001a3b; }
+    background-color: #181818;
+    border-color: #181818; }
   .btn-check:focus + .btn-primary, .btn-primary:focus {
     color: #fff;
-    background-color: #001b3f;
-    border-color: #001a3b;
+    background-color: #181818;
+    border-color: #181818;
     -webkit-box-shadow: 0 0 0 0.25rem rgba(38, 65, 101, 0.5);
     box-shadow: 0 0 0 0.25rem rgba(38, 65, 101, 0.5); }
   .btn-check:checked + .btn-primary,
   .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #001a3b;
-    border-color: #001838; }
+    background-color: #181818;
+    border-color: #181818; }
     .btn-check:checked + .btn-primary:focus,
     .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
@@ -2965,7 +2969,7 @@ textarea.form-control-lg {
   color: #e7bc4c;
   text-decoration: underline; }
   .btn-link:hover {
-    color: #001a3b; }
+    color: #181818; }
   .btn-link:disabled, .btn-link.disabled {
     color: #6c757d; }
 
@@ -3391,7 +3395,7 @@ textarea.form-control-lg {
       -o-transition: none;
       transition: none; } }
   .nav-link:hover, .nav-link:focus {
-    color: #001a3b; }
+    color: #181818; }
   .nav-link.disabled {
     color: #6c757d;
     pointer-events: none;
@@ -4157,7 +4161,7 @@ textarea.form-control-lg {
       -o-transition: none;
       transition: none; } }
   .accordion-button:not(.collapsed) {
-    color: #001d43;
+    color: #181818;
     background-color: #e6e9ed;
     -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125); }
@@ -4283,12 +4287,12 @@ textarea.form-control-lg {
       transition: none; } }
   .page-link:hover {
     z-index: 2;
-    color: #001a3b;
+    color: #181818;
     background-color: #e9ecef;
     border-color: #dee2e6; }
   .page-link:focus {
     z-index: 3;
-    color: #001a3b;
+    color: #181818;
     background-color: #e9ecef;
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 32, 74, 0.25);
@@ -4385,7 +4389,7 @@ textarea.form-control-lg {
     padding: 1.25rem 1rem; }
 
 .alert-primary {
-  color: #00132c;
+  color: #181818;
   background-color: #ccd2db;
   border-color: #b3bcc9; }
   .alert-primary .alert-link {
@@ -4691,15 +4695,15 @@ textarea.form-control-lg {
       border-bottom-width: 0; }
 
 .list-group-item-primary {
-  color: #00132c;
+  color: #181818;
   background-color: #ccd2db; }
   .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
-    color: #00132c;
+    color: #181818;
     background-color: #b8bdc5; }
   .list-group-item-primary.list-group-item-action.active {
     color: #fff;
-    background-color: #00132c;
-    border-color: #00132c; }
+    background-color: #181818;
+    border-color: #181818; }
 
 .list-group-item-secondary {
   color: #003333;
@@ -5766,7 +5770,7 @@ textarea.form-control-lg {
 .link-primary {
   color: #e7bc4c; }
   .link-primary:hover, .link-primary:focus {
-    color: #001a3b; }
+    color: #181818; }
 
 .link-secondary {
   color: #005555; }
@@ -9624,17 +9628,19 @@ body {
     visibility: visible; }
 
  h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Work Sans", sans-serif;
-  color: #e7bc4c; }
+  font-family: 'Young Serif';
+  color: #181818;}
 
 h1, .h1, .logo {
   font-family: 'Sans';
   font-size: 35px;
+  color: #181818;
 }
 
 h2, .h2 {
   font-family: 'Young Serif';
   font-size: 32px !important;
+  color: #181818;
 }
 
 
@@ -10308,7 +10314,7 @@ nav[aria-label="breadcrumb"] li:before {
     width: 100%;
     bottom: 0;
     height: 2px;
-    background-color: #005555;
+    background-color: #e7bc4c;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease; }
