@@ -1,0 +1,10 @@
+# Allow HTTP methods for requests
+<Limit GET POST>
+    Allow from all
+</Limit>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^.*$ - [L]
+</IfModule>

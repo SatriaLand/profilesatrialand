@@ -376,6 +376,7 @@ button[type="submit"]:active {
       </div>
     </div>
   </div>
+  
   <div class="container mb-5 ml-3 mr-3">
     <div class="row align-items-center">
       <h1 class="text-center mb-4"></h1>
@@ -412,6 +413,12 @@ button[type="submit"]:active {
             </a>
           </p>
           <p>
+            <strong>Harga :</strong> Rp. 350.000.000,-
+          </p>
+          <p>
+            <strong>DP :</strong> 10%
+          </p>
+          <p>
             <strong>Luas Tanah :</strong> 120 m&sup2;
           </p>
           <p>
@@ -429,27 +436,21 @@ button[type="submit"]:active {
           <P>
             <strong>Keunggulan :</strong> Kawasan yang berkembang, cocok untuk investasi jangka panjang atau pembangunan rumah pribadi.
           </P>
-          <p>
-            <strong>Harga :</strong> Rp. 350.000.000,-
-          </p>
-          <p>
-            <strong>DP :</strong> 10%
-          </p>
         </div>
         <!-- Tab 2: Simulasi KPR -->
         <div class="tab-pane fade" id="simulation" role="tabpanel" aria-labelledby="simulation-tab">
           <h4>Simulasi KPR</h4>
             <form id="kprForm">
               <label for="hargaRumah">Harga Properti (Rp):</label>
-              <input type="number" id="hargaRumah" required>
-        
+              <input type="text" id="hargaRumah" oninput="formatNumber(this)" placeholder="Contoh: 500.000.000" required>
+       
               <label for="bunga">Bunga Tahunan (%) :</label>
               <input type="number" id="bunga" required>
         
-              <label for="tenor">Tenor (bulan):</label>
-              <input type="number" id="tenor" required>
+              <label for="tenor">Tenor (tahun):</label>
+              <input type="number" id="tenor" placeholder="Contoh: 10" required>
         
-              <button type="submit" class="btn-hitung-simulasi">Hitung Simulasi</button>
+              <button type="submit" class="btn-hitung-simulasi mb-3">Hitung Simulasi</button>
             </form>
         
             <div class="result" id="result"></div>
@@ -591,37 +592,47 @@ button[type="submit"]:active {
   </script>
   <script src="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.3/dist/tiny-slider.js"></script>
   <script>
-    document.getElementById('kprForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      
-      // Mengambil input dari form
-      let hargaRumah = parseFloat(document.getElementById('hargaRumah').value);
-      let bunga = parseFloat(document.getElementById('bunga').value);
-      let tenor = parseFloat(document.getElementById('tenor').value);
-      
-      // Menghitung uang muka (DP)
-      let dp = hargaRumah * 0.1;
-      
-      // Menghitung pinjaman setelah DP
-      let pinjaman = hargaRumah - dp;
-      
-      // Menghitung bunga total selama tahun
-      let bungaTotal = (pinjaman * bunga) / 100;
-      let bungaPerBulan = bungaTotal / 12;
-      
-      // Menghitung cicilan per bulan
-      let cicilanBulanan = (pinjaman + bungaTotal) / tenor;
+    // Fungsi untuk format angka dengan titik pemisah ribuan
+    function formatNumber(input) {
+      let value = input.value.replace(/[^\d]/g, ''); // Menghapus selain angka
+      // Menambahkan titik setiap 3 digit
+      value = value.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+      input.value = value;
+    }
+  </script>
+  <script>
+   document.getElementById('kprForm').addEventListener('submit', function(event) {
+  event.preventDefault();
 
-      // Menampilkan hasil simulasi
-      document.getElementById('result').innerHTML = `
-        <p><strong>Harga Rumah:</strong> Rp ${hargaRumah.toLocaleString()}</p>
-        <p><strong>Uang Muka (DP):</strong> Rp ${dp.toLocaleString()}</p>
-        <p><strong>Pinjaman:</strong> Rp ${pinjaman.toLocaleString()}</p>
-        <p><strong>Total Bunga:</strong> Rp ${bungaTotal.toLocaleString()}</p>
-        <p><strong>Cicilan Per Bulan:</strong> Rp ${cicilanBulanan.toLocaleString()}</p>
-        <p><strong>Total Pembayaran Selama ${tenor} bulan:</strong> Rp ${(pinjaman + bungaTotal).toLocaleString()}</p>
-      `;
-    });
+  // Mengambil input dari form
+  let hargaRumah = parseFloat(document.getElementById('hargaRumah').value.replace(/[^\d]/g, ''));
+  let bunga = parseFloat(document.getElementById('bunga').value); // bunga tahunan dalam %
+  let tenor = parseFloat(document.getElementById('tenor').value); // sekarang tenor dalam tahun langsung
+  
+  // Menghitung uang muka (DP) (10% dari harga rumah)
+  let dp = hargaRumah * 0.1;
+
+  // Menghitung jumlah pinjaman setelah DP
+  let pinjaman = hargaRumah - dp;
+
+  // Menghitung total bunga berdasarkan tenor (sekarang tenor sudah dalam tahun)
+  let bungaTotal = pinjaman * (bunga / 100) * tenor; // Total bunga selama tenor
+  
+  // Menghitung cicilan per bulan (bunga flat)
+  let totalPembayaran = pinjaman + bungaTotal;
+  let cicilanBulanan = totalPembayaran / (tenor * 12); // Pembagian cicilan per bulan
+  
+  // Menampilkan hasil simulasi
+  document.getElementById('result').innerHTML = `
+    <p><strong>Harga Properti:</strong> Rp ${hargaRumah.toLocaleString()}</p>
+    <p><strong>Uang Muka (DP):</strong> Rp ${dp.toLocaleString()}</p>
+    <p><strong>Pinjaman:</strong> Rp ${pinjaman.toLocaleString()}</p>
+    <p><strong>Total Bunga:</strong> Rp ${bungaTotal.toLocaleString()}</p>
+    <p><strong>Cicilan Per Bulan:</strong> Rp ${cicilanBulanan.toLocaleString()}</p>
+    <p><strong>Total Pembayaran Selama ${tenor} tahun:</strong> Rp ${totalPembayaran.toLocaleString()}</p>
+  `;
+});
+
   </script>
   <script>
     var slider = tns({
@@ -657,26 +668,6 @@ button[type="submit"]:active {
       });
     });
 
-    let slideIndex = 0;
-    const slides = document.getElementsByClassName("slide");
-    const dots = document.getElementsByClassName("dot");
-
-    function currentSlide(n) {
-      showSlides((slideIndex = n));
-    }
-
-    function showSlides(n) {
-      if (n >= slides.length) slideIndex = 0;
-      if (n < 0) slideIndex = slides.length - 1;
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex].style.display = "block";
-      dots[slideIndex].className += " active";
-    }
 
     function openTab(event, tabId) {
       const contents = document.getElementsByClassName("content");
