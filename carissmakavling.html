@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="favicon.png" />
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap5" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css" />
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+  <link rel="stylesheet" href="css/tiny-slider.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+ 
+
+  <title>
+    Satria Land
+  </title>
+
+  <style>
+    /* CSS untuk tombol panah ke atas */
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      /* Latar belakang hitam */
+      color: white;
+      /* Warna panah putih */
+      border: none;
+      padding: 5px;
+      /* Ukuran tombol lebih besar */
+      font-size: 20px;
+      /* Ukuran panah */
+      cursor: pointer;
+      display: none;
+      /* Mulai dengan disembunyikan */
+      border-radius: 50%;
+      /* Bulat */
+      width: 45px;
+      /*Lebar tombol */
+      height: 45px;
+      /* Tinggi tombol sama dengan lebar untuk bulat sempurna */
+      text-align: center;
+      line-height: 20px;
+      /* Menjaga panah di tengah */
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    #scrollTopBtn:hover {
+      background-color: #E7BC4C;
+      /* Warna latar belakang lebih gelap saat hover */
+    }
+  </style>
+
+  <style>
+    .tab-content {
+      margin-top: 20px;
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    .nav-tabs .nav-link {
+      color: #333;
+      /* Warna default teks */
+    }
+
+    .nav-tabs .nav-link.active {
+      color: #000;
+      /* Warna teks saat aktif */
+      font-weight: bold;
+    }
+
+    .nav-tabs .nav-link:hover {
+      color: #E7BC4C;
+      /* Warna teks saat dihover */
+    }
+
+    @media (max-width: 768px) {
+
+      /* Atur untuk layar kecil */
+      .nav-tabs {
+        display: flex;
+        flex-wrap: nowrap;
+        /* Hindari baris baru */
+        overflow-x: auto;
+        /* Gulir secara horizontal jika perlu */
+        border-bottom: 1px solid #ddd;
+        /* Garis bawah agar terlihat konsisten */
+      }
+
+      .nav-tabs .nav-item {
+        flex: none;
+        /* Hindari skala otomatis */
+      }
+    }
+  </style>
+  <style>
+    .video-property-slide-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-property-slide {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.tns-nav {
+  position: absolute;     /* Menjadikan dot tetap berada di bawah video */
+  bottom: -15px;           /* Memberikan sedikit jarak antara video dan dot */
+  display: flex;          /* Membuat dot-disusun dalam satu baris */
+  justify-content: center; /* Menempatkan dot di tengah secara horizontal */
+  align-items: center;    /* Menjaga agar dot tetap terpusat secara vertikal */
+  width: 100%;            /* Membuat `.tns-nav` memiliki lebar penuh agar dapat memenuhi area lebar video */
+  gap: 4px;
+  z-index: 10;            /* Pastikan dot berada di atas video */
+}
+
+.tns-nav button {
+  background-color: rgba(43, 41, 41, 0.5); /* Warna dot */
+  border: none;
+  width: 7px;                    /* Membuat dot lebih kecil */
+  height: 7px;                   /* Membuat dot lebih kecil */
+  border-radius: 50%;            /* Membuat dot bulat */
+  gap: 7px;
+  right: 0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.tns-nav button.tns-nav-active {
+  background-color: #E7BC4C;     /* Warna dot aktif */
+  transform: scale(1.1);          /* Membesarkan dot yang aktif */
+}
+
+.tns-nav button:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Warna dot saat hover */
+}
+
+  </style>
+  <style>
+    
+    /* Kelas untuk tombol "Hitung Simulasi" */
+.btn-hitung-simulasi {
+  background-color: #E7BC4C; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border: none; /* Menghapus border */
+  padding: 10px 20px; /* Memberikan padding agar tombol lebih besar dan nyaman */
+  font-size: 16px; /* Ukuran font */
+  font-weight: bold; /* Menebalkan teks tombol */
+  border-radius: 5px; /* Membuat sudut tombol lebih membulat */
+  cursor: pointer; /* Menambahkan pointer saat hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi saat hover */
+}
+
+/* Efek hover untuk tombol */
+.btn-hitung-simulasi:hover {
+  background-color: #E7BC4C; /* Mengubah warna latar belakang tombol saat hover */
+  transform: scale(1.05); /* Menambah ukuran tombol sedikit saat hover */
+}
+
+/* Efek saat tombol sedang dalam keadaan aktif */
+.btn-hitung-simulasi:active {
+  background-color: #E7BC4C; /* Warna tombol ketika ditekan */
+}
+/* Wrapper form */
+.form-wrapper {
+  max-width: 800px; /* Mengatur lebar maksimum form */
+  margin: 0 auto; /* Memusatkan form di tengah */
+  padding: 20px;
+}
+
+/* Styling untuk form input (text dan number) */
+input[type="text"], input[type="number"], input[type="email"], select {
+  width: 100%; /* Membuat input lebar 100% dari parent container */
+  padding: 10px; /* Padding untuk ruang dalam input */
+  margin: 10px 0; /* Jarak antar input */
+  border: 1px solid #ddd; /* Border input */
+  border-radius: 5px; /* Border radius untuk membuat sudut lebih membulat */
+  font-size: 16px; /* Ukuran font agar nyaman dilihat */
+  box-sizing: border-box; /* Agar padding dan border dihitung dalam lebar input */
+}
+
+/* Styling untuk button, khususnya tombol "Hitung Simulasi" */
+button[type="submit"] {
+  background-color: #E7BC4C;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Tombol mengambil lebar penuh pada perangkat mobile */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover dan active states untuk tombol */
+button[type="submit"]:hover {
+  background-color: #E7BC4C;
+  transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+  background-color: #E7BC4C;
+}
+
+/* Responsif untuk perangkat lebih kecil (max-width: 768px) */
+@media (max-width: 768px) {
+  .form-wrapper {
+    padding: 15px; /* Padding sedikit lebih kecil untuk perangkat kecil */
+  }
+  
+  input[type="text"], input[type="number"], input[type="email"], select {
+    font-size: 14px; /* Menurunkan ukuran font untuk perangkat lebih kecil */
+  }
+  
+  button[type="submit"] {
+    font-size: 14px; /* Menurunkan ukuran font tombol untuk perangkat lebih kecil */
+    padding: 12px; /* Menambah padding pada tombol */
+  }
+}
+
+/* Untuk layar perangkat mobile sangat kecil (max-width: 480px) */
+@media (max-width: 480px) {
+  .form-wrapper {
+    padding: 10px; /* Padding lebih kecil */
+  }
+
+  input[type="text"], input[type="number"], input[type="email"], select {
+    font-size: 12px; /* Ukuran font semakin kecil di layar sangat kecil */
+    padding: 8px; /* Padding lebih kecil di input */
+  }
+  
+  button[type="submit"] {
+    font-size: 12px; /* Ukuran font tombol lebih kecil di perangkat sangat kecil */
+    padding: 10px; /* Padding tombol lebih kecil */
+  }
+}
+body {
+        background-color: white;
+        color: black;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <nav class="site-nav">
+    <div class="container">
+      <div class="menu-bg-wrap">
+        <div class="site-navigation m-0">
+          <a href="index.html">
+            <img src="images/Logo2.png" alt="Satria Land" style="height: 45px;">
+          </a>
+          <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+            <li class="active"><a href="index.html">Beranda</a></li>
+            <li class="has-children">
+              <a href="properties.html#properti">Properti</a>
+              <ul class="dropdown">
+                <li class="has-children">
+                  <a href="#">Bangunan</a>
+                  <ul class="dropdown">
+                    <li><a href="properties.html#properti">Carissma Mansion</a></li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a href="#">Tanah</a>
+                  <ul class="dropdown">
+                    <li><a href="">Demang Mansion</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="services.html#layanan">Layanan</a></li>
+            <li><a href="blog.html#blog">Blog</a></li>
+            <li><a href="about.html#tentang">Tentang</a></li>
+            <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
+          </ul>
+
+          <a href="#"
+            class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero page-inner overlay" style="background-image: url('images/hero_bg_3.jpg')">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-9 text-center mt-5">
+          <h1 class="heading" data-aos="fade-up">
+            Carissma Mansion, Type Saphire
+          </h1>
+
+          <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+            <ol class="breadcrumb text-center justify-content-center">
+              <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+              <li class="breadcrumb-item">
+                <a href="properties.html">Properti</a>
+              </li>
+              <li class="breadcrumb-item active text-white-50" aria-current="page">
+                Demang Mansion, Tanah Kavling
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container ">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="video-property-slide-wrap">
+            <div class="video-property-slide tns-slider">
+              <video src="videos/v1.mp4" class="video-fluid" autoplay loop muted></video>
+              <video src="videos/v2.mp4" class="video-fluid" autoplay loop muted></video>
+              <video src="videos/v4.mp4" class="video-fluid" autoplay loop muted></video>
+            </div>
+          
+            <!-- Navigasi hanya berupa dots -->
+            <div class="tns-nav"></div>
+          </div>          
+        </div>
+        <div class="col-lg-4 mt-4" >
+          <h2 class="heading ">Demang Mansion, Tanah Kavling</h2>
+          <p class="meta">Kancil Putih, Palembang</p>
+          <p style="font-family: 'Lato', sans-serif ;">
+            Demang Mansion terletak di Jalan Kancil Putih yang merupakan salah satu kawasan elit kota Palembang. 
+          </p>
+          <p style="font-family: 'Lato', sans-serif ;">
+            10 Menit dari Palembang Square Mall, Palembang Icon, dan Bandara Internasional Sultan Mahmud Badaruddin II.
+            Demang Mansion merupakan kawasan Cluster dan Kavling mewah siap bangun.
+          </p>
+          <p style="font-family: 'Lato', sans-serif ;"> 
+            <strong>Lokasi Demang Mansion :</strong><br>
+            Jl. Kancil Putih II Gg. Bersama,<br>
+            Demang Lebar Daun, Kecamatan Ilir Barat I,<br>
+            Kota Palembang, Sumatera Selatan<br>
+            Kode Pos: 30153<br>
+            Indonesia
+          </p>
+          <p>
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container mb-5 ml-3 mr-3">
+    <div class="row align-items-center">
+      <h1 class="text-center mb-4"></h1>
+      <!-- Tab Navigation -->
+      <ul class="nav nav-tabs" id="propertyTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="details-tab" data-bs-toggle="tab" data-bs-target="#details" type="button"
+            role="tab" aria-controls="details" aria-selected="true">
+            Detail
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="simulation-tab" data-bs-toggle="tab" data-bs-target="#simulation" type="button"
+            role="tab" aria-controls="simulation" aria-selected="false">
+            Simulasi KPR
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+            role="tab" aria-controls="contact" aria-selected="false">
+            Hubungi Kami
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="propertyTabsContent">
+        <!-- Tab 1: Detail Properti -->
+        <div class="tab-pane fade show active" id="details" role="tabpanel" aria-labelledby="details-tab">
+          <h4>Detail Properti</h4>
+          <p><strong>Lokasi: </strong>
+            <a href="https://maps.app.goo.gl/noeiFfBtcqgVnujs9" target="_blank" style="font-family: 'Lato',sans-serif; color: #181818;">
+              Jl. Kancil Putih II Gg. Bersama, Demang Lebar Daun, Kota Palembang, Sumatera Selatan
+            </a>
+          </p>
+          <p>
+            <strong>Harga :</strong> Rp. 350.000.000,-
+          </p>
+          <p>
+            <strong>DP :</strong> Rp. 100.000.000,-
+          </p>
+          <p>
+            <strong>Luas Tanah :</strong> 8 x 15
+          </p>
+          <p>
+            <strong>Status :</strong> SHM (Sertifikat Hak Milik).
+          </p>
+          <p>
+            <strong>Fasilitas Umum:</strong>
+            <ul>
+              <li>Jalan lebar dan disiram batu aspal</li>
+              <li>Jaringan utama PLN</li>
+              <li>Jaringan utama pipa PDAM</li>
+              <li>Dekat dengan fasilitas umum : Universitas Sriwijaya (UNSRI), Sekolah PAUD Cipta Bangsa, Sekolat IT Izzuddin, Sekolah SMAN 1.</li>
+            </ul>
+          </p>
+          <P>
+            <strong>Keunggulan :</strong> Kawasan yang berkembang, cocok untuk investasi jangka panjang atau pembangunan rumah pribadi.
+          </P>
+        </div>
+        <!-- Tab 2: Simulasi KPR -->
+        <div class="tab-pane fade" id="simulation" role="tabpanel" aria-labelledby="simulation-tab">
+          <h4>Simulasi KPR</h4>
+          <form id="kprForm">
+              <label for="hargaRumah">Harga Properti (Rp):</label>
+              <input type="text" id="hargaRumah" oninput="formatNumber(this)" placeholder="Contoh: 500.000.000" required>
+      
+              <label for="dp">Down Payment (DP) (Rp):</label>
+              <input type="text" id="dp" oninput="formatNumber(this)" placeholder="Contoh: 100.000.000" required>
+      
+              <label for="bunga">Bunga Tahunan (%) :</label>
+              <input type="number" placeholder="Setiap bank memiliki suku bunga berbeda. Contoh : 7" id="bunga" required>
+      
+              <label for="tenor">Tenor (tahun):</label>
+              <input type="number" id="tenor" placeholder="Contoh: 10" required>
+      
+              <button type="submit" class="btn-hitung-simulasi mb-3">Hitung Simulasi</button>
+          </form>
+      
+          <div class="result" id="result"></div>
+      </div>
+
+        <!-- Tab 3: Hubungi Kami -->
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <h4>Hubungi Kami</h4>
+          <div class="d-flex gap-5"> <!-- Membuat kedua kolom bersebelahan dengan gap antar keduanya -->
+            <!-- Kolom pertama -->
+            <ul class="list-unstyled" style="align-items: center;">
+              <li><a
+                  href="https://wa.me/6285946930091?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Adit%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F"
+                  target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6285946930091 -
+                  Adit</a></li>
+              <li><a
+                  href="https://wa.me/6282176609317?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Andi%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F"
+                  target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6282176609317 -
+                  Andi</a></li>
+              <li><a
+                  href="https://wa.me/6282291113806?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Anggi%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F"
+                  target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6282291113806 -
+                  Anggi</a></li>    
+            </ul>      
+            <ul class="list-unstyled">
+              <li><a
+                  href="https://wa.me/6285381994369?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Erwin%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F"
+                  target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6285381994369 -
+                  Awin</a></li>
+              <li><a
+                  href="https://wa.me/628972754947?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Aidil%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F"  
+                  target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +628972754947 -  
+                  Idil</a></li>      
+              <li><a
+                  href="https://wa.me/6288276368428?text=Selamat%20pagi%2Fsiang%2Fsore%20Admin%20Ryan%20Satria%20Land%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20produk%2Flayanan%20yang%20Anda%20tawarkan.%20Bisa%20dibantu%3F"
+                  target="_blank"><span class="icon-whatsapp" style="font-size: 20px; color: #25D366;"></span> +6288276368428 -
+                  Rian</a></li>
+            </ul>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <!-- Bagian Contact -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Contact</h3>
+            <ul class="list-unstyled links">
+              <li>
+                <a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
+                  Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br>Kota Palembang, <br>Sumatera Selatan
+                </a>
+              </li>
+              <li><a href="https://wa.me/6285266366309" target="_blank">085266366309 - Kantor</a></li>
+              <li><a href="https://wa.me/6285946930091" target="_blank">085946930091 - Adit</a></li>
+              <li><a href="https://wa.me/6282291113806" target="_blank">082291113806 - Anggi</a></li>
+              <li><a href="https://wa.me/6285381994369" target="_blank">085381994369 - Awin</a></li>
+              <li>
+                <a href="mailto:satrialandpalembang@gmail.com">
+                  satrialandpalembang@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>  
+
+        <!-- Bagian Sources -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Sources</h3>
+            <ul class="list-unstyled links">
+              <li><a href="about.html#tentang">Tentang Kami</a></li>
+              <li><a href="services.html#layanan">Layanan</a></li>
+              <li><a href="about.html#visi">Visi dan Misi</a></li>
+              <li><a href="partner.html#mitra">Mitra</a></li>
+              <li><a href="blog.html#blog">Blog</a></li>
+              <li><a href="faq.html#faq">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bagian Links dan Social Media -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Links</h3>
+            <ul class="list-unstyled links">
+              <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
+            </ul>
+            <ul class="list-unstyled social d-flex gap-3">
+              <li><a href="#"><span class="icon-instagram"></span></a></li>
+              <li><a href="#"><span class="icon-whatsapp"></span></a></li>
+              <li><a href="#"><span class="icon-facebook"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- /.row -->
+
+  <div class="row mt-5">
+    <div class="col-12 text-center">
+
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        &mdash; Satria Land
+      </p>
+    </div>
+  </div>
+  <!-- /.site-footer -->
+
+  <!-- Preloader -->
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.3/dist/tiny-slider.js"></script>
+  <script>
+    // Fungsi untuk format angka dengan titik pemisah ribuan
+    function formatNumber(input) {
+      let value = input.value.replace(/[^\d]/g, ''); // Menghapus selain angka
+      // Menambahkan titik setiap 3 digit
+      value = value.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+      input.value = value;
+    }
+  </script>
+  <script>
+    document.getElementById('kprForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Mengambil input dari form
+    let hargaRumah = parseFloat(document.getElementById('hargaRumah').value.replace(/[^\d]/g, '')) || 0;
+    let bunga = parseFloat(document.getElementById('bunga').value) || 0; // bunga tahunan dalam %
+    let tenor = parseFloat(document.getElementById('tenor').value) || 0; // tenor dalam tahun
+    let dpInput = document.getElementById('dp').value.replace(/\s/g, ''); // Mengambil input DP
+
+    let dp;
+
+    // Jika input DP dalam persen (misal "20%")
+    if (dpInput.includes('%')) {
+        let persen = parseFloat(dpInput.replace('%', ''));
+        dp = (persen / 100) * hargaRumah;
+    } else {
+        dp = parseFloat(dpInput.replace(/[^\d]/g, '')) || 0;
+
+        // Validasi DP dalam rupiah harus antara 1 juta - 75 juta
+        if (dp < 1000000 || dp > 100000000) {
+            alert("Jika DP dalam rupiah, harus antara Rp 1.000.000 hingga Rp 100.000.000!");
+            return;
+        }
+    }
+
+    // Validasi DP tidak boleh lebih besar dari harga rumah
+    if (dp > hargaRumah) {
+        alert("DP tidak boleh lebih besar dari harga properti!");
+        return;
+    }
+
+    // Menghitung jumlah pinjaman setelah DP
+    let pinjaman = hargaRumah - dp;
+
+    // Menghitung total bunga berdasarkan tenor
+    let bungaTotal = pinjaman * (bunga / 100) * tenor; // Total bunga selama tenor
+
+    // Menghitung cicilan per bulan (bunga flat)
+    let totalPembayaran = pinjaman + bungaTotal;
+    let cicilanBulanan = totalPembayaran / (tenor * 12); // Cicilan per bulan
+
+    // Menampilkan hasil simulasi
+    document.getElementById('result').innerHTML = `
+      <p><strong>Harga Properti:</strong> Rp ${hargaRumah.toLocaleString()}</p>
+      <p><strong>Uang Muka (DP):</strong> Rp ${dp.toLocaleString()}</p>
+      <p><strong>Pinjaman:</strong> Rp ${pinjaman.toLocaleString()}</p>
+      <p><strong>Total Bunga:</strong> Rp ${bungaTotal.toLocaleString()}</p>
+      <p><strong>Cicilan Per Bulan:</strong> Rp ${cicilanBulanan.toLocaleString()}</p>
+      <p><strong>Total Pembayaran Selama ${tenor} tahun:</strong> Rp ${totalPembayaran.toLocaleString()}</p>
+    `;
+});
+  </script>
+  <script>
+    var slider = tns({
+  container: '.video-property-slide',
+  items: 1,
+  slideBy: 'page',
+  autoplay: true,
+  controls: false,  // Menonaktifkan tombol prev dan next
+  nav: true,         // Mengaktifkan dot navigasi
+  navPosition: 'bottom', // Menempatkan navigasi dot di bawah
+  autoplayButtonOutput: false, // Menghilangkan tombol autoplay
+});
+
+  </script>
+  <script>
+    // Ambil elemen tombol panah ke atas
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    // Fungsi untuk menampilkan tombol ketika pengguna menggulir
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollTopBtn.style.display = "block"; // Menampilkan tombol
+      } else {
+        scrollTopBtn.style.display = "none"; // Menyembunyikan tombol
+      }
+    };
+
+    // Fungsi untuk scroll ke atas ketika tombol ditekan
+    scrollTopBtn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
+
+    function openTab(event, tabId) {
+      const contents = document.getElementsByClassName("content");
+      for (let i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+        contents[i].classList.remove("active");
+      }
+
+      const tabs = document.getElementsByClassName("tab");
+      for (let i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove("active");
+      }
+
+      document.getElementById(tabId).style.display = "block";
+      document.getElementById(tabId).classList.add("active");
+      event.currentTarget.classList.add("active");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      showSlides(slideIndex);
+      document.querySelector(".tab").click(); // Open the first tab by default
+    });
+  </script>
+</body>
+
+</html>

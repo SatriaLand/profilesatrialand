@@ -49,17 +49,11 @@
       #scrollTopBtn:hover {
         background-color: #E7BC4C; /* Warna latar belakang lebih gelap saat hover */
       }
-
-      body.dark-mode {
-  background-color: #333; /* Latar belakang gelap */
-  color: #fff; /* Teks putih */
-}
-
-/* Optional: Jika ingin menambahkan detail untuk mode terang */
-body.light-mode {
-  background-color: #fff;
-  color: #000;
-}
+      
+      body {
+        background-color: white;
+        color: black;
+      }
 
     </style>
   </head>
@@ -86,7 +80,7 @@ body.light-mode {
             >
               <li class="active"><a href="index.html">Beranda</a></li>
               <li class="has-children">
-                <a href="#">Properti</a>
+                <a href="properties.html#properti">Properti</a>
                 <ul class="dropdown">
                   <li class="has-children">
                     <a href="#">Bangunan</a>
@@ -97,7 +91,7 @@ body.light-mode {
                   <li class="has-children">
                     <a href="#">Tanah</a>
                     <ul class="dropdown">
-                      <li><a href="">Demang Mansion</a></li>
+                      <li><a href="properties.html#properti">Demang Mansion</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -125,7 +119,7 @@ body.light-mode {
       <div class="hero-slide">
         <div
           class="img overlay"
-          style="background-image: url('images/hero_bg_3.jpg')"
+          style="background-image: url('images/emerald.jpg')"
         ></div>
         <div
           class="img overlay"
@@ -171,7 +165,6 @@ body.light-mode {
             -->
             <a
             href="index.html#propertiterlaris"
-            target="_blank"
             class="btn btn-primary text-white py-3 px-4" 
             style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
             >Penawaran Hari Ini</a
@@ -194,7 +187,7 @@ body.light-mode {
           <div class="col-lg-6 text-lg-end">
             <p>
               <a
-                href="properties.html"
+                href="properties.html#properti"
                 target="_blank"
                 class="btn btn-primary text-white py-3 px-4" 
                 style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
@@ -208,43 +201,8 @@ body.light-mode {
             <div class="property-slider-wrap">
               <div class="property-slider">
                 <div class="property-item">
-                  <a href="property1.html" class="img">
-                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>Rp. 550.000.000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >Carissma Mansion, Type Sapphire</span
-                      >
-                      <span class="city d-block mb-3">Sukabangun 2, Palembang</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">1 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property1.html#carissmasapphire"
-                        class="btn btn-primary py-2 px-3"
-                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-                        >Lihat Detail</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .item -->
-
-                <div class="property-item">
-                  <a href="property2.html" class="img">
-                    <img src="images/t1.jpg" alt="Image" class="img-fluid" />
+                  <a href="carissmaemerald.html" class="img">
+                    <img src="images/ce1.jpg" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
@@ -253,7 +211,7 @@ body.light-mode {
                       <span class="d-block mb-2 text-black-50"
                         >Carissma Mansion, Type Emerald</span
                       >
-                      <span class="city d-block mb-3">Sukabangun, Palembang</span>
+                      <span class="city d-block mb-3">Sukabangun 2, Palembang</span>
 
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
@@ -267,7 +225,75 @@ body.light-mode {
                       </div>
 
                       <a
-                        href="property2.html"
+                        href="carissmaemerald.html#emerald"
+                        class="btn btn-primary py-2 px-3"
+                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
+                        >Lihat Detail</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+                <div class="property-item">
+                  <a href="carissmaruby.html" class="img">
+                    <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>Rp. 575.000.000</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >Carissma Mansion, Type Ruby</span
+                      >
+                      <span class="city d-block mb-3">Sukabangun 2, Palembang</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baths</span>
+                        </span>
+                      </div>
+
+                      <a
+                        href="carissmaruby.html#ruby"
+                        class="btn btn-primary py-2 px-3"
+                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
+                        >Lihat Detail</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="property-item">
+                  <a href="carissmasapphire.html" class="img">
+                    <img src="images/ce1.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>Rp. 490.000.000</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >Carissma Mansion, Type Sapphire</span
+                      >
+                      <span class="city d-block mb-3">Sukabangun, Palembang</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">1 baths</span>
+                        </span>
+                      </div>
+
+                      <a
+                        href="carissmasapphire.html#sapphire"
                         class="btn btn-primary py-2 px-3"
                         style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
                         >Lihat Detail</a
@@ -278,7 +304,7 @@ body.light-mode {
                 <!-- .item -->
 
                 <div class="property-item">
-                  <a href="property3.html" class="img">
+                  <a href="carissmakavling.html" class="img">
                     <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
                   </a>
 
@@ -298,7 +324,7 @@ body.light-mode {
                       </div>
 
                       <a
-                        href="property3.html"
+                        href="carissmakavling.html"
                         class="btn btn-primary py-2 px-3"
                         style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
                         >Lihat Detail</a
@@ -307,40 +333,9 @@ body.light-mode {
                   </div>
                 </div>
                 <!-- .item -->
-                <!--
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >Lihat Detail</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                -->
+                
+                
+                
                 <!-- .item -->
                 <!--
                 <div class="property-item">
