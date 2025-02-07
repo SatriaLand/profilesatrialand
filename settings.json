@@ -1,0 +1,10 @@
+{
+    "minify.html.options": {
+      "removeComments": true,
+      "collapseWhitespace": true,
+      "minifyJS": true,
+      "minifyCSS": true,
+      "editor.maxTokenizationLineLength": 1000000
+    }
+  }
+  

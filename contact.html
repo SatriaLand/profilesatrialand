@@ -19,92 +19,12 @@
   <link rel="stylesheet" href="css/tiny-slider.css" />
   <link rel="stylesheet" href="css/aos.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/up.css" />
+  <link rel="stylesheet" href="css/contact.css">
 
   <title>
     Satria Land
   </title>
-  <style>
-    /* CSS untuk tombol panah ke atas */
-    #scrollTopBtn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #333;
-      /* Latar belakang hitam */
-      color: white;
-      /* Warna panah putih */
-      border: none;
-      padding: 5px;
-      /* Ukuran tombol lebih besar */
-      font-size: 20px;
-      /* Ukuran panah */
-      cursor: pointer;
-      display: none;
-      /* Mulai dengan disembunyikan */
-      border-radius: 50%;
-      /* Bulat */
-      width: 45px;
-      /*Lebar tombol */
-      height: 45px;
-      /* Tinggi tombol sama dengan lebar untuk bulat sempurna */
-      text-align: center;
-      line-height: 20px;
-      /* Menjaga panah di tengah */
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    #scrollTopBtn:hover {
-      background-color: #E7BC4C;
-      /* Warna latar belakang lebih gelap saat hover */
-    }
-
-    body {
-        background-color: white;
-        color: black;
-      }
-  </style>
-  <style>
-   /* Styling untuk tombol kirim pesan */
-#submitBtn {
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    background-color: #E7BC4C;
-    color: white;
-    position: relative;
-    width: auto;
-    text-align: center;
-    z-index: 10;
-}
-
-#loadingIcon {
-    border: 4px solid #f3f3f3; /* Warna latar belakang abu-abu untuk spinner */
-    border-top: 4px solid #3498db; /* Warna spinner biru */
-    border-radius: 50%; /* Bentuk bulat */
-    width: 20px;
-    height: 20px;
-    animation: spin 1s linear infinite; /* Animasi putaran spinner */
-    display: none; /* Sembunyikan spinner secara default */
-    position: absolute;
-    z-index: 20;
-    top: 50%;
-    left: 50%;
-    margin-left: -10px; /* Untuk menyusun spinner ke tengah */
-    margin-top: -10px;  /* Untuk menyusun spinner ke tengah */
-}
-
-/* Animasi putar untuk spinner */
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-/* Gaya saat tombol dalam keadaan disabled */
-#submitBtn:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
-}
-  </style>
 </head>
 
 <body>
@@ -138,7 +58,7 @@
                 <li class="has-children">
                   <a href="#">Tanah</a>
                   <ul class="dropdown">
-                    <li><a href="">Demang Mansion</a></li>
+                    <li><a href="properties.html#properti">Demang Mansion</a></li>
                   </ul>
                 </li>
               </ul>
@@ -180,61 +100,64 @@
 
   <div class="section">
     <div class="container">
-        <h2 class="section-title text-center mb-5" id="hubungi">Hubungi Kami</h2>
-        <div class="row">
-            <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-                <div class="contact-info">
-                    <div class="address mt-2">
-                        <i class="icon-room"></i>
-                        <h4 class="mb-2">Lokasi:</h4>
-                        <p>Jl. Kol H. Burlian No.104,<br />Rt.24 Rw.09,<br />Palembang, Sumatera Selatan</p>
-                    </div>
-                    <div class="open-hours mt-4">
-                        <i class="icon-clock-o"></i>
-                        <h4 class="mb-2">Jam Buka:</h4>
-                        <p>Senin-Jum'at:<br />08:00 - 16:00</p>
-                    </div>
-                    <div class="email mt-4">
-                        <i class="icon-envelope"></i>
-                        <h4 class="mb-2">Email:</h4>
-                        <p>satrialandpalembang@gmail.com</p>
-                    </div>
-                    <div class="phone mt-4">
-                        <i class="icon-phone"></i>
-                        <h4 class="mb-2">Hubungi:</h4>
-                        <p>+6285946930091</p>
-                    </div>
-                </div>
+      <h2 class="section-title text-center mb-5" id="hubungi">Hubungi Kami</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-info">
+            <div class="address mt-2">
+              <i class="icon-room"></i>
+              <h4 class="mb-2">Lokasi:</h4>
+              <p><a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
+                Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br> Kota Palembang, Sumatera Selatan
+              </a>
+              </p>
             </div>
-            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-              <form id="contactForm" action="send_email.php" method="POST">
-                <div class="row">
-                    <div class="col-6 mb-3">
-                        <input type="text" class="form-control" placeholder="Nama" name="nama" required />
-                    </div>
-                    <div class="col-6 mb-3">
-                        <input type="email" class="form-control" placeholder="Email" name="email" required />
-                    </div>
-                    <div class="col-12 mb-3">
-                        <input type="text" class="form-control" placeholder="Subjek" name="subjek" required />
-                    </div>
-                    <div class="col-12 mb-3">
-                        <textarea name="pesan" cols="30" rows="7" class="form-control" placeholder="Pesan" required></textarea>
-                    </div>
-                    <div class="col-12">
-                      <button type="submit" class="btn btn-primary submit-btn" style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;">
-                        Kirim Pesan
-                        <span id="loadingIcon" class="loading" style="display: none;"></span> <!-- Loading spinner -->
-                    </button>                    
-                    </div>
-                </div>
-            </form>            
+            <div class="open-hours mt-4">
+              <i class="icon-clock-o"></i>
+              <h4 class="mb-2">Jam Buka:</h4>
+              <p>Senin-Jum'at:<br />08:00 - 16:00</p>
             </div>
+            <div class="email mt-4">
+              <i class="icon-envelope"></i>
+              <h4 class="mb-2">Email:</h4>
+              <p>satrialandpalembang@gmail.com</p>
+            </div>
+            <div class="phone mt-4">
+              <i class="icon-phone"></i>
+              <h4 class="mb-2">Hubungi:</h4>
+              <p><a href="https://wa.me/6285266366309" target="_blank">+6285266366309 | Kantor</a></p>
+            </div>
+          </div>
         </div>
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+          <form id="contactForm" action="send_email.php" method="POST">
+            <div class="row">
+              <div class="col-6 mb-3">
+                <input type="text" class="form-control" placeholder="Nama" name="nama" required />
+              </div>
+              <div class="col-6 mb-3">
+                <input type="email" class="form-control" placeholder="Email" name="email" required />
+              </div>
+              <div class="col-12 mb-3">
+                <input type="text" class="form-control" placeholder="Subjek" name="subjek" required />
+              </div>
+              <div class="col-12 mb-3">
+                <textarea name="pesan" cols="30" rows="7" class="form-control" placeholder="Pesan" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary submit-btn"
+                  style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;">
+                  Kirim Pesan
+                  <span id="loadingIcon" class="loading" style="display: none;"></span> <!-- Loading spinner -->
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-  <!-- /.untree_co-section -->
 
   <button id="scrollTopBtn" title="Go to top">↑</button>
 
@@ -246,24 +169,20 @@
           <div class="widget">
             <h3>Contact</h3>
             <ul class="list-unstyled links">
-              <li>
-                <a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
-                  Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br>Kota Palembang, <br>Sumatera Selatan
-                </a>
-              </li>
-              <li><a href="https://wa.me/6285266366309" target="_blank">085266366309 - Kantor</a></li>
-              <li><a href="https://wa.me/6285946930091" target="_blank">085946930091 - Adit</a></li>
-              <li><a href="https://wa.me/6282291113806" target="_blank">082291113806 - Anggi</a></li>
-              <li><a href="https://wa.me/6285381994369" target="_blank">085381994369 - Awin</a></li>
+              <li><a href="https://wa.me/6285266366309" target="_blank">+6285266366309 - Kantor</a></li>
               <li>
                 <a href="mailto:satrialandpalembang@gmail.com">
                   satrialandpalembang@gmail.com
                 </a>
               </li>
+              <li>
+                <a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
+                  Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br> Kota Palembang, Sumatera Selatan
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-
         <!-- Bagian Sources -->
         <div class="col-lg-4">
           <div class="widget">
@@ -271,47 +190,44 @@
             <ul class="list-unstyled links">
               <li><a href="about.html#tentang">Tentang Kami</a></li>
               <li><a href="services.html#layanan">Layanan</a></li>
-              <li><a href="about.html#visi">Visi dan Misi</a></li>
               <li><a href="partner.html#mitra">Mitra</a></li>
               <li><a href="blog.html#blog">Blog</a></li>
               <li><a href="faq.html#faq">FAQ</a></li>
+              <li><a href="career.html#">Join Marketing</a></li>
             </ul>
           </div>
         </div>
-
         <!-- Bagian Links dan Social Media -->
         <div class="col-lg-4">
           <div class="widget">
-            <h3>Links</h3>
+            <h3>Social Media</h3>
             <ul class="list-unstyled links">
               <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
             </ul>
-            <ul class="list-unstyled social d-flex gap-3">
-              <li><a href="#"><span class="icon-instagram"></span></a></li>
-              <li><a href="#"><span class="icon-twitter"></span></a></li>
-              <li><a href="#"><span class="icon-facebook"></span></a></li>
+            <ul class="list-unstyled social d-flex gap-0">
+              <li><a href="https://www.instagram.com/satria_land.id/" target="_blank"><span
+                    class="icon-instagram"></span></a></li>
+              <li><a
+                  href="https://www.facebook.com/people/Satria-Investama/pfbid0YYzhCxgxGQKKGyS2tWqq9xvuTHvP6uM6KygXuGRMdYJYBLNef6tbJspQs6AFaWafl/?ref=ig_profile_ac"
+                  target="_blank"><span class="icon-facebook"></span></a></li>
+              <li><a href="https://www.youtube.com/@SatriaLand" target=""><span class="icon-youtube"></span></a></li>
             </ul>
           </div>
         </div>
       </div>
+      <div class="row mt-2 mb-0">
+        <div class="col-12 text-center">
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            &mdash; Satria Land
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-
-  <!-- /.row -->
-
-  <div class="row mt-5">
-    <div class="col-12 text-center">
-
-      <p>
-        Copyright &copy;
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        &mdash; Satria Land
-      </p>
-    </div>
-  </div>
-  <!-- /.site-footer -->
 
   <!-- Preloader -->
   <div id="overlayer"></div>
@@ -321,79 +237,53 @@
     </div>
   </div>
 
-  
+
   <script>
- document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Mencegah pengiriman form default
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault(); // Mencegah pengiriman form default
 
-    const formData = new FormData(this); // Ambil data form
-    const submitButton = document.querySelector(".submit-btn"); // Tombol kirim pesan
-    const loadingIcon = document.getElementById("loadingIcon"); // Ikon loading
+      const formData = new FormData(this); // Ambil data form
+      const submitButton = document.querySelector(".submit-btn"); // Tombol kirim pesan
+      const loadingIcon = document.getElementById("loadingIcon"); // Ikon loading
 
-    // Menonaktifkan tombol dan menampilkan spinner
-    submitButton.disabled = true;
-    loadingIcon.style.display = "inline-block";  // Menampilkan spinner
+      // Menonaktifkan tombol dan menampilkan spinner
+      submitButton.disabled = true;
+      loadingIcon.style.display = "inline-block";  // Menampilkan spinner
 
-    // Kirim data form menggunakan AJAX
-    fetch('send_email.php', {
+      // Kirim data form menggunakan AJAX
+      fetch('send_email.php', {
         method: 'POST',
         body: formData
-    })
-    .then(response => response.text())  // Mendapatkan response dari server
-    .then(data => {
-        if (data.includes("Pesan Anda telah berhasil dikirim")) {
+      })
+        .then(response => response.text())  // Mendapatkan response dari server
+        .then(data => {
+          if (data.includes("Pesan Anda telah berhasil dikirim")) {
             alert("Pesan Anda telah berhasil dikirim!");
-            
+
             // Mengosongkan form setelah pesan berhasil dikirim
             document.getElementById("contactForm").reset();
-        } else {
+          } else {
             alert("Terjadi kesalahan. Coba lagi nanti.");
-        }
-    })
-    .catch(error => {
-        alert("Error: " + error.message); // Menangani error
-    })
-    .finally(() => {
-        // Mengembalikan tombol ke keadaan normal setelah pengiriman selesai
-        submitButton.disabled = false;
-        loadingIcon.style.display = "none"; // Sembunyikan spinner
+          }
+        })
+        .catch(error => {
+          alert("Error: " + error.message); // Menangani error
+        })
+        .finally(() => {
+          // Mengembalikan tombol ke keadaan normal setelah pengiriman selesai
+          submitButton.disabled = false;
+          loadingIcon.style.display = "none"; // Sembunyikan spinner
+        });
     });
-});
-</script>
-  
+  </script>
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/tiny-slider.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/navbar.js"></script>
   <script src="js/counter.js"></script>
   <script src="js/custom.js"></script>
-  <script>
-    // Ambil elemen tombol panah ke atas
-    const scrollTopBtn = document.getElementById("scrollTopBtn");
-
-    // Fungsi untuk menampilkan tombol ketika pengguna menggulir
-    window.onscroll = function () {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        scrollTopBtn.style.display = "block"; // Menampilkan tombol
-      } else {
-        scrollTopBtn.style.display = "none"; // Menyembunyikan tombol
-      }
-    };
-
-    // Fungsi untuk scroll ke atas ketika tombol ditekan
-    scrollTopBtn.addEventListener("click", function () {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    });
-  </script>
-  <script>
-    function kirimPesan() {
-    alert("Pesan Anda telah berhasil dikirim!");
-    // Mungkin bisa menyembunyikan form dan menampilkan konfirmasi kirim
-}
-  </script>
+  <script src="js/up.js"></script>
 </body>
 
 </html>

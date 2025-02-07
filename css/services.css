@@ -1,0 +1,81 @@
+.features-1 .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Horizontal alignment */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Space between boxes */
+  }
+
+  .features-1 .box-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fffefe;
+    border-radius: 8px;
+    padding: 30px;
+    width: 280px;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+    min-height: 360px;
+  }
+  
+  /* Responsif untuk layar lebih kecil */
+  
+
+  @media (min-width: 1200px) {
+  .features-1 .box-feature {
+  max-width: 1070px; } }
+
+  @media (max-width: 992px) {
+    .features-1 .box-feature {
+      width: 45%; /* Lebar 45% untuk layar medium, seperti tablet */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .features-1 .box-feature {
+      width: 90%; /* Lebar penuh untuk layar kecil, seperti smartphone */
+    }
+  }
+  
+  @media (max-width: 576px) {
+  .features-1 .box-feature {
+  width: 90%; /* Pastikan di layar ponsel sangat kecil, tetap lebar dengan memberi 90% */
+  }
+  .box-feature h3 {
+    font-size: 16px; /* Ukuran judul lebih kecil di layar kecil */
+  }
+  .box-feature p {
+    font-size: 14px; /* Ukuran paragraf lebih kecil */
+  }
+  }
+
+  .features-1 .box-feature h3, .features-1 .box-feature .h3 {
+    font-size: 26px; /* Better readability */
+    margin: 10px 0;
+  }
+
+  .features-1 .box-feature [class^="flaticon-"] {
+    color: #e7bc4c;
+    font-size: 70px;
+    margin-bottom: 20px;
+    display: block;
+    line-height: 1;
+  }
+
+  .features-1 .box-feature:hover {
+    transform: translateY(-5px); /* Hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  .box-feature span {
+  font-size: 50px;
+  color: #e7bc4c;
+  margin-bottom: 20px;
+  display: block;
+  }
+  .features-1 .row > div {
+  margin-bottom: 30px;
+  }

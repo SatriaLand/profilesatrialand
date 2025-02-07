@@ -1,542 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="favicon.png" />
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="bootstrap, bootstrap5" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="favicon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap5" />
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css" />
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/tiny-slider.css" />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="fonts/icomoon/style.css" />
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
 
-    <title>
-        Satria Land
-    </title>
-    <style>
-        /* Blog Content */
-.blog-content {
-  padding: 40px;
-}
+  <link rel="stylesheet" href="css/tiny-slider.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/up.css" />
+  <link rel="stylesheet" href="css/blog.css" />
 
-.blog-post {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
+  <title>
+    Satria Land
+  </title>
+</head>
 
-.blog-post .post-title {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.blog-post .post-meta {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 20px;
-}
-
-.blog-post .post-image img {
-  width: 100%;
-  border-radius: 8px;
-  margin-top: 20px;
-}
-
-.blog-post .post-content {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-top: 20px;
-}
-
-.blog-post .read-more a {
-  display: inline-block;
-  margin-top: 20px;
-  background-color: #0056b3;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-}
-
-/* Related Posts Section */
-.related-posts {
-  margin-top: 60px;
-}
-
-.related-posts h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.related-posts-container {
-  display: flex;
-  gap: 20px;
-}
-
-.related-post {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 30%;
-}
-
-.related-post img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.related-post h4 {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.related-post a {
-  text-decoration: none;
-  color: #0056b3;
-}
-
-.related-posts-container > .related-post:not(:last-child) {
-  border-right: 1px solid #ddd;
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-  .related-posts-container {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .related-post {
-    width: 100%;
-  }
-}
-  /* CSS untuk tombol panah ke atas */
-  #scrollTopBtn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #333; /* Latar belakang hitam */
-        color: white; /* Warna panah putih */
-        border: none;
-        padding: 5px; /* Ukuran tombol lebih besar */
-        font-size: 20px; /* Ukuran panah */
-        cursor: pointer;
-        display: none; /* Mulai dengan disembunyikan */
-        border-radius: 50%; /* Bulat */
-        width: 45px; /*Lebar tombol */
-        height: 45px;/* Tinggi tombol sama dengan lebar untuk bulat sempurna */
-        text-align: center;
-        line-height: 20px; /* Menjaga panah di tengah */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-      }
-  
-      #scrollTopBtn:hover {
-        background-color: #E7BC4C; /* Warna latar belakang lebih gelap saat hover */
-      }
-
-      body {
-        background-color: white;
-        color: black;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-          <span class="icofont-close js-menu-toggle"></span>
-        </div>
+<body>
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
       </div>
-      <div class="site-mobile-menu-body"></div>
     </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
 
-    <nav class="site-nav">
-      <div class="container">
-        <div class="menu-bg-wrap">
-          <div class="site-navigation m-0">
-            <a href="index.html">
+  <nav class="site-nav">
+    <div class="container">
+      <div class="menu-bg-wrap">
+        <div class="site-navigation m-0">
+          <a href="index.html">
             <img src="images/Logo2.png" alt="Satria Land" style="height: 45px;">
           </a>
-            <ul
-              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
-            >
-              <li class="active"><a href="index.html">Beranda</a></li>
-              <li class="has-children">
-                <a href="properties.html#properti">Properti</a>
-                <ul class="dropdown">
-                  <li class="has-children">
-                    <a href="#">Bangunan</a>
-                    <ul class="dropdown">
-                      <li><a href="properties.html#properti">Carissma Mansion</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-children">
-                    <a href="#">Tanah</a>
-                    <ul class="dropdown">
-                      <li><a href="">Demang Mansion</a></li>
-                    </ul>
-                  </li>
-                </ul>
+          <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+            <li class="active"><a href="index.html">Beranda</a></li>
+            <li class="has-children">
+              <a href="properties.html#properti">Properti</a>
+              <ul class="dropdown">
+                <li class="has-children">
+                  <a href="#">Bangunan</a>
+                  <ul class="dropdown">
+                    <li><a href="properties.html#properti">Carissma Mansion</a></li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a href="#">Tanah</a>
+                  <ul class="dropdown">
+                    <li><a href="properties.html#properti">Demang Mansion</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="services.html#layanan">Layanan</a></li>
+            <li><a href="blog.html#blog">Blog</a></li>
+            <li><a href="about.html#tentang">Tentang</a></li>
+            <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
+          </ul>
+
+          <a href="#"
+            class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero page-inner overlay" style="background-image: url('images/hero_bg_1.jpg')">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-9 text-center mt-5">
+          <h1 class="heading" data-aos="fade-up">Blog</h1>
+
+          <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+            <ol class="breadcrumb text-center justify-content-center">
+              <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+              <li class="breadcrumb-item active text-white-50" aria-current="page">
+                Blog
               </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blog-content">
+    <div class="blog-post">
+      <h1 class="post-title">Panduan Investasi Properti untuk Pemula</h1>
+      <div class="post-meta">
+        <span class="author">Oleh: Admin | Rey</span> |
+        <span class="date">Januari 2025</span>
+      </div>
+
+      <!-- Gambar terkait -->
+      <div class="post-image">
+        <img src="images/blog4.jpg" alt="Panduan Investasi Properti" class="img-fluid" />
+      </div>
+
+      <div class="post-content">
+        <p>Investasi properti merupakan salah satu jenis investasi yang banyak diminati, terutama karena potensinya yang
+          besar dalam memberikan keuntungan jangka panjang. Namun, bagi Anda yang baru mulai, investasi properti bisa
+          terasa membingungkan. Tidak perlu khawatir! Di artikel ini, kami akan memberikan panduan investasi properti
+          untuk pemula agar Anda bisa memulai dengan percaya diri.</p>
+
+        <h2>1. Memahami Jenis-Jenis Properti untuk Investasi</h2>
+        <p>Sebelum mulai berinvestasi, Anda harus mengetahui jenis-jenis properti yang dapat dijadikan pilihan. Beberapa
+          jenis properti yang umum untuk investasi adalah:</p>
+        <ul>
+          <li><strong>Properti Residensial</strong>: Rumah, apartemen, atau kondominium yang digunakan sebagai tempat
+            tinggal.</li>
+          <li><strong>Properti Komersial</strong>: Ruko, kantor, atau gedung perkantoran yang digunakan untuk bisnis.
+          </li>
+          <li><strong>Properti Industri</strong>: Gudang atau pabrik yang digunakan untuk keperluan industri.</li>
+          <li><strong>Properti Sekunder</strong>: Properti bekas yang dijual kembali dengan harga lebih terjangkau.</li>
+        </ul>
+        <p>Setiap jenis properti memiliki karakteristik yang berbeda, dan Anda harus memilih yang sesuai dengan tujuan
+          investasi Anda.</p>
+
+        <h2>2. Tentukan Tujuan Investasi Anda</h2>
+        <p>Apakah tujuan Anda membeli properti untuk disewakan, dijual kembali, atau sebagai investasi jangka panjang?
+          Menentukan tujuan investasi akan memudahkan Anda dalam memilih jenis properti dan strategi investasi yang
+          tepat. Berikut beberapa tujuan investasi properti:</p>
+        <ul>
+          <li><strong>Investasi Jangka Panjang</strong>: Anda membeli properti untuk dijadikan sumber pendapatan pasif
+            melalui sewa atau capital gain dari kenaikan harga properti.</li>
+          <li><strong>Flip Properti</strong>: Anda membeli properti dengan harga murah, merenovasi, dan menjualnya
+            dengan harga lebih tinggi.</li>
+          <li><strong>Properti untuk Disewakan</strong>: Membeli properti dan menyewakannya untuk mendapatkan
+            penghasilan rutin.</li>
+        </ul>
+
+        <h2>3. Lokasi, Lokasi, Lokasi!</h2>
+        <p>Salah satu faktor terpenting dalam investasi properti adalah lokasi. Lokasi yang strategis dapat meningkatkan
+          nilai properti dan mempermudah Anda untuk menjual atau menyewakan properti tersebut. Beberapa hal yang perlu
+          diperhatikan dalam memilih lokasi properti adalah:</p>
+        <ul>
+          <li><strong>Kedekatan dengan fasilitas umum</strong>: Dekat dengan sekolah, pusat perbelanjaan, rumah sakit,
+            dan transportasi publik.</li>
+          <li><strong>Perkembangan daerah</strong>: Daerah yang sedang berkembang atau memiliki potensi pertumbuhan
+            ekonomi tinggi.</li>
+          <li><strong>Keamanan dan kenyamanan</strong>: Faktor lingkungan yang aman dan nyaman sangat penting untuk
+            kenyamanan penghuni properti.</li>
+        </ul>
+
+        <h2>4. Perhitungkan Pembiayaan dan Modal Awal</h2>
+        <p>Sebelum memulai investasi properti, pastikan Anda memiliki modal yang cukup. Biasanya, pembelian properti
+          dilakukan dengan menggunakan fasilitas kredit pemilikan rumah (KPR). Anda juga bisa memilih untuk membeli
+          properti secara tunai. Pastikan Anda mempertimbangkan cicilan KPR, bunga yang dikenakan, dan biaya lainnya
+          seperti pajak, notaris, dan biaya perawatan properti.</p>
+
+        <h2>5. Analisa Potensi Keuntungan</h2>
+        <p>Investasi properti bukanlah investasi instan. Anda perlu menganalisa potensi keuntungan yang bisa didapatkan.
+          Berikut adalah dua cara untuk memperoleh keuntungan dari properti:</p>
+        <ul>
+          <li><strong>Capital Gain</strong>: Keuntungan yang didapat dari selisih harga jual properti di masa depan
+            dengan harga beli saat ini.</li>
+          <li><strong>Rental Yield</strong>: Pendapatan dari penyewaan properti, yang dihitung dari selisih antara
+            pendapatan sewa tahunan dengan harga properti.</li>
+        </ul>
+
+        <h2>6. Pertimbangkan Risiko Investasi</h2>
+        <p>Seperti halnya investasi lainnya, investasi properti juga memiliki risiko. Beberapa risiko yang perlu Anda
+          pertimbangkan antara lain:</p>
+        <ul>
+          <li><strong>Fluktuasi harga pasar</strong>: Harga properti bisa turun, terutama di daerah yang kurang
+            berkembang.</li>
+          <li><strong>Kendala penyewaan</strong>: Properti yang disewakan mungkin tidak selalu terisi, yang dapat
+            memengaruhi pendapatan sewa Anda.</li>
+          <li><strong>Biaya perawatan</strong>: Properti membutuhkan biaya pemeliharaan, perbaikan, dan renovasi yang
+            bisa menjadi beban tambahan.</li>
+        </ul>
+
+        <h2>7. Pahami Hukum dan Regulasi Properti</h2>
+        <p>Investasi properti juga melibatkan aspek hukum yang perlu dipahami. Pastikan Anda mengetahui hak-hak Anda
+          sebagai pemilik properti, peraturan tentang sewa properti, serta kewajiban perpajakan yang berlaku. Anda bisa
+          berkonsultasi dengan notaris atau pengacara properti untuk memastikan bahwa transaksi properti yang Anda
+          lakukan aman secara hukum.</p>
+
+        <h2>8. Mulai Investasi dengan Properti yang Terjangkau</h2>
+        <p>Bagi pemula, mulai dengan properti yang lebih terjangkau adalah langkah yang bijak. Anda bisa membeli
+          properti dengan harga yang lebih rendah namun masih memiliki potensi keuntungan yang besar, seperti properti
+          di daerah yang sedang berkembang atau properti sekunder yang dijual dengan harga lebih murah.</p>
+
+        <p>Kesimpulannya, investasi properti dapat menjadi pilihan yang menguntungkan jika dilakukan dengan strategi
+          yang tepat. Dengan memahami berbagai aspek investasi properti, seperti jenis properti, tujuan investasi,
+          lokasi, dan risiko yang ada, Anda dapat membuat keputusan yang lebih baik dan mengelola investasi properti
+          Anda dengan bijak. Semoga panduan ini dapat membantu Anda memulai perjalanan investasi properti yang sukses!
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Related Posts -->
+  <div class="related-posts">
+    <h3>Artikel Terkait</h3>
+    <div class="related-posts-container">
+      <div class="related-post">
+        <img src="images/blog1.jpg" alt="Tips Properti" />
+        <h4><a href="blog1.html">Panduan Memilih Properti yang Tepat: Tips dari Ahli Properti</a></h4>
+      </div>
+      <div class="related-post">
+        <img src="images/blog2.jpg" alt="Pasar Properti" />
+        <h4><a href="blog2.html">Tips Memilih Investasi Properti yang Menguntungkan</a></h4>
+      </div>
+      <div class="related-post">
+        <img src="images/blog3.jpg" alt="Panduan Investasi" />
+        <h4><a href="blog3.html">Tren Pasar Properti 2025 yang Perlu Anda Ketahui</a></h4>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <!-- Bagian Contact -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Contact</h3>
+            <ul class="list-unstyled links">
+              <li><a href="https://wa.me/6285266366309" target="_blank">+6285266366309 - Kantor</a></li>
+              <li>
+                <a href="mailto:satrialandpalembang@gmail.com">
+                  satrialandpalembang@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
+                  Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br> Kota Palembang, Sumatera Selatan
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Bagian Sources -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Sources</h3>
+            <ul class="list-unstyled links">
+              <li><a href="about.html#tentang">Tentang Kami</a></li>
               <li><a href="services.html#layanan">Layanan</a></li>
+              <li><a href="partner.html#mitra">Mitra</a></li>
               <li><a href="blog.html#blog">Blog</a></li>
-              <li><a href="about.html#tentang">Tentang</a></li>
+              <li><a href="faq.html#faq">FAQ</a></li>
+              <li><a href="career.html#">Join Marketing</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Bagian Links dan Social Media -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Social Media</h3>
+            <ul class="list-unstyled links">
               <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
             </ul>
-
-            <a
-              href="#"
-              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
-              data-toggle="collapse"
-              data-target="#main-navbar"
-            >
-              <span></span>
-            </a>
+            <ul class="list-unstyled social d-flex gap-0">
+              <li><a href="https://www.instagram.com/satria_land.id/" target="_blank"><span
+                    class="icon-instagram"></span></a></li>
+              <li><a
+                  href="https://www.facebook.com/people/Satria-Investama/pfbid0YYzhCxgxGQKKGyS2tWqq9xvuTHvP6uM6KygXuGRMdYJYBLNef6tbJspQs6AFaWafl/?ref=ig_profile_ac"
+                  target="_blank"><span class="icon-facebook"></span></a></li>
+              <li><a href="https://www.youtube.com/@SatriaLand" target=""><span class="icon-youtube"></span></a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </nav>
-
-    <div
-      class="hero page-inner overlay"
-      style="background-image: url('images/hero_bg_1.jpg')"
-    >
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-9 text-center mt-5">
-            <h1 class="heading" data-aos="fade-up">Blog</h1>
-
-            <nav
-              aria-label="breadcrumb"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <ol class="breadcrumb text-center justify-content-center">
-                <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
-                <li
-                  class="breadcrumb-item active text-white-50"
-                  aria-current="page"
-                >
-                  Blog
-                </li>
-              </ol>
-            </nav>
-          </div>
+      <div class="row mt-2 mb-0">
+        <div class="col-12 text-center">
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            &mdash; Satria Land
+          </p>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="blog-content">
-        <div class="blog-post">
-            <h1 class="post-title">Panduan Investasi Properti untuk Pemula</h1>
-            <div class="post-meta">
-                <span class="author">Oleh: Admin | Rey</span> | 
-                <span class="date">Januari 2025</span>
-            </div>
-    
-            <!-- Gambar terkait -->
-            <div class="post-image">
-                <img src="images/blog4.jpg" alt="Panduan Investasi Properti" class="img-fluid" />
-            </div>
-    
-            <div class="post-content">
-                <p>Investasi properti merupakan salah satu jenis investasi yang banyak diminati, terutama karena potensinya yang besar dalam memberikan keuntungan jangka panjang. Namun, bagi Anda yang baru mulai, investasi properti bisa terasa membingungkan. Tidak perlu khawatir! Di artikel ini, kami akan memberikan panduan investasi properti untuk pemula agar Anda bisa memulai dengan percaya diri.</p>
-    
-                <h2>1. Memahami Jenis-Jenis Properti untuk Investasi</h2>
-                <p>Sebelum mulai berinvestasi, Anda harus mengetahui jenis-jenis properti yang dapat dijadikan pilihan. Beberapa jenis properti yang umum untuk investasi adalah:</p>
-                <ul>
-                    <li><strong>Properti Residensial</strong>: Rumah, apartemen, atau kondominium yang digunakan sebagai tempat tinggal.</li>
-                    <li><strong>Properti Komersial</strong>: Ruko, kantor, atau gedung perkantoran yang digunakan untuk bisnis.</li>
-                    <li><strong>Properti Industri</strong>: Gudang atau pabrik yang digunakan untuk keperluan industri.</li>
-                    <li><strong>Properti Sekunder</strong>: Properti bekas yang dijual kembali dengan harga lebih terjangkau.</li>
-                </ul>
-                <p>Setiap jenis properti memiliki karakteristik yang berbeda, dan Anda harus memilih yang sesuai dengan tujuan investasi Anda.</p>
-    
-                <h2>2. Tentukan Tujuan Investasi Anda</h2>
-                <p>Apakah tujuan Anda membeli properti untuk disewakan, dijual kembali, atau sebagai investasi jangka panjang? Menentukan tujuan investasi akan memudahkan Anda dalam memilih jenis properti dan strategi investasi yang tepat. Berikut beberapa tujuan investasi properti:</p>
-                <ul>
-                    <li><strong>Investasi Jangka Panjang</strong>: Anda membeli properti untuk dijadikan sumber pendapatan pasif melalui sewa atau capital gain dari kenaikan harga properti.</li>
-                    <li><strong>Flip Properti</strong>: Anda membeli properti dengan harga murah, merenovasi, dan menjualnya dengan harga lebih tinggi.</li>
-                    <li><strong>Properti untuk Disewakan</strong>: Membeli properti dan menyewakannya untuk mendapatkan penghasilan rutin.</li>
-                </ul>
-    
-                <h2>3. Lokasi, Lokasi, Lokasi!</h2>
-                <p>Salah satu faktor terpenting dalam investasi properti adalah lokasi. Lokasi yang strategis dapat meningkatkan nilai properti dan mempermudah Anda untuk menjual atau menyewakan properti tersebut. Beberapa hal yang perlu diperhatikan dalam memilih lokasi properti adalah:</p>
-                <ul>
-                    <li><strong>Kedekatan dengan fasilitas umum</strong>: Dekat dengan sekolah, pusat perbelanjaan, rumah sakit, dan transportasi publik.</li>
-                    <li><strong>Perkembangan daerah</strong>: Daerah yang sedang berkembang atau memiliki potensi pertumbuhan ekonomi tinggi.</li>
-                    <li><strong>Keamanan dan kenyamanan</strong>: Faktor lingkungan yang aman dan nyaman sangat penting untuk kenyamanan penghuni properti.</li>
-                </ul>
-    
-                <h2>4. Perhitungkan Pembiayaan dan Modal Awal</h2>
-                <p>Sebelum memulai investasi properti, pastikan Anda memiliki modal yang cukup. Biasanya, pembelian properti dilakukan dengan menggunakan fasilitas kredit pemilikan rumah (KPR). Anda juga bisa memilih untuk membeli properti secara tunai. Pastikan Anda mempertimbangkan cicilan KPR, bunga yang dikenakan, dan biaya lainnya seperti pajak, notaris, dan biaya perawatan properti.</p>
-    
-                <h2>5. Analisa Potensi Keuntungan</h2>
-                <p>Investasi properti bukanlah investasi instan. Anda perlu menganalisa potensi keuntungan yang bisa didapatkan. Berikut adalah dua cara untuk memperoleh keuntungan dari properti:</p>
-                <ul>
-                    <li><strong>Capital Gain</strong>: Keuntungan yang didapat dari selisih harga jual properti di masa depan dengan harga beli saat ini.</li>
-                    <li><strong>Rental Yield</strong>: Pendapatan dari penyewaan properti, yang dihitung dari selisih antara pendapatan sewa tahunan dengan harga properti.</li>
-                </ul>
-    
-                <h2>6. Pertimbangkan Risiko Investasi</h2>
-                <p>Seperti halnya investasi lainnya, investasi properti juga memiliki risiko. Beberapa risiko yang perlu Anda pertimbangkan antara lain:</p>
-                <ul>
-                    <li><strong>Fluktuasi harga pasar</strong>: Harga properti bisa turun, terutama di daerah yang kurang berkembang.</li>
-                    <li><strong>Kendala penyewaan</strong>: Properti yang disewakan mungkin tidak selalu terisi, yang dapat memengaruhi pendapatan sewa Anda.</li>
-                    <li><strong>Biaya perawatan</strong>: Properti membutuhkan biaya pemeliharaan, perbaikan, dan renovasi yang bisa menjadi beban tambahan.</li>
-                </ul>
-    
-                <h2>7. Pahami Hukum dan Regulasi Properti</h2>
-                <p>Investasi properti juga melibatkan aspek hukum yang perlu dipahami. Pastikan Anda mengetahui hak-hak Anda sebagai pemilik properti, peraturan tentang sewa properti, serta kewajiban perpajakan yang berlaku. Anda bisa berkonsultasi dengan notaris atau pengacara properti untuk memastikan bahwa transaksi properti yang Anda lakukan aman secara hukum.</p>
-    
-                <h2>8. Mulai Investasi dengan Properti yang Terjangkau</h2>
-                <p>Bagi pemula, mulai dengan properti yang lebih terjangkau adalah langkah yang bijak. Anda bisa membeli properti dengan harga yang lebih rendah namun masih memiliki potensi keuntungan yang besar, seperti properti di daerah yang sedang berkembang atau properti sekunder yang dijual dengan harga lebih murah.</p>
-    
-                <p>Kesimpulannya, investasi properti dapat menjadi pilihan yang menguntungkan jika dilakukan dengan strategi yang tepat. Dengan memahami berbagai aspek investasi properti, seperti jenis properti, tujuan investasi, lokasi, dan risiko yang ada, Anda dapat membuat keputusan yang lebih baik dan mengelola investasi properti Anda dengan bijak. Semoga panduan ini dapat membantu Anda memulai perjalanan investasi properti yang sukses!</p>
-            </div>
-        </div>
+  <!-- Preloader -->
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
     </div>
-    
-    
-    
-        <!-- Related Posts -->
-        <div class="related-posts">
-            <h3>Artikel Terkait</h3>
-            <div class="related-posts-container">
-                <div class="related-post">
-                    <img src="images/blog1.jpg" alt="Tips Properti" />
-                    <h4><a href="blog1.html">Panduan Memilih Properti yang Tepat: Tips dari Ahli Properti</a></h4>
-                </div>
-                <div class="related-post">
-                    <img src="images/blog2.jpg" alt="Pasar Properti" />
-                    <h4><a href="blog2.html">Tips Memilih Investasi Properti yang Menguntungkan</a></h4>
-                </div>
-                <div class="related-post">
-                    <img src="images/blog3.jpg" alt="Panduan Investasi" />
-                    <h4><a href="blog3.html">Tren Pasar Properti 2025 yang Perlu Anda Ketahui</a></h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-<!--
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-4 mb-5 mb-lg-0"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="contact-info">
-              <div class="address mt-2">
-                <i class="icon-room"></i>
-                <h4 class="mb-2">Location:</h4>
-                <p>
-                  43 Raymouth Rd. Baltemoer,<br />
-                  London 3910
-                </p>
-              </div>
+  </div>
 
-              <div class="open-hours mt-4">
-                <i class="icon-clock-o"></i>
-                <h4 class="mb-2">Open Hours:</h4>
-                <p>
-                  Sunday-Friday:<br />
-                  11:00 AM - 2300 PM
-                </p>
-              </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/up.js"></script>
+</body>
 
-              <div class="email mt-4">
-                <i class="icon-envelope"></i>
-                <h4 class="mb-2">Email:</h4>
-                <p>info@Untree.co</p>
-              </div>
-
-              <div class="phone mt-4">
-                <i class="icon-phone"></i>
-                <h4 class="mb-2">Call:</h4>
-                <p>+1 1234 55488 55</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <form action="#">
-              <div class="row">
-                <div class="col-6 mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div class="col-6 mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Your Email"
-                  />
-                </div>
-                <div class="col-12 mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Subject"
-                  />
-                </div>
-                <div class="col-12 mb-3">
-                  <textarea
-                    name=""
-                    id=""
-                    cols="30"
-                    rows="7"
-                    class="form-control"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-
-                <div class="col-12">
-                  <input
-                    type="submit"
-                    value="Send Message"
-                    class="btn btn-primary"
-                  />
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    -->
-    <!-- /.untree_co-section -->
-    <button id="scrollTopBtn" title="Go to top">↑</button>
-
-    <div class="site-footer">
-      <div class="container">
-        <div class="row">
-          <!-- Bagian Contact -->
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Contact</h3>
-              <ul class="list-unstyled links">
-                <li>
-                  <a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
-                    Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br>Kota Palembang, <br>Sumatera Selatan
-                  </a>
-                </li>
-                <li><a href="https://wa.me/6285266366309" target="_blank">085266366309 - Kantor</a></li>
-                <li><a href="https://wa.me/6285946930091" target="_blank">085946930091 - Adit</a></li>
-                <li><a href="https://wa.me/6282291113806" target="_blank">082291113806 - Anggi</a></li>
-                <li><a href="https://wa.me/6285381994369" target="_blank">085381994369 - Awin</a></li>
-                <li>
-                  <a href="mailto:satrialandpalembang@gmail.com">
-                    satrialandpalembang@gmail.com
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-    
-          <!-- Bagian Sources -->
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Sources</h3>
-              <ul class="list-unstyled links">
-                <li><a href="about.html#tentang">Tentang Kami</a></li>
-                <li><a href="services.html#layanan">Layanan</a></li>
-                <li><a href="about.html#visi">Visi dan Misi</a></li>
-                <li><a href="partner.html#mitra">Mitra</a></li>
-                <li><a href="blog.html#blog">Blog</a></li>
-                <li><a href="faq.html#faq">FAQ</a></li>
-              </ul>
-            </div>
-          </div>
-    
-          <!-- Bagian Links dan Social Media -->
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Links</h3>
-              <ul class="list-unstyled links">
-                <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
-              </ul>
-              <ul class="list-unstyled social d-flex gap-3">
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-        <!-- /.row -->
-
-        <div class="row mt-5">
-          <div class="col-12 text-center">
-           
-            <p>
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              &mdash; Satria Land
-            </p>
-          </div>
-        </div>
-    <!-- /.site-footer -->
-
-    <!-- Preloader -->
-    <div id="overlayer"></div>
-    <div class="loader">
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-    </div>
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tiny-slider.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/counter.js"></script>
-    <script src="js/custom.js"></script>
-    <script>
-      // Ambil elemen tombol panah ke atas
-      const scrollTopBtn = document.getElementById("scrollTopBtn");
-  
-      // Fungsi untuk menampilkan tombol ketika pengguna menggulir
-      window.onscroll = function() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-          scrollTopBtn.style.display = "block"; // Menampilkan tombol
-        } else {
-          scrollTopBtn.style.display = "none"; // Menyembunyikan tombol
-        }
-      };
-  
-      // Fungsi untuk scroll ke atas ketika tombol ditekan
-      scrollTopBtn.addEventListener("click", function() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
-      });
-    </script>
-  </body>
 </html>

@@ -1,0 +1,31 @@
+/* CSS untuk tombol panah ke atas */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333; /* Latar belakang hitam */
+    color: white; /* Warna panah putih */
+    border: none;
+    padding: 5px; /* Ukuran tombol lebih besar */
+    font-size: 20px; /* Ukuran panah */
+    cursor: pointer;
+    display: none; /* Mulai dengan disembunyikan */
+    border-radius: 50%; /* Bulat */
+    width: 45px; /*Lebar tombol */
+    height: 45px;/* Tinggi tombol sama dengan lebar untuk bulat sempurna */
+    text-align: center;
+    line-height: 20px; /* Menjaga panah di tengah */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  #scrollTopBtn:hover {
+    background-color: #E7BC4C; /* Warna latar belakang lebih gelap saat hover */
+  }
+
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  

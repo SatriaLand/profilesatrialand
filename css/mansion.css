@@ -1,0 +1,269 @@
+/*TABBED*/
+.tab-content {
+    margin-top: 20px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+
+  .nav-tabs .nav-link {
+    color: #333;
+    /* Warna default teks */
+  }
+
+  .nav-tabs .nav-link.active {
+    color: #000;
+    /* Warna teks saat aktif */
+    font-weight: bold;
+  }
+
+  .nav-tabs .nav-link:hover {
+    color: #E7BC4C;
+    /* Warna teks saat dihover */
+  }
+
+  @media (max-width: 768px) {
+
+    /* Atur untuk layar kecil */
+    .nav-tabs {
+      display: flex;
+      flex-wrap: nowrap;
+      /* Hindari baris baru */
+      overflow-x: auto;
+      /* Gulir secara horizontal jika perlu */
+      border-bottom: 1px solid #ddd;
+      /* Garis bawah agar terlihat konsisten */
+    }
+
+    .nav-tabs .nav-item {
+      flex: none;
+      /* Hindari skala otomatis */
+    }
+  }
+
+  /* IMAGE SLIDE */
+  .image-property-slide-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px; /* Memberikan padding bawah agar dot tidak menutupi gambar */
+  }
+
+  .image-property-slide img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    object-fit: cover;
+  }
+  .image-property-slide {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .tns-nav {
+    position: absolute;
+    bottom: 10px; /* Menambah jarak dari bawah kontainer gambar */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+  }
+
+  .tns-nav button {
+    background-color: rgba(43, 41, 41, 0.5); /* Warna dot */
+    border: none;
+    width: 7px;                    /* Membuat dot lebih kecil */
+    height: 7px;                   /* Membuat dot lebih kecil */
+    border-radius: 50%;            /* Membuat dot bulat */
+    gap: 7px;
+    right: 0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .tns-nav button.tns-nav-active {
+    background-color: #E7BC4C;
+    transform: scale(1.1);
+  }
+
+  .tns-nav button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  /*VIDEO SLIDE */
+  .video-property-slide-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-property-slide {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    gap: 10px; /* Tambahkan jarak antar video */
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Untuk menjaga aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+/* Kelas untuk tombol "Hitung Simulasi" */
+.btn-hitung-simulasi {
+    background-color: #E7BC4C; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghapus border */
+    padding: 10px 20px; /* Memberikan padding agar tombol lebih besar dan nyaman */
+    font-size: 16px; /* Ukuran font */
+    font-weight: bold; /* Menebalkan teks tombol */
+    border-radius: 5px; /* Membuat sudut tombol lebih membulat */
+    cursor: pointer; /* Menambahkan pointer saat hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi saat hover */
+  }
+  
+  /* Efek hover untuk tombol */
+  .btn-hitung-simulasi:hover {
+    background-color: #E7BC4C; /* Mengubah warna latar belakang tombol saat hover */
+    transform: scale(1.05); /* Menambah ukuran tombol sedikit saat hover */
+  }
+  
+  /* Efek saat tombol sedang dalam keadaan aktif */
+  .btn-hitung-simulasi:active {
+    background-color: #E7BC4C; /* Warna tombol ketika ditekan */
+  }
+  /* Wrapper form */
+  .form-wrapper {
+    max-width: 800px; /* Mengatur lebar maksimum form */
+    margin: 0 auto; /* Memusatkan form di tengah */
+    padding: 20px;
+  }
+  
+  /* Styling untuk form input (text dan number) */
+  input[type="text"], input[type="number"], input[type="email"], select {
+    width: 100%; /* Membuat input lebar 100% dari parent container */
+    padding: 10px; /* Padding untuk ruang dalam input */
+    margin: 10px 0; /* Jarak antar input */
+    border: 1px solid #ddd; /* Border input */
+    border-radius: 5px; /* Border radius untuk membuat sudut lebih membulat */
+    font-size: 16px; /* Ukuran font agar nyaman dilihat */
+    box-sizing: border-box; /* Agar padding dan border dihitung dalam lebar input */
+  }
+  
+  /* Styling untuk button, khususnya tombol "Hitung Simulasi" */
+  button[type="submit"] {
+    background-color: #E7BC4C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Tombol mengambil lebar penuh pada perangkat mobile */
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  /* Hover dan active states untuk tombol */
+  button[type="submit"]:hover {
+    background-color: #E7BC4C;
+    transform: scale(1.05);
+  }
+  
+  button[type="submit"]:active {
+    background-color: #E7BC4C;
+  }
+  
+  /* Responsif untuk perangkat lebih kecil (max-width: 768px) */
+  @media (max-width: 768px) {
+    .form-wrapper {
+      padding: 15px; /* Padding sedikit lebih kecil untuk perangkat kecil */
+    }
+    
+    input[type="text"], input[type="number"], input[type="email"], select {
+      font-size: 14px; /* Menurunkan ukuran font untuk perangkat lebih kecil */
+    }
+    
+    button[type="submit"] {
+      font-size: 14px; /* Menurunkan ukuran font tombol untuk perangkat lebih kecil */
+      padding: 12px; /* Menambah padding pada tombol */
+    }
+  }
+  
+  /* Untuk layar perangkat mobile sangat kecil (max-width: 480px) */
+  @media (max-width: 480px) {
+    .form-wrapper {
+      padding: 10px; /* Padding lebih kecil */
+    }
+  
+    input[type="text"], input[type="number"], input[type="email"], select {
+      font-size: 12px; /* Ukuran font semakin kecil di layar sangat kecil */
+      padding: 8px; /* Padding lebih kecil di input */
+    }
+    
+    button[type="submit"] {
+      font-size: 12px; /* Ukuran font tombol lebih kecil di perangkat sangat kecil */
+      padding: 10px; /* Padding tombol lebih kecil */
+    }
+  }
+  .property-list {
+    list-style-type: none;  /* Menghilangkan bullet */
+    padding: 0;
+}
+
+.property-list p {
+    margin-bottom: 8px;  /* Memberikan jarak antar item */
+}
+
+.property-list p .label {
+    display: inline-block;  /* Menyusun label secara inline */
+    min-width: 110px;  /* Menentukan lebar minimum untuk label */
+}
+
+.property-list p::after {
+    content: "";  /* Menambahkan titik dua setelah label */
+    margin-right: 5px;  /* Menambahkan jarak antara titik dua dan nilai */
+}
+.property-list {
+    list-style-type: none;  /* Menghilangkan bullet */
+    padding: 0;
+}
+
+.property-list li{
+    margin-bottom: 8px;  /* Memberikan jarak antar item */
+}
+
+.property-list li .label {
+    display: inline-block;  /* Menyusun label secara inline */
+    min-width: 110px;  /* Menentukan lebar minimum untuk label */
+}
+
+.property-list li::after {
+    content: "";  /* Menambahkan titik dua setelah label */
+    margin-right: 5px;  /* Menambahkan jarak antara titik dua dan nilai */
+}

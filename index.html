@@ -1,143 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="favicon.png" />
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="bootstrap, bootstrap5" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="favicon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap5" />
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css" />
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/tiny-slider.css" />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="fonts/icomoon/style.css" />
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
 
-    <title>
-      Satria Land
-    </title>
-    <style>
-      /* CSS untuk tombol panah ke atas */
-      #scrollTopBtn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #333; /* Latar belakang hitam */
-        color: white; /* Warna panah putih */
-        border: none;
-        padding: 5px; /* Ukuran tombol lebih besar */
-        font-size: 20px; /* Ukuran panah */
-        cursor: pointer;
-        display: none; /* Mulai dengan disembunyikan */
-        border-radius: 50%; /* Bulat */
-        width: 45px; /*Lebar tombol */
-        height: 45px;/* Tinggi tombol sama dengan lebar untuk bulat sempurna */
-        text-align: center;
-        line-height: 20px; /* Menjaga panah di tengah */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-      }
-  
-      #scrollTopBtn:hover {
-        background-color: #E7BC4C; /* Warna latar belakang lebih gelap saat hover */
-      }
-      
-      body {
-        background-color: white;
-        color: black;
-      }
+  <link rel="stylesheet" href="css/tiny-slider.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/up.css" />
 
-    </style>
-  </head>
-  <body>
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-          <span class="icofont-close js-menu-toggle"></span>
+  <title>
+    Satria Land
+  </title>
+</head>
+
+<body>
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <nav class="site-nav">
+    <div class="container">
+      <div class="menu-bg-wrap">
+        <div class="site-navigation m-0">
+          <a href="index.html">
+            <img src="images/Logo2.png" alt="Satria Land" style="height: 45px;">
+          </a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+            <li class="active"><a href="index.html">Beranda</a></li>
+            <li class="has-children">
+              <a href="properties.html#properti">Properti</a>
+              <ul class="dropdown">
+                <li class="has-children">
+                  <a href="#">Bangunan</a>
+                  <ul class="dropdown">
+                    <li><a href="properties.html#properti">Carissma Mansion</a></li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a href="#">Tanah</a>
+                  <ul class="dropdown">
+                    <li><a href="properties.html#properti">Demang Mansion</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="services.html#layanan">Layanan</a></li>
+            <li><a href="blog.html#blog">Blog</a></li>
+            <li><a href="about.html#tentang">Tentang</a></li>
+            <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
+          </ul>
+
+          <a href="#"
+            class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
         </div>
       </div>
-      <div class="site-mobile-menu-body"></div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-slide">
+      <div class="img overlay" style="background-image: url('images/hero_bg_1.jpg')"></div>
+      <!--
+      <div class="img overlay" style="background-image: url('images/hero_bg_2.jpg')"></div>
+      <div class="img overlay" style="background-image: url('images/hero_bg_1.jpg')"></div>
+      -->
     </div>
 
-    <nav class="site-nav">
-      <div class="container">
-        <div class="menu-bg-wrap">
-          <div class="site-navigation m-0">
-            <a href="index.html">
-              <img src="images/Logo2.png" alt="Satria Land" style="height: 45px;">
-            </a>
-
-            <ul
-              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
-            >
-              <li class="active"><a href="index.html">Beranda</a></li>
-              <li class="has-children">
-                <a href="properties.html#properti">Properti</a>
-                <ul class="dropdown">
-                  <li class="has-children">
-                    <a href="#">Bangunan</a>
-                    <ul class="dropdown">
-                      <li><a href="properties.html#properti">Carissma Mansion</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-children">
-                    <a href="#">Tanah</a>
-                    <ul class="dropdown">
-                      <li><a href="properties.html#properti">Demang Mansion</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="services.html#layanan">Layanan</a></li>
-              <li><a href="blog.html#blog">Blog</a></li>
-              <li><a href="about.html#tentang">Tentang</a></li>
-              <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
-            </ul>
-
-            <a
-              href="#"
-              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
-              data-toggle="collapse"
-              data-target="#main-navbar"
-            >
-              <span></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <div class="hero">
-      <div class="hero-slide">
-        <div
-          class="img overlay"
-          style="background-image: url('images/emerald.jpg')"
-        ></div>
-        <div
-          class="img overlay"
-          style="background-image: url('images/hero_bg_2.jpg')"
-        ></div>
-        <div
-          class="img overlay"
-          style="background-image: url('images/hero_bg_1.jpg')"
-        ></div>
-      </div>
-
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-9 text-center">
-            <h1 
-                class="heading" 
-                data-aos="fade-up" 
-                style="
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-9 text-center">
+          <h1 class="heading" data-aos="fade-up" style="
                     font-size: 3rem;
                     font-weight: bold;
                     margin-top: 20px;
@@ -146,439 +100,186 @@
                     -webkit-background-clip: text; /* Untuk Chrome & Safari */
                     background-clip: text;         /* Properti standar untuk kompatibilitas */
                     -webkit-text-fill-color: transparent; /* Untuk membuat teks transparan */
-                "
-            >
-                Find Your Future Home Now 
-            </h1>
-            <form>
-            <!--
-              action="#"
-              class="narrow-w form-search d-flex align-items-stretch mb-3"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-            <input
-                type="text"
-                class="form-control px-4"
-                placeholder="Your ZIP code or City. e.g. New York"
-              />
-            -->
-            <a
-            href="index.html#propertiterlaris"
-            class="btn btn-primary text-white py-3 px-4" 
-            style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-            >Penawaran Hari Ini</a
-          >
-            </form>
-            
-          </div>
+                ">
+            Find Your Future Home Now
+          </h1>
+          <form>
+            <a href="index.html#propertiterlaris" class="btn btn-primary text-white py-3 px-4"
+              style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;">Penawaran Hari Ini</a>
+          </form>
+
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="section">
-      <div class="container">
-        <div class="row mb-5 align-items-center">
-          <div class="col-lg-6">
-            <h2 class="font-weight-bold text-primary heading" id="propertiterlaris">
-              Properti Terlaris
-            </h2>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <p>
-              <a
-                href="properties.html#properti"
-                target="_blank"
-                class="btn btn-primary text-white py-3 px-4" 
-                style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-                >Semua Properti</a
-              >
-            </p>
-          </div>
+  <div class="section">
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="font-weight-bold text-primary heading" id="propertiterlaris">
+            Properti Terlaris
+          </h2>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="property-slider-wrap">
-              <div class="property-slider">
-                <div class="property-item">
-                  <a href="carissmaemerald.html" class="img">
-                    <img src="images/ce1.jpg" alt="Image" class="img-fluid" />
-                  </a>
+        <div class="col-lg-6 text-lg-end">
+          <p>
+            <a href="properties.html#properti" target="_blank" class="btn btn-primary text-white py-3 px-4"
+              style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;">Semua Properti</a>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="property-slider-wrap">
+            <div class="property-slider">
+              <div class="property-item">
+                <a href="carissmaemerald.html#emerald" class="img">
+                  <img src="images/ce1.jpg" alt="Image" class="img-fluid" />
+                </a>
 
-                  <div class="property-content">
-                    <div class="price mb-2"><span>Rp. 750.000.000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >Carissma Mansion, Type Emerald</span
-                      >
-                      <span class="city d-block mb-3">Sukabangun 2, Palembang</span>
+                <div class="property-content">
+                  <div class="price mb-2"><span>Rp. 750.000.000</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">Carissma Mansion, Type Emerald</span>
+                    <span class="city d-block mb-3">Sukabangun 2, Palembang</span>
 
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">3 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="carissmaemerald.html#emerald"
-                        class="btn btn-primary py-2 px-3"
-                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-                        >Lihat Detail</a
-                      >
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bed me-2"></span>
+                        <span class="caption">3 beds</span>
+                      </span>
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bath me-2"></span>
+                        <span class="caption">2 baths</span>
+                      </span>
                     </div>
+
+                    <a href="carissmaemerald.html#emerald" class="btn btn-primary py-2 px-3"
+                      style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;">Lihat Detail</a>
                   </div>
                 </div>
-                <!-- .item -->
-                <div class="property-item">
-                  <a href="carissmaruby.html" class="img">
-                    <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
-                  </a>
+              </div>
+              <!-- .item -->
+              <div class="property-item">
+                <a href="carissmaruby.html#ruby" class="img">
+                  <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
+                </a>
 
-                  <div class="property-content">
-                    <div class="price mb-2"><span>Rp. 575.000.000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >Carissma Mansion, Type Ruby</span
-                      >
-                      <span class="city d-block mb-3">Sukabangun 2, Palembang</span>
+                <div class="property-content">
+                  <div class="price mb-2"><span>Rp. 575.000.000</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">Carissma Mansion, Type Ruby</span>
+                    <span class="city d-block mb-3">Sukabangun 2, Palembang</span>
 
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="carissmaruby.html#ruby"
-                        class="btn btn-primary py-2 px-3"
-                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-                        >Lihat Detail</a
-                      >
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bed me-2"></span>
+                        <span class="caption">2 beds</span>
+                      </span>
+                      <span class="d-block d-flex align-items-center">
+                        <span class="icon-bath me-2"></span>
+                        <span class="caption">2 baths</span>
+                      </span>
                     </div>
+
+                    <a href="carissmaruby.html#ruby" class="btn btn-primary py-2 px-3"
+                      style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;">Lihat Detail</a>
                   </div>
                 </div>
-
-                <div class="property-item">
-                  <a href="carissmasapphire.html" class="img">
-                    <img src="images/ce1.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>Rp. 490.000.000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >Carissma Mansion, Type Sapphire</span
-                      >
-                      <span class="city d-block mb-3">Sukabangun, Palembang</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">1 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="carissmasapphire.html#sapphire"
-                        class="btn btn-primary py-2 px-3"
-                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-                        >Lihat Detail</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .item -->
-
-                <div class="property-item">
-                  <a href="carissmakavling.html" class="img">
-                    <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>Rp. 350.000.000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >Demang Mansion, Tanah Kavling</span
-                      >
-                      <span class="city d-block mb-3">Kancil Putih, Palembang</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-stack-exchange me-2"></span>
-                          <span class="caption">8 x 15</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="carissmakavling.html"
-                        class="btn btn-primary py-2 px-3"
-                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-                        >Lihat Detail</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .item -->
-                
-                
-                
-                <!-- .item -->
-                <!--
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >Lihat Detail</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                -->
-                <!-- .item -->
-                <!--
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >Lihat Detail</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                -->
-                <!-- .item -->
-                <!--
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >Lihat Detail</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                -->
-                <!-- .item -->
-                <!--
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >Lihat Detail</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                -->
-                <!-- .item -->
-                <!--
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >Lihat Detail</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                -->
-                <!-- .item -->
               </div>
 
-              <div
-                id="property-nav"
-                class="controls"
-                tabindex="0"
-                aria-label="Carousel Navigation"
-              >
-                <span
-                  class="prev"
-                  data-controls="prev"
-                  aria-controls="property"
-                  tabindex="-1"
-                  >Sebelumnya</span
-                >
-                <span
-                  class="next"
-                  data-controls="next"
-                  aria-controls="property"
-                  tabindex="-1"
-                  >Selanjutnya</span
-                >
+              <div class="property-item">
+                <a href="carissmasapphire.html#sapphire" class="img">
+                  <img src="images/cms2.png" alt="Image" class="img-fluid" />
+                </a>
+
+                <div class="property-content">
+                  <div class="price mb-2"><span>Rp. 490.000.000</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">Carissma Mansion, Type Sapphire</span>
+                    <span class="city d-block mb-3">Sukabangun, Palembang</span>
+
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bed me-2"></span>
+                        <span class="caption">2 beds</span>
+                      </span>
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bath me-2"></span>
+                        <span class="caption">1 baths</span>
+                      </span>
+                    </div>
+
+                    <a href="carissmasapphire.html#sapphire" class="btn btn-primary py-2 px-3"
+                      style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;">Lihat Detail</a>
+                  </div>
+                </div>
               </div>
+              <!-- .item -->
+              
+              <div class="property-item">
+                <a href="demangrumah.html#demangrumah" class="img">
+                  <img src="images/dm1.png" alt="Image" class="img-fluid" />
+                </a>
+
+                <div class="property-content">
+                  <div class="price mb-2"><span>Rp. 450.000.000</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">Demang Mansion, Type 40/120</span>
+                    <span class="city d-block mb-3">Kancil Putih, Palembang</span>
+
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bed me-2"></span>
+                        <span class="caption">2 beds</span>
+                      </span>
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bath me-2"></span>
+                        <span class="caption">1 baths</span>
+                      </span>
+                    </div>
+
+                    <a href="demangrumah.html#demangrumah" class="btn btn-primary py-2 px-3"
+                      style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;">Lihat Detail</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property-item">
+                <a href="carissmakavling.html#kavling" class="img">
+                  <img src="images/dm3.png" alt="Image" class="img-fluid" />
+                </a>
+
+                <div class="property-content">
+                  <div class="price mb-2"><span>Rp. 350.000.000</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">Demang Mansion, Tanah Kavling</span>
+                    <span class="city d-block mb-3">Kancil Putih, Palembang</span>
+
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-stack-exchange me-2"></span>
+                        <span class="caption">8 x 15</span>
+                      </span>
+                    </div>
+
+                    <a href="demangkavling.html#kavling" class="btn btn-primary py-2 px-3"
+                      style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;">Lihat Detail</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
+              <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1">Sebelumnya</span>
+              <span class="next" data-controls="next" aria-controls="property" tabindex="-1">Selanjutnya</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--
-    <section class="features-1">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              <span class="flaticon-house"></span>
-              <h3 class="mb-3">Properti Kami</h3>
-              <p>
-                Kami memiliki berbagai pilihan properti yang dapat memenuhi kebutuhan Anda, mulai dari rumah mewah hingga pilihan terjangkau.
-              </p>
-              <p><a href="properties.html" class="learn-more">Learn More</a></p>
-            </div>
-          </div>
-          
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
-            <div class="box-feature">
-              <span class="flaticon-house-1"></span>
-              <h3 class="mb-3">Tanah Kavling</h3>
-                <p>
-                  Kami menawarkan berbagai pilihan tanah kavling dengan lokasi strategis dan potensi investasi yang menjanjikan.
-                </p>
-                <p><a href="#our-agents" class="learn-more">Learn More</a></p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="box-feature">
-              <span class="flaticon-house-3"></span>
-              <h3 class="mb-3">Jasa Notaris</h3>
-              <p>
-                Kami bekerja sama dengan notaris profesional untuk mengurus legalisasi properti Anda, mulai dari akta jual beli hingga sertifikat dengan aman.
-              </p>                           
-              <p><a href="#our-agents" class="learn-more">Learn More</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  -->
+  </div>
 
   <div class="section section-4 bg-light">
     <div class="container">
@@ -588,16 +289,20 @@
             Mari temukan rumah yang sempurna untuk Anda.
           </h2>
           <p class="text-black-50">
-            Dengan berbagai pilihan properti terbaik di lokasi strategis, kami akan membantu Anda menemukan rumah yang sempurna, nyaman, dan sesuai dengan impian Anda.
+            Dengan berbagai pilihan properti terbaik di lokasi strategis, kami akan membantu Anda menemukan rumah yang
+            sempurna, nyaman, dan sesuai dengan impian Anda.
           </p>
         </div>
       </div>
-      <div class="row  mb-5">
+      <div class="row mb-5 align-items-center">
+        <!-- Kolom untuk gambar -->
         <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
           <div class="img-about dots mb-4">
-            <img src="images/hero_bg_3.jpg" alt="Image" class="img-fluid" />
+            <img src="images/cms2.png" alt="Image" class="img-fluid" />
           </div>
         </div>
+
+        <!-- Kolom untuk teks -->
         <div class="col-lg-4">
           <div class="d-flex feature-h">
             <span class="wrap-icon me-3">
@@ -606,12 +311,13 @@
             <div class="feature-text">
               <h3 class="heading">Properti Terbaik</h3>
               <p class="text-black-50">
-                Rumah impian Anda kini lebih dekat dari yang Anda bayangkan lokasi strategis, desain modern, dan harga terjangkau!
+                Rumah impian Anda kini lebih dekat dari yang Anda bayangkan lokasi strategis, desain modern, dan harga
+                terjangkau!
               </p>
             </div>
           </div>
 
-          <div class="d-flex feature-h">
+          <div class="d-flex feature-h align-items-center mb-4">
             <span class="wrap-icon me-3">
               <span class="icon-security"></span>
             </span>
@@ -623,12 +329,12 @@
             </div>
           </div>
 
-          <div class="d-flex feature-h">
+          <div class="d-flex feature-h align-items-center mb-4">
             <span class="wrap-icon me-3">
               <span class="icon-person"></span>
             </span>
             <div class="feature-text">
-              <h3  class="heading">Properti Strategis</h3>
+              <h3 class="heading">Properti Strategis</h3>
               <p class="text-black-50">
                 Pilihan sempurna bagi Anda yang mencari properti strategis untuk kenyamanan hidup sehari-hari.
               </p>
@@ -636,454 +342,94 @@
           </div>
         </div>
       </div>
-      <!--
-      <div class="row section-counter mt-5">
-        <div
-          class="col-6 col-sm-6 col-md-6 col-lg-3"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"
-              ><span class="countup text-primary">3298</span></span
-            >
-            <span class="caption text-black-50"># of Buy Properties</span>
-          </div>
-        </div>
-        <div
-          class="col-6 col-sm-6 col-md-6 col-lg-3"
-          data-aos="fade-up"
-          data-aos-delay="400"
-        >
-          <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"
-              ><span class="countup text-primary">2181</span></span
-            >
-            <span class="caption text-black-50"># of Sell Properties</span>
-          </div>
-        </div>
-        <div
-          class="col-6 col-sm-6 col-md-6 col-lg-3"
-          data-aos="fade-up"
-          data-aos-delay="500"
-        >
-          <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"
-              ><span class="countup text-primary">9316</span></span
-            >
-            <span class="caption text-black-50"># of All Properties</span>
-          </div>
-        </div>
-        <div
-          class="col-6 col-sm-6 col-md-6 col-lg-3"
-          data-aos="fade-up"
-          data-aos-delay="600"
-        >
-          <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"
-              ><span class="countup text-primary">7191</span></span
-            >
-            <span class="caption text-black-50"># of Agents</span>
-          </div>
-        </div>
-        -->
-      </div>
     </div>
+  </div>
 
+  <button id="scrollTopBtn" title="Go to top">↑</button>
 
-      <!-- Testimoni Pelanggan -->
-
-      <div class="section sec-testimonials">
-        <div class="container">
-          <div class="row mb-5 align-items-center">
-            <div class="col-md-6">
-              <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
-                Kata Pelanggan
-              </h2>
-            </div>
-            <div class="col-md-6 text-md-end">
-              <div id="testimonial-nav">
-                <span class="prev" data-controls="prev">Sebelumnya</span>
-  
-                <span class="next" data-controls="next">Selanjutnya</span>
-              </div>
-            </div>
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <!-- Bagian Contact -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Contact</h3>
+            <ul class="list-unstyled links">
+              <li><a href="https://wa.me/6285266366309" target="_blank">+6285266366309 - Kantor</a></li>
+              <li>
+                <a href="mailto:satrialandpalembang@gmail.com">
+                  satrialandpalembang@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
+                  Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br> Kota Palembang, Sumatera Selatan
+                </a>
+              </li>
+            </ul>
           </div>
-  
-          <div class="row">
-            <div class="col-lg-4"></div>
+        </div>
+        <!-- Bagian Sources -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Sources</h3>
+            <ul class="list-unstyled links">
+              <li><a href="about.html#tentang">Tentang Kami</a></li>
+              <li><a href="services.html#layanan">Layanan</a></li>
+              <li><a href="partner.html#mitra">Mitra</a></li>
+              <li><a href="blog.html#blog">Blog</a></li>
+              <li><a href="faq.html#faq">FAQ</a></li>
+              <li><a href="career.html#">Join Marketing</a></li>
+            </ul>
           </div>
-          <div class="testimonial-slider-wrap">
-            <div class="testimonial-slider">
-              <div class="item">
-                <div class="testimonial">
-                  <img
-                    src="images/person_1-min.jpg"
-                    alt="Image"
-                    class="img-fluid rounded-circle w-25 mb-4"
-                  />
-                  <div class="rate">
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                  </div>
-                  <h3 class="h5 text-primary mb-4">James Smith</h3>
-                  <blockquote>
-                    <p>
-                      &ldquo;Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in Bookmarksgrove right at the
-                      coast of the Semantics, a large language ocean.&rdquo;
-                    </p>
-                  </blockquote>
-                  <p class="text-black-50">Designer, Co-founder</p>
-                </div>
-              </div>
-  
-              <div class="item">
-                <div class="testimonial">
-                  <img
-                    src="images/person_2-min.jpg"
-                    alt="Image"
-                    class="img-fluid rounded-circle w-25 mb-4"
-                  />
-                  <div class="rate">
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                  </div>
-                  <h3 class="h5 text-primary mb-4">Mike Houston</h3>
-                  <blockquote>
-                    <p>
-                      &ldquo;Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in Bookmarksgrove right at the
-                      coast of the Semantics, a large language ocean.&rdquo;
-                    </p>
-                  </blockquote>
-                  <p class="text-black-50">Designer, Co-founder</p>
-                </div>
-              </div>
-  
-              <div class="item">
-                <div class="testimonial">
-                  <img
-                    src="images/person_3-min.jpg"
-                    alt="Image"
-                    class="img-fluid rounded-circle w-25 mb-4"
-                  />
-                  <div class="rate">
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                  </div>
-                  <h3 class="h5 text-primary mb-4">Cameron Webster</h3>
-                  <blockquote>
-                    <p>
-                      &ldquo;Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in Bookmarksgrove right at the
-                      coast of the Semantics, a large language ocean.&rdquo;
-                    </p>
-                  </blockquote>
-                  <p class="text-black-50">Designer, Co-founder</p>
-                </div>
-              </div>
-  
-              <div class="item">
-                <div class="testimonial">
-                  <img
-                    src="images/person_4-min.jpg"
-                    alt="Image"
-                    class="img-fluid rounded-circle w-25 mb-4"
-                  />
-                  <div class="rate">
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                  </div>
-                  <h3 class="h5 text-primary mb-4">Dave Smith</h3>
-                  <blockquote>
-                    <p>
-                      &ldquo;Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in Bookmarksgrove right at the
-                      coast of the Semantics, a large language ocean.&rdquo;
-                    </p>
-                  </blockquote>
-                  <p class="text-black-50">Designer, Co-founder</p>
-                </div>
-              </div>
-            </div>
+        </div>
+        <!-- Bagian Links dan Social Media -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Social Media</h3>
+            <ul class="list-unstyled links">
+              <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
+            </ul>
+            <ul class="list-unstyled social d-flex gap-0">
+              <li><a href="https://www.instagram.com/satria_land.id/" target="_blank"><span
+                    class="icon-instagram"></span></a></li>
+              <li><a
+                  href="https://www.facebook.com/people/Satria-Investama/pfbid0YYzhCxgxGQKKGyS2tWqq9xvuTHvP6uM6KygXuGRMdYJYBLNef6tbJspQs6AFaWafl/?ref=ig_profile_ac"
+                  target="_blank"><span class="icon-facebook"></span></a></li>
+              <li><a href="https://www.youtube.com/@SatriaLand" target=""><span class="icon-youtube"></span></a></li>
+            </ul>
           </div>
         </div>
       </div>
-
-    <!--
-    <div class="section section-5 bg-light" id="our-agents">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-lg-6 mb-5">
-            <h2 class="font-weight-bold heading text-primary mb-4">
-              Our Agents
-            </h2>
-            <p class="text-black-50">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              enim pariatur similique debitis vel nisi qui reprehenderit totam?
-              Quod maiores.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
-            <div class="h-100 person">
-              <img
-                src="images/person_1-min.jpg"
-                alt="Image"
-                class="img-fluid"
-              />
-
-              <div class="person-contents">
-                <h2 class="mb-0"><a href="#">James Doe</a></h2>
-                <span class="meta d-block mb-3">Real Estate Agent</span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facere officiis inventore cumque tenetur laboriosam, minus
-                  culpa doloremque odio, neque molestias?
-                </p>
-
-                <ul class="social list-unstyled list-inline dark-hover">
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-twitter"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-facebook"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-linkedin"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-instagram"></span></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
-            <div class="h-100 person">
-              <img
-                src="images/person_2-min.jpg"
-                alt="Image"
-                class="img-fluid"
-              />
-
-              <div class="person-contents">
-                <h2 class="mb-0"><a href="#">Jean Smith</a></h2>
-                <span class="meta d-block mb-3">Real Estate Agent</span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facere officiis inventore cumque tenetur laboriosam, minus
-                  culpa doloremque odio, neque molestias?
-                </p>
-
-                <ul class="social list-unstyled list-inline dark-hover">
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-twitter"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-facebook"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-linkedin"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-instagram"></span></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
-            <div class="h-100 person">
-              <img
-                src="images/person_3-min.jpg"
-                alt="Image"
-                class="img-fluid"
-              />
-
-              <div class="person-contents">
-                <h2 class="mb-0"><a href="#">Alicia Huston</a></h2>
-                <span class="meta d-block mb-3">Real Estate Agent</span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facere officiis inventore cumque tenetur laboriosam, minus
-                  culpa doloremque odio, neque molestias?
-                </p>
-
-                <ul class="social list-unstyled list-inline dark-hover">
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-twitter"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-facebook"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-linkedin"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-instagram"></span></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <div class="row mt-2 mb-0">
+        <div class="col-12 text-center">
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            &mdash; Satria Land
+          </p>
         </div>
       </div>
     </div>
-    -->
-    <button id="scrollTopBtn" title="Go to top">↑</button>
+  </div>
 
-    <div class="site-footer">
-      <div class="container">
-        <div class="row">
-          <!-- Bagian Contact -->
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Contact</h3>
-              <ul class="list-unstyled links">
-                <li>
-                  <a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
-                    Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br>Kota Palembang, <br>Sumatera Selatan
-                  </a>
-                </li>
-                <li><a href="https://wa.me/6285266366309" target="_blank">085266366309 - Kantor</a></li>
-                <li><a href="https://wa.me/6285946930091" target="_blank">085946930091 - Adit</a></li>
-                <li><a href="https://wa.me/6282291113806" target="_blank">082291113806 - Anggi</a></li>
-                <li><a href="https://wa.me/6285381994369" target="_blank">085381994369 - Awin</a></li>
-                <li>
-                  <a href="mailto:satrialandpalembang@gmail.com">
-                    satrialandpalembang@gmail.com
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-    
-          <!-- Bagian Sources -->
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Sources</h3>
-              <ul class="list-unstyled links">
-                <li><a href="about.html#tentang">Tentang Kami</a></li>
-                <li><a href="services.html#layanan">Layanan</a></li>
-                <li><a href="about.html#visi">Visi dan Misi</a></li>
-                <li><a href="partner.html#mitra">Mitra</a></li>
-                <li><a href="blog.html#blog">Blog</a></li>
-                <li><a href="faq.html#faq">FAQ</a></li>
-              </ul>
-            </div>
-          </div>
-    
-          <!-- Bagian Links dan Social Media -->
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Links</h3>
-              <ul class="list-unstyled links">
-                <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
-              </ul>
-              <ul class="list-unstyled social d-flex gap-3">
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- Preloader -->
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
     </div>
-    
-        <!-- /.row -->
+  </div>
 
-        <div class="row mt-5">
-          <div class="col-12 text-center">
-           
-            <p>
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              &mdash; Satria Land
-            </p>
-          </div>
-        </div>
-      <!-- /.container -->
-    <!-- /.site-footer -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/up.js"></script>
+</body>
 
-    <!-- Preloader -->
-    <div id="overlayer"></div>
-    <div class="loader">
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-    </div>
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tiny-slider.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/counter.js"></script>
-    <script src="js/custom.js"></script>
-    <script>
-      // Ambil elemen tombol panah ke atas
-      const scrollTopBtn = document.getElementById("scrollTopBtn");
-  
-      // Fungsi untuk menampilkan tombol ketika pengguna menggulir
-      window.onscroll = function() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-          scrollTopBtn.style.display = "block"; // Menampilkan tombol
-        } else {
-          scrollTopBtn.style.display = "none"; // Menyembunyikan tombol
-        }
-      };
-  
-      // Fungsi untuk scroll ke atas ketika tombol ditekan
-      scrollTopBtn.addEventListener("click", function() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
-      });
-
-  document.addEventListener('DOMContentLoaded', function () {
-    // Deteksi apakah user menggunakan dark mode
-    const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
-
-    // Sesuaikan tampilan berdasarkan preferensi mode
-    if (prefersDarkMode.matches) {
-      document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.add('light-mode');
-    }
-
-    // Pantau perubahan preferensi mode
-    prefersDarkMode.addEventListener('change', (e) => {
-      if (e.matches) {
-        document.body.classList.add('dark-mode');
-        document.body.classList.remove('light-mode');
-      } else {
-        document.body.classList.add('light-mode');
-        document.body.classList.remove('dark-mode');
-      }
-    });
-  });
-    </script>
-  </body>
 </html>

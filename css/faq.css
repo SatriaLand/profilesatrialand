@@ -1,0 +1,69 @@
+/* CSS */
+.faq-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+  }
+
+  .faq-item {
+    margin-bottom: 20px;
+    background-color: #fff; /* Background untuk setiap item */
+    padding: 15px; /* Padding untuk memberi ruang dalam kotak */
+    border: 1px solid #ddd; /* Border tipis antar item FAQ */
+    border-radius: 8px; /* Membuat sudut melengkung */
+    transition: all 0.3s ease; /* Efek transisi saat hover */
+  }
+
+  .faq-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Efek hover dengan bayangan */
+    border-color: #E7BC4C; /* Mengubah warna border saat hover */
+  }
+
+  .faq-question {
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .faq-question::before {
+    content: '+';
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .faq-question.open::before {
+    content: '-';
+  }
+
+  .faq-answer {
+    font-size: 16px;
+    color: #555;
+    margin-left: 20px;
+    line-height: 1.6;
+    display: none;
+  }
+
+  .faq-item.open .faq-answer {
+    display: block;
+  }
+
+  .faq-question:hover {
+    color: #181818;
+  }

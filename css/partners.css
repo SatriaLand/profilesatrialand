@@ -1,0 +1,31 @@
+.partners-carousel-wrap {
+    overflow: hidden; /* Sembunyikan elemen di luar area tampilan */
+    width: 100%;
+    position: relative;
+  }
+  
+  .partners-carousel {
+    display: flex;
+    gap: 20px; /* Jarak antar logo */
+    animation: scroll-logos 20s linear infinite; /* Gulirkan dengan kecepatan konstan */
+    will-change: transform; /* Optimalkan animasi */
+  }
+  
+  .partners-carousel img {
+    height: 80px; /* Ukuran logo */
+    object-fit: contain; /* Sesuaikan logo tanpa distorsi */
+  }
+  
+  /* Animasi untuk scrolling */
+  @keyframes scroll-logos {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); /* Gulir setengah area panjang */
+    }
+  }
+  .partners-carousel:hover {
+    animation-play-state: paused; /* Animasi berhenti sementara saat hover */
+  }
+  

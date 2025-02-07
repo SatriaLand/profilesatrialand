@@ -1,174 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="favicon.png" />
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="bootstrap, bootstrap5" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="favicon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap5" />
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css" />
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/tiny-slider.css" />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="fonts/icomoon/style.css" />
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
 
-    <title>
-      Satria Land
-    </title>
-    <style>
-      /* CSS untuk tombol panah ke atas */
-      #scrollTopBtn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #333; /* Latar belakang hitam */
-        color: white; /* Warna panah putih */
-        border: none;
-        padding: 5px; /* Ukuran tombol lebih besar */
-        font-size: 20px; /* Ukuran panah */
-        cursor: pointer;
-        display: none; /* Mulai dengan disembunyikan */
-        border-radius: 50%; /* Bulat */
-        width: 45px; /*Lebar tombol */
-        height: 45px;/* Tinggi tombol sama dengan lebar untuk bulat sempurna */
-        text-align: center;
-        line-height: 20px; /* Menjaga panah di tengah */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        z-index: 999;
-      }
-  
-      #scrollTopBtn:hover {
-        background-color: #E7BC4C; /* Warna latar belakang lebih gelap saat hover */
-      }
+  <link rel="stylesheet" href="css/tiny-slider.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/up.css" />
 
-      body {
-        background-color: white;
-        color: black;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-          <span class="icofont-close js-menu-toggle"></span>
-        </div>
+  <title>
+    Satria Land
+  </title>
+</head>
+
+<body>
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
       </div>
-      <div class="site-mobile-menu-body"></div>
     </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
 
-    <nav class="site-nav">
-      <div class="container">
-        <div class="menu-bg-wrap">
-          <div class="site-navigation m-0">
-            <a href="index.html">
+  <nav class="site-nav">
+    <div class="container">
+      <div class="menu-bg-wrap">
+        <div class="site-navigation m-0">
+          <a href="index.html">
             <img src="images/Logo2.png" alt="Satria Land" style="height: 45px;">
           </a>
-            <ul
-              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
-            >
-              <li class="active"><a href="index.html">Beranda</a></li>
-              <li class="has-children">
-                <a href="properties.html#properti">Properti</a>
-                <ul class="dropdown">
-                  <li class="has-children">
-                    <a href="#">Bangunan</a>
-                    <ul class="dropdown">
-                      <li><a href="properties.html#properti">Carissma Mansion</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-children">
-                    <a href="#">Tanah</a>
-                    <ul class="dropdown">
-                      <li><a href="">Demang Mansion</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="services.html#layanan">Layanan</a></li>
-              <li><a href="blog.html#blog">Blog</a></li>
-              <li><a href="about.html#tentang">Tentang</a></li>
-              <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
-            </ul>
-
-            <a
-              href="#"
-              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
-              data-toggle="collapse"
-              data-target="#main-navbar"
-            >
-              <span></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <div
-      class="hero page-inner overlay"
-      style="background-image: url('images/hero_bg_1.jpg')"
-    >
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-9 text-center mt-5">
-            <h1 class="heading" data-aos="fade-up">Properti</h1>
-
-            <nav
-              aria-label="breadcrumb"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <ol class="breadcrumb text-center justify-content-center">
-                <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
-                <li
-                  class="breadcrumb-item active text-white-50"
-                  aria-current="page"
-                >
-                  Properti
+          <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+            <li class="active"><a href="index.html">Beranda</a></li>
+            <li class="has-children">
+              <a href="properties.html#properti">Properti</a>
+              <ul class="dropdown">
+                <li class="has-children">
+                  <a href="#">Bangunan</a>
+                  <ul class="dropdown">
+                    <li><a href="properties.html#properti">Carissma Mansion</a></li>
+                  </ul>
                 </li>
-              </ol>
-            </nav>
-          </div>
+                <li class="has-children">
+                  <a href="#">Tanah</a>
+                  <ul class="dropdown">
+                    <li><a href="properties.html#properti">Demang Mansion</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="services.html#layanan">Layanan</a></li>
+            <li><a href="blog.html#blog">Blog</a></li>
+            <li><a href="about.html#tentang">Tentang</a></li>
+            <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
+          </ul>
+
+          <a href="#"
+            class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
         </div>
       </div>
     </div>
+  </nav>
 
-    <div class="section">
-      <div class="container">
-        <div class="row mb-5 align-items-center">
-          <div class="col-lg-6 text-center mx-auto">
-            <h2 class="font-weight-bold text-primary heading" id="properti">
-              Properti Unggulan
-            </h2>
-          </div>
+  <div class="hero page-inner overlay" style="background-image: url('images/hero_bg_1.jpg')">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-9 text-center mt-5">
+          <h1 class="heading" data-aos="fade-up">Properti</h1>
+
+          <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+            <ol class="breadcrumb text-center justify-content-center">
+              <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+              <li class="breadcrumb-item active text-white-50" aria-current="page">
+                Properti
+              </li>
+            </ol>
+          </nav>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="property-slider-wrap">
-              <div class="property-slider">
-                <div class="property-item">
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-lg-6 text-center mx-auto">
+          <h2 class="font-weight-bold text-primary heading" id="properti">
+            Properti Unggulan
+          </h2>
+        </div>
+        <div class="section section-properties">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="property-item mb-30">
                   <a href="carissmaemerald.html" class="img">
                     <img src="images/ce1.jpg" alt="Image" class="img-fluid" />
                   </a>
-
+      
                   <div class="property-content">
                     <div class="price mb-2"><span>Rp. 750.000.000</span></div>
                     <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >Carissma Mansion, Type Emerald</span
-                      >
+                      <span class="d-block mb-2 text-black-50">Carissma Mansion, Type Emerald</span>
                       <span class="city d-block mb-3">Sukabangun 2, Palembang</span>
-
+      
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
                           <span class="icon-bed me-2"></span>
@@ -179,31 +130,26 @@
                           <span class="caption">2 baths</span>
                         </span>
                       </div>
-
-                      <a
-                        href="carissmaemerald.html#emerald"
-                        class="btn btn-primary py-2 px-3"
-                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-                        >Lihat Detail</a
-                      >
+      
+                      <a href="carissmaemerald.html#emerald" class="btn btn-primary py-2 px-3"
+                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;">Lihat Detail</a>
                     </div>
                   </div>
                 </div>
                 <!-- .item -->
-
-                <div class="property-item">
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="property-item mb-30">
                   <a href="carissmaruby.html" class="img">
                     <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
                   </a>
-
+      
                   <div class="property-content">
                     <div class="price mb-2"><span>Rp. 575.000.000</span></div>
                     <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >Carissma Mansion, Type Ruby</span
-                      >
+                      <span class="d-block mb-2 text-black-50">Carissma Mansion, Type Ruby</span>
                       <span class="city d-block mb-3">Sukabangun 2, Palembang</span>
-
+      
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
                           <span class="icon-bed me-2"></span>
@@ -214,31 +160,26 @@
                           <span class="caption">2 baths</span>
                         </span>
                       </div>
-
-                      <a
-                        href="carissmaruby.html#ruby"
-                        class="btn btn-primary py-2 px-3"
-                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-                        >Lihat Detail</a
-                      >
+      
+                      <a href="carissmaruby.html#ruby" class="btn btn-primary py-2 px-3"
+                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;">Lihat Detail</a>
                     </div>
                   </div>
                 </div>
                 <!-- .item -->
-
-                <div class="property-item">
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="property-item mb-30">
                   <a href="carissmasapphire.html" class="img">
-                    <img src="images/ce1.jpg" alt="Image" class="img-fluid" />
+                    <img src="images/cms2.png" alt="Image" class="img-fluid" />
                   </a>
-
+      
                   <div class="property-content">
                     <div class="price mb-2"><span>Rp. 490.000.000</span></div>
                     <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >Carissma Mansion, Type Sapphire</span
-                      >
+                      <span class="d-block mb-2 text-black-50">Carissma Mansion, Type Sapphire</span>
                       <span class="city d-block mb-3">Sukabangun, Palembang</span>
-
+      
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
                           <span class="icon-bed me-2"></span>
@@ -249,601 +190,75 @@
                           <span class="caption">1 baths</span>
                         </span>
                       </div>
-
-                      <a
-                        href="carissmasapphire.html#sapphire"
-                        class="btn btn-primary py-2 px-3"
-                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-                        >Lihat Detail</a
-                      >
+      
+                      <a href="carissmasapphire.html#sapphire" class="btn btn-primary py-2 px-3"
+                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;">Lihat Detail</a>
                     </div>
                   </div>
                 </div>
                 <!-- .item -->
-                
-                <div class="property-item">
-                  <a href="carissmakavling.html" class="img">
-                    <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
+              </div>
+      
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="property-item mb-30">
+                  <a href="demangrumah.html#demangrumah" class="img">
+                    <img src="images/dm1.png" alt="Image" class="img-fluid" />
                   </a>
-
+      
+                  <div class="property-content">
+                    <div class="price mb-2"><span>Rp. 450.000.000</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">Demang Mansion, Type 40/120</span>
+                      <span class="city d-block mb-3">Kancil Putih, Palembang</span>
+      
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">1 baths</span>
+                        </span>
+                      </div>
+      
+                      <a href="demangrumah.html#demangrumah" class="btn btn-primary py-2 px-3"
+                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;">Lihat Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="property-item mb-30">
+                  <a href="demangkavling.html#kavling" class="img">
+                    <img src="images/dm3.png" alt="Image" class="img-fluid" />
+                  </a>
+      
                   <div class="property-content">
                     <div class="price mb-2"><span>Rp. 350.000.000</span></div>
                     <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >Demang Mansion, Tanah Kavling</span
-                      >
+                      <span class="d-block mb-2 text-black-50">Demang Mansion, Tanah Kavling</span>
                       <span class="city d-block mb-3">Kancil Putih, Palembang</span>
-
+      
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
                           <span class="icon-stack-exchange me-2"></span>
                           <span class="caption">8 x 15</span>
                         </span>
                       </div>
-
-                      <a
-                        href="carissmakavling.html"
-                        class="btn btn-primary py-2 px-3"
-                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-                        >Lihat Detail</a
-                      >
+      
+                      <a href="demangkavling.html#kavling" class="btn btn-primary py-2 px-3"
+                        style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;">Lihat Detail</a>
                     </div>
                   </div>
                 </div>
-
-                <!-- .item -->
-                <!--
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                -->
-                <!-- .item -->
-                <!--
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                -->
-                <!-- .item -->
-                <!--
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                -->
-                <!-- .item -->
-                <!--
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                -->
-                <!-- .item -->
-                 <!--
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                -->
-                <!-- .item -->
-              </div>
-
-              <div
-                id="property-nav"
-                class="controls"
-                tabindex="0"
-                aria-label="Carousel Navigation"
-              >
-                <span
-                  class="prev"
-                  data-controls="prev"
-                  aria-controls="property"
-                  tabindex="-1"
-                  >Prev</span
-                >
-                <span
-                  class="next"
-                  data-controls="next"
-                  aria-controls="property"
-                  tabindex="-1"
-                  >Next</span
-                >
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
-
-    <div class="section section-properties">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
-              <a href="carissmaemerald.html" class="img">
-                <img src="images/ce1.jpg" alt="Image" class="img-fluid" />
-              </a>
-
-              <div class="property-content">
-                <div class="price mb-2"><span>Rp. 750.000.000</span></div>
-                <div>
-                  <span class="d-block mb-2 text-black-50"
-                    >Carissma Mansion, Type Emerald</span
-                  >
-                  <span class="city d-block mb-3">Sukabangun 2, Palembang</span>
-
-                  <div class="specs d-flex mb-4">
-                    <span class="d-block d-flex align-items-center me-3">
-                      <span class="icon-bed me-2"></span>
-                      <span class="caption">3 beds</span>
-                    </span>
-                    <span class="d-block d-flex align-items-center me-3">
-                      <span class="icon-bath me-2"></span>
-                      <span class="caption">2 baths</span>
-                    </span>
-                  </div>
-
-                  <a
-                    href="carissmaemerald.html#emerald"
-                    class="btn btn-primary py-2 px-3"
-                    style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-                    >Lihat Detail</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- .item -->
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
-              <a href="carissmaruby.html" class="img">
-                <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
-              </a>
-
-              <div class="property-content">
-                <div class="price mb-2"><span>Rp. 575.000.000</span></div>
-                <div>
-                  <span class="d-block mb-2 text-black-50"
-                    >Carissma Mansion, Type Ruby</span
-                  >
-                  <span class="city d-block mb-3">Sukabangun 2, Palembang</span>
-
-                  <div class="specs d-flex mb-4">
-                    <span class="d-block d-flex align-items-center me-3">
-                      <span class="icon-bed me-2"></span>
-                      <span class="caption">2 beds</span>
-                    </span>
-                    <span class="d-block d-flex align-items-center">
-                      <span class="icon-bath me-2"></span>
-                      <span class="caption">2 baths</span>
-                    </span>
-                  </div>
-
-                  <a
-                    href="carissmaruby.html#ruby"
-                    class="btn btn-primary py-2 px-3"
-                    style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-                    >Lihat Detail</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- .item -->
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
-              <a href="carissmasapphire.html" class="img">
-                <img src="images/ce1.jpg" alt="Image" class="img-fluid" />
-              </a>
-
-              <div class="property-content">
-                <div class="price mb-2"><span>Rp. 490.000.000</span></div>
-                <div>
-                  <span class="d-block mb-2 text-black-50"
-                    >Carissma Mansion, Type Sapphire</span
-                  >
-                  <span class="city d-block mb-3">Sukabangun, Palembang</span>
-
-                  <div class="specs d-flex mb-4">
-                    <span class="d-block d-flex align-items-center me-3">
-                      <span class="icon-bed me-2"></span>
-                      <span class="caption">2 beds</span>
-                    </span>
-                    <span class="d-block d-flex align-items-center me-3">
-                      <span class="icon-bath me-2"></span>
-                      <span class="caption">1 baths</span>
-                    </span>
-                  </div>
-
-                  <a
-                    href="carissmasapphire.html#sapphire"
-                    class="btn btn-primary py-2 px-3"
-                    style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-                    >Lihat Detail</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- .item -->
-          </div>
-          
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-          <div class="property-item mb-30">
-            <a href="carissmakavling.html" class="img">
-              <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
-            </a>
-
-            <div class="property-content">
-              <div class="price mb-2"><span>Rp. 350.000.000</span></div>
-              <div>
-                <span class="d-block mb-2 text-black-50"
-                  >Demang Mansion, Tanah Kavling</span
-                >
-                <span class="city d-block mb-3">Kancil Putih, Palembang</span>
-
-                <div class="specs d-flex mb-4">
-                  <span class="d-block d-flex align-items-center me-3">
-                    <span class="icon-stack-exchange me-2"></span>
-                    <span class="caption">8 x 15</span>
-                  </span>
-                </div>
-
-                <a
-                  href="carissmakavling.html"
-                  class="btn btn-primary py-2 px-3"
-                  style="background-color: #E7BC4C; font-family: Lato; font-size: 18px;"
-                  >Lihat Detail</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-            <!-- .item -->
-             <!--
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
-              <a href="property-single.html" class="img">
-                <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
-              </a>
-
-              <div class="property-content">
-                <div class="price mb-2"><span>$1,291,000</span></div>
-                <div>
-                  <span class="d-block mb-2 text-black-50"
-                    >5232 California Fake, Ave. 21BC</span
-                  >
-                  <span class="city d-block mb-3">California, USA</span>
-
-                  <div class="specs d-flex mb-4">
-                    <span class="d-block d-flex align-items-center me-3">
-                      <span class="icon-bed me-2"></span>
-                      <span class="caption">2 beds</span>
-                    </span>
-                    <span class="d-block d-flex align-items-center">
-                      <span class="icon-bath me-2"></span>
-                      <span class="caption">2 baths</span>
-                    </span>
-                  </div>
-
-                  <a
-                    href="property-single.html"
-                    class="btn btn-primary py-2 px-3"
-                    >See details</a
-                  >
-                </div>
-              </div>
-            </div>
-            -->
-            <!-- .item -->
-             <!--
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
-              <a href="property-single.html" class="img">
-                <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
-              </a>
-
-              <div class="property-content">
-                <div class="price mb-2"><span>$1,291,000</span></div>
-                <div>
-                  <span class="d-block mb-2 text-black-50"
-                    >5232 California Fake, Ave. 21BC</span
-                  >
-                  <span class="city d-block mb-3">California, USA</span>
-
-                  <div class="specs d-flex mb-4">
-                    <span class="d-block d-flex align-items-center me-3">
-                      <span class="icon-bed me-2"></span>
-                      <span class="caption">2 beds</span>
-                    </span>
-                    <span class="d-block d-flex align-items-center">
-                      <span class="icon-bath me-2"></span>
-                      <span class="caption">2 baths</span>
-                    </span>
-                  </div>
-
-                  <a
-                    href="property-single.html"
-                    class="btn btn-primary py-2 px-3"
-                    >See details</a
-                  >
-                </div>
-              </div>
-            </div>
-            -->
-            <!-- .item -->
-             <!--
-          </div>
-
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
-              <a href="property-single.html" class="img">
-                <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
-              </a>
-
-              <div class="property-content">
-                <div class="price mb-2"><span>$1,291,000</span></div>
-                <div>
-                  <span class="d-block mb-2 text-black-50"
-                    >5232 California Fake, Ave. 21BC</span
-                  >
-                  <span class="city d-block mb-3">California, USA</span>
-
-                  <div class="specs d-flex mb-4">
-                    <span class="d-block d-flex align-items-center me-3">
-                      <span class="icon-bed me-2"></span>
-                      <span class="caption">2 beds</span>
-                    </span>
-                    <span class="d-block d-flex align-items-center">
-                      <span class="icon-bath me-2"></span>
-                      <span class="caption">2 baths</span>
-                    </span>
-                  </div>
-
-                  <a
-                    href="property-single.html"
-                    class="btn btn-primary py-2 px-3"
-                    >See details</a
-                  >
-                </div>
-              </div>
-            </div>
-            -->
-            <!-- .item -->
-          </div>
-          <!--
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
-              <a href="property-single.html" class="img">
-                <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
-              </a>
-
-              <div class="property-content">
-                <div class="price mb-2"><span>$1,291,000</span></div>
-                <div>
-                  <span class="d-block mb-2 text-black-50"
-                    >5232 California Fake, Ave. 21BC</span
-                  >
-                  <span class="city d-block mb-3">California, USA</span>
-
-                  <div class="specs d-flex mb-4">
-                    <span class="d-block d-flex align-items-center me-3">
-                      <span class="icon-bed me-2"></span>
-                      <span class="caption">2 beds</span>
-                    </span>
-                    <span class="d-block d-flex align-items-center">
-                      <span class="icon-bath me-2"></span>
-                      <span class="caption">2 baths</span>
-                    </span>
-                  </div>
-
-                  <a
-                    href="property-single.html"
-                    class="btn btn-primary py-2 px-3"
-                    >See details</a
-                  >
-                </div>
-              </div>
-            </div>
-            -->
-            <!-- .item -->
-          </div>
-          <!--
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
-              <a href="property-single.html" class="img">
-                <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-              </a>
-
-              <div class="property-content">
-                <div class="price mb-2"><span>$1,291,000</span></div>
-                <div>
-                  <span class="d-block mb-2 text-black-50"
-                    >5232 California Fake, Ave. 21BC</span
-                  >
-                  <span class="city d-block mb-3">California, USA</span>
-
-                  <div class="specs d-flex mb-4">
-                    <span class="d-block d-flex align-items-center me-3">
-                      <span class="icon-bed me-2"></span>
-                      <span class="caption">2 beds</span>
-                    </span>
-                    <span class="d-block d-flex align-items-center">
-                      <span class="icon-bath me-2"></span>
-                      <span class="caption">2 baths</span>
-                    </span>
-                  </div>
-
-                  <a
-                    href="property-single.html"
-                    class="btn btn-primary py-2 px-3"
-                    >See details</a
-                  >
-                </div>
-              </div>
-            </div>
-            -->
-            <!-- .item -->
-          </div>
-        </div>
-        <!--
-        <div class="row align-items-center py-5">
-          <div class="col-lg-3">Pagination (1 of 10)</div>
-          <div class="col-lg-6 text-center">
-            <div class="custom-pagination">
-              <a href="#" class="active">1</a>
-              <a href="#" >2</a>
-              <a href="#">3</a>
-              <a href="#">4</a>
-              <a href="#">5</a>
-            </div>
-          </div>
-        </div>
-        -->
-      </div>
-    </div>
+  </div>
 
     <button id="scrollTopBtn" title="Go to top">↑</button>
 
@@ -855,24 +270,20 @@
             <div class="widget">
               <h3>Contact</h3>
               <ul class="list-unstyled links">
-                <li>
-                  <a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
-                    Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br>Kota Palembang, <br>Sumatera Selatan
-                  </a>
-                </li>
-                <li><a href="https://wa.me/6285266366309" target="_blank">085266366309 - Kantor</a></li>
-                <li><a href="https://wa.me/6285946930091" target="_blank">085946930091 - Adit</a></li>
-                <li><a href="https://wa.me/6282291113806" target="_blank">082291113806 - Anggi</a></li>
-                <li><a href="https://wa.me/6285381994369" target="_blank">085381994369 - Awin</a></li>
+                <li><a href="https://wa.me/6285266366309" target="_blank">+6285266366309 - Kantor</a></li>
                 <li>
                   <a href="mailto:satrialandpalembang@gmail.com">
                     satrialandpalembang@gmail.com
                   </a>
                 </li>
+                <li>
+                  <a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
+                    Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br> Kota Palembang, Sumatera Selatan
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
-    
           <!-- Bagian Sources -->
           <div class="col-lg-4">
             <div class="widget">
@@ -880,37 +291,33 @@
               <ul class="list-unstyled links">
                 <li><a href="about.html#tentang">Tentang Kami</a></li>
                 <li><a href="services.html#layanan">Layanan</a></li>
-                <li><a href="about.html#visi">Visi dan Misi</a></li>
                 <li><a href="partner.html#mitra">Mitra</a></li>
                 <li><a href="blog.html#blog">Blog</a></li>
                 <li><a href="faq.html#faq">FAQ</a></li>
+                <li><a href="career.html#">Join Marketing</a></li>
               </ul>
             </div>
           </div>
-    
           <!-- Bagian Links dan Social Media -->
           <div class="col-lg-4">
             <div class="widget">
-              <h3>Links</h3>
+              <h3>Social Media</h3>
               <ul class="list-unstyled links">
                 <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
               </ul>
-              <ul class="list-unstyled social d-flex gap-3">
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
+              <ul class="list-unstyled social d-flex gap-0">
+                <li><a href="https://www.instagram.com/satria_land.id/" target="_blank"><span
+                      class="icon-instagram"></span></a></li>
+                <li><a
+                    href="https://www.facebook.com/people/Satria-Investama/pfbid0YYzhCxgxGQKKGyS2tWqq9xvuTHvP6uM6KygXuGRMdYJYBLNef6tbJspQs6AFaWafl/?ref=ig_profile_ac"
+                    target="_blank"><span class="icon-facebook"></span></a></li>
+                <li><a href="https://www.youtube.com/@SatriaLand" target=""><span class="icon-youtube"></span></a></li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    
-        <!-- /.row -->
-
-        <div class="row mt-5">
+        <div class="row mt-2 mb-0">
           <div class="col-12 text-center">
-           
             <p>
               Copyright &copy;
               <script>
@@ -920,7 +327,8 @@
             </p>
           </div>
         </div>
-    <!-- /.site-footer -->
+      </div>
+    </div>
 
     <!-- Preloader -->
     <div id="overlayer"></div>
@@ -936,26 +344,7 @@
     <script src="js/navbar.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-      // Ambil elemen tombol panah ke atas
-      const scrollTopBtn = document.getElementById("scrollTopBtn");
-  
-      // Fungsi untuk menampilkan tombol ketika pengguna menggulir
-      window.onscroll = function() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-          scrollTopBtn.style.display = "block"; // Menampilkan tombol
-        } else {
-          scrollTopBtn.style.display = "none"; // Menyembunyikan tombol
-        }
-      };
-  
-      // Fungsi untuk scroll ke atas ketika tombol ditekan
-      scrollTopBtn.addEventListener("click", function() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
-      });
-    </script>
-  </body>
+    <script src="js/up.js"></script>
+</body>
+
 </html>

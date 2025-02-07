@@ -1,0 +1,103 @@
+/* Main Blog Content */
+.blog-content {
+    margin-top: 40px;
+  }
+  
+  .blog-post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Menambahkan border abu-abu */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-post .post-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-post .post-meta {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .blog-post .post-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .blog-post .post-content {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+  
+  .blog-post .read-more {
+    text-decoration: underline; /* Garis bawah pada teks */
+    color: #181818; /*warna biru pada teks, sesuaikan dengan tema kamu */
+    font-weight: bold; /* Menguatkan teks */
+    font-size: 16px; /* Ukuran font */
+  }
+  .blog-post .read-more{
+    color: #E7BC4C; /* Warna biru lebih gelap saat di-hover */
+    text-decoration: none; /* Menghilangkan garis bawah saat di-hover */
+  }
+  
+  /* Related Posts Section */
+  .related-posts {
+    margin-top: 60px;
+  }
+  
+  .related-posts h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .related-posts-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .related-post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Menambahkan border pada artikel terkait */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+  }
+  
+  .related-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .related-post h4 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .related-post p {
+    font-size: 14px;
+    color: #181818;
+  }
+  
+  /* Menambahkan Border pada setiap artikel */
+  .related-posts-container > .related-post:not(:last-child) {
+    border-right: 1px solid #ddd; /* Memberikan border kanan pada artikel-artikel sebelumnya */
+  }
+  
+  /* Responsif untuk layar lebih kecil */
+  @media (max-width: 768px) {
+    .related-posts-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .related-post {
+      width: 100%;
+    }
+  }

@@ -1,266 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="favicon.png" />
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="bootstrap, bootstrap5" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="favicon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap5" />
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css" />
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/tiny-slider.css" />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="fonts/icomoon/style.css" />
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
 
-    <title>
-      Satria Land
-    </title>
-    <style>
-      /* Main Blog Content */
-.blog-content {
-  margin-top: 40px;
-}
+  <link rel="stylesheet" href="css/tiny-slider.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/up.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+  <title>
+    Satria Land
+  </title>
+</head>
 
-.blog-post {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #ddd; /* Menambahkan border abu-abu */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.blog-post .post-title {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.blog-post .post-meta {
-  font-size: 14px;
-  color: #777;
-}
-
-.blog-post .post-image {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-  border-radius: 8px;
-}
-
-.blog-post .post-content {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-top: 20px;
-}
-
-.blog-post .read-more {
-  text-decoration: underline; /* Garis bawah pada teks */
-  color: #181818; /*warna biru pada teks, sesuaikan dengan tema kamu */
-  font-weight: bold; /* Menguatkan teks */
-  font-size: 16px; /* Ukuran font */
-}
-.blog-post .read-more{
-  color: #E7BC4C; /* Warna biru lebih gelap saat di-hover */
-  text-decoration: none; /* Menghilangkan garis bawah saat di-hover */
-}
-
-/* Related Posts Section */
-.related-posts {
-  margin-top: 60px;
-}
-
-.related-posts h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.related-posts-container {
-  display: flex;
-  gap: 20px;
-}
-
-.related-post {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #ddd; /* Menambahkan border pada artikel terkait */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 30%;
-}
-
-.related-post img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.related-post h4 {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.related-post p {
-  font-size: 14px;
-  color: #181818;
-}
-
-/* Menambahkan Border pada setiap artikel */
-.related-posts-container > .related-post:not(:last-child) {
-  border-right: 1px solid #ddd; /* Memberikan border kanan pada artikel-artikel sebelumnya */
-}
-
-/* Responsif untuk layar lebih kecil */
-@media (max-width: 768px) {
-  .related-posts-container {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .related-post {
-    width: 100%;
-  }
-}
-
-/* CSS untuk tombol panah ke atas */
-#scrollTopBtn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #333; /* Latar belakang hitam */
-        color: white; /* Warna panah putih */
-        border: none;
-        padding: 5px; /* Ukuran tombol lebih besar */
-        font-size: 20px; /* Ukuran panah */
-        cursor: pointer;
-        display: none; /* Mulai dengan disembunyikan */
-        border-radius: 50%; /* Bulat */
-        width: 45px; /*Lebar tombol */
-        height: 45px;/* Tinggi tombol sama dengan lebar untuk bulat sempurna */
-        text-align: center;
-        line-height: 20px; /* Menjaga panah di tengah */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-      }
-  
-      #scrollTopBtn:hover {
-        background-color: #E7BC4C; /* Warna latar belakang lebih gelap saat hover */
-      }
-
-      body {
-        background-color: white;
-        color: black;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-          <span class="icofont-close js-menu-toggle"></span>
-        </div>
+<body>
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
       </div>
-      <div class="site-mobile-menu-body"></div>
     </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
 
-    <nav class="site-nav">
-      <div class="container">
-        <div class="menu-bg-wrap">
-          <div class="site-navigation m-0">
-            <a href="index.html">
+  <nav class="site-nav">
+    <div class="container">
+      <div class="menu-bg-wrap">
+        <div class="site-navigation m-0">
+          <a href="index.html">
             <img src="images/Logo2.png" alt="Satria Land" style="height: 45px;">
           </a>
-            <ul
-              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
-            >
-              <li class="active"><a href="index.html">Beranda</a></li>
-              <li class="has-children">
-                <a href="properties.html#properti">Properti</a>
-                <ul class="dropdown">
-                  <li class="has-children">
-                    <a href="#">Bangunan</a>
-                    <ul class="dropdown">
-                      <li><a href="properties.html#properti">Carissma Mansion</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-children">
-                    <a href="#">Tanah</a>
-                    <ul class="dropdown">
-                      <li><a href="">Demang Mansion</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="services.html#layanan">Layanan</a></li>
-              <li><a href="blog.html#blog">Blog</a></li>
-              <li><a href="about.html#tentang">Tentang</a></li>
-              <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
-            </ul>
-
-            <a
-              href="#"
-              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
-              data-toggle="collapse"
-              data-target="#main-navbar"
-            >
-              <span></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <div
-      class="hero page-inner overlay"
-      style="background-image: url('images/hero_bg_1.jpg')"
-    >
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-9 text-center mt-5">
-            <h1 class="heading" data-aos="fade-up">Blog</h1>
-
-            <nav
-              aria-label="breadcrumb"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <ol class="breadcrumb text-center justify-content-center">
-                <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
-                <li
-                  class="breadcrumb-item active text-white-50"
-                  aria-current="page"
-                >
-                  Blog
+          <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+            <li class="active"><a href="index.html">Beranda</a></li>
+            <li class="has-children">
+              <a href="properties.html#properti">Properti</a>
+              <ul class="dropdown">
+                <li class="has-children">
+                  <a href="#">Bangunan</a>
+                  <ul class="dropdown">
+                    <li><a href="properties.html#properti">Carissma Mansion</a></li>
+                  </ul>
                 </li>
-              </ol>
-            </nav>
-          </div>
+                <li class="has-children">
+                  <a href="#">Tanah</a>
+                  <ul class="dropdown">
+                    <li><a href="properties.html#properti">Demang Mansion</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="services.html#layanan">Layanan</a></li>
+            <li><a href="blog.html#blog">Blog</a></li>
+            <li><a href="about.html#tentang">Tentang</a></li>
+            <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
+          </ul>
+
+          <a href="#"
+            class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
         </div>
       </div>
     </div>
+  </nav>
 
-    <main class="blog-content" style="justify-content: center; align-items: center;">
-      <div class="container" >
-        <!-- Artikel Utama -->
-        <div class="blog-post">
-          <h2 class="post-title" id="blog">Panduan Memilih Properti yang Tepat</h2>
-          <p class="post-meta">Dipublikasikan pada 6 Januari 2025 oleh Admin</p>
-          <img src="images/blog1.jpg" alt="Panduan Memilih Properti" class="post-image">
-          <div class="post-content">
-            <p>Membeli properti adalah salah satu keputusan besar dalam hidup yang memerlukan pertimbangan matang. Entah itu untuk kebutuhan pribadi, investasi jangka panjang, atau sekadar tempat tinggal...</p>
-            <a href="blog1.html#blog1" class="read-more">Baca Selengkapnya &raquo;</a>
-          </div>
+  <div class="hero page-inner overlay" style="background-image: url('images/hero_bg_1.jpg')">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-9 text-center mt-5">
+          <h1 class="heading" data-aos="fade-up">Blog</h1>
+
+          <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+            <ol class="breadcrumb text-center justify-content-center">
+              <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+              <li class="breadcrumb-item active text-white-50" aria-current="page">
+                Blog
+              </li>
+            </ol>
+          </nav>
         </div>
-    
-        <!-- Rekomendasi Artikel -->
-      <div class="container" >
+      </div>
+    </div>
+  </div>
+
+  <main class="blog-content" style="justify-content: center; align-items: center;">
+    <div class="container">
+      <!-- Artikel Utama -->
+      <div class="blog-post">
+        <h2 class="post-title" id="blog">Panduan Memilih Properti yang Tepat</h2>
+        <p class="post-meta">Dipublikasikan pada 6 Januari 2025 oleh Admin</p>
+        <img src="images/blog1.jpg" alt="Panduan Memilih Properti" class="post-image">
+        <div class="post-content">
+          <p>Membeli properti adalah salah satu keputusan besar dalam hidup yang memerlukan pertimbangan matang. Entah
+            itu untuk kebutuhan pribadi, investasi jangka panjang, atau sekadar tempat tinggal...</p>
+          <a href="blog1.html#blog1" class="read-more">Baca Selengkapnya &raquo;</a>
+        </div>
+      </div>
+
+      <!-- Rekomendasi Artikel -->
+      <div class="container">
         <div class="related-posts mb-5">
           <h3>Artikel Terkait</h3>
           <div class="related-posts-container" style="justify-content: center; align-items: center;">
@@ -268,229 +120,114 @@
             <div class="related-post">
               <img src="images/blog2.jpg" alt="Investasi Properti">
               <h4><a href="blog2.html#blog2">Memahami Investasi Properti</a></h4>
-              <p>Investasi properti merupakan salah satu pilihan investasi yang paling populer di Indonesia. Tidak hanya memberikan keuntungan jangka panjang, tetapi juga dapat memberi rasa aman...</p>
+              <p>Investasi properti merupakan salah satu pilihan investasi yang paling populer di Indonesia. Tidak hanya
+                memberikan keuntungan jangka panjang, tetapi juga dapat memberi rasa aman...</p>
             </div>
             <!-- Artikel 2 -->
             <div class="related-post">
               <img src="images/blog3.jpg" alt="Mencari Properti Terjangkau">
               <h4><a href="blog3.html#blog3">Tips Mencari Properti dengan Harga Terjangkau</a></h4>
-              <p>Pasar properti Indonesia terus berkembang dan mengalami perubahan setiap tahunnya. Tren pasar properti pada tahun 2025 diprediksi akan sangat...</p>
+              <p>Pasar properti Indonesia terus berkembang dan mengalami perubahan setiap tahunnya. Tren pasar properti
+                pada tahun 2025 diprediksi akan sangat...</p>
             </div>
             <!-- Artikel 3 -->
             <div class="related-post">
               <img src="images/blog4.jpg" alt="Membeli Rumah">
               <h4><a href="blog4.html#blog4">5 Hal yang Perlu Diperhatikan Sebelum Membeli Rumah</a></h4>
-              <p>Investasi properti merupakan salah satu jenis investasi yang banyak diminati, terutama karena potensinya yang besar dalam memberikan...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>  
-    </main>
-    
-<!--
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-4 mb-5 mb-lg-0"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="contact-info">
-              <div class="address mt-2">
-                <i class="icon-room"></i>
-                <h4 class="mb-2">Location:</h4>
-                <p>
-                  43 Raymouth Rd. Baltemoer,<br />
-                  London 3910
-                </p>
-              </div>
-
-              <div class="open-hours mt-4">
-                <i class="icon-clock-o"></i>
-                <h4 class="mb-2">Open Hours:</h4>
-                <p>
-                  Sunday-Friday:<br />
-                  11:00 AM - 2300 PM
-                </p>
-              </div>
-
-              <div class="email mt-4">
-                <i class="icon-envelope"></i>
-                <h4 class="mb-2">Email:</h4>
-                <p>info@Untree.co</p>
-              </div>
-
-              <div class="phone mt-4">
-                <i class="icon-phone"></i>
-                <h4 class="mb-2">Call:</h4>
-                <p>+1 1234 55488 55</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <form action="#">
-              <div class="row">
-                <div class="col-6 mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div class="col-6 mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Your Email"
-                  />
-                </div>
-                <div class="col-12 mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Subject"
-                  />
-                </div>
-                <div class="col-12 mb-3">
-                  <textarea
-                    name=""
-                    id=""
-                    cols="30"
-                    rows="7"
-                    class="form-control"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-
-                <div class="col-12">
-                  <input
-                    type="submit"
-                    value="Send Message"
-                    class="btn btn-primary"
-                  />
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    -->
-    <!-- /.untree_co-section -->
-    <button id="scrollTopBtn" title="Go to top">↑</button>
-
-    <div class="site-footer">
-      <div class="container">
-        <div class="row">
-          <!-- Bagian Contact -->
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Contact</h3>
-              <ul class="list-unstyled links">
-                <li>
-                  <a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
-                    Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br>Kota Palembang, <br>Sumatera Selatan
-                  </a>
-                </li>
-                <li><a href="https://wa.me/6285266366309" target="_blank">085266366309 - Kantor</a></li>
-                <li><a href="https://wa.me/6285946930091" target="_blank">085946930091 - Adit</a></li>
-                <li><a href="https://wa.me/6282291113806" target="_blank">082291113806 - Anggi</a></li>
-                <li><a href="https://wa.me/6285381994369" target="_blank">085381994369 - Awin</a></li>
-                <li>
-                  <a href="mailto:satrialandpalembang@gmail.com">
-                    satrialandpalembang@gmail.com
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-    
-          <!-- Bagian Sources -->
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Sources</h3>
-              <ul class="list-unstyled links">
-                <li><a href="about.html#tentang">Tentang Kami</a></li>
-                <li><a href="services.html#layanan">Layanan</a></li>
-                <li><a href="about.html#visi">Visi dan Misi</a></li>
-                <li><a href="partner.html#mitra">Mitra</a></li>
-                <li><a href="blog.html#blog">Blog</a></li>
-                <li><a href="faq.html#faq">FAQ</a></li>
-              </ul>
-            </div>
-          </div>
-    
-          <!-- Bagian Links dan Social Media -->
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Links</h3>
-              <ul class="list-unstyled links">
-                <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
-              </ul>
-              <ul class="list-unstyled social d-flex gap-3">
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-              </ul>
+              <p>Investasi properti merupakan salah satu jenis investasi yang banyak diminati, terutama karena
+                potensinya yang besar dalam memberikan...</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-        <!-- /.row -->
+  </main>
 
-        <div class="row mt-5">
-          <div class="col-12 text-center">
-           
-            <p>
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              &mdash; Satria Land
-            </p>
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <!-- Bagian Contact -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Contact</h3>
+            <ul class="list-unstyled links">
+              <li><a href="https://wa.me/6285266366309" target="_blank">+6285266366309 - Kantor</a></li>
+              <li>
+                <a href="mailto:satrialandpalembang@gmail.com">
+                  satrialandpalembang@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="https://maps.app.goo.gl/PpAFgGfDSJUHJ1bM6" target="_blank">
+                  Jl. Kol H Burlian No.104 Rt.24 Rw.09, <br> Kota Palembang, Sumatera Selatan
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      <!-- /.container -->
-    <!-- /.site-footer -->
-
-    <!-- Preloader -->
-    <div id="overlayer"></div>
-    <div class="loader">
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
+        <!-- Bagian Sources -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Sources</h3>
+            <ul class="list-unstyled links">
+              <li><a href="about.html#tentang">Tentang Kami</a></li>
+              <li><a href="services.html#layanan">Layanan</a></li>
+              <li><a href="partner.html#mitra">Mitra</a></li>
+              <li><a href="blog.html#blog">Blog</a></li>
+              <li><a href="faq.html#faq">FAQ</a></li>
+              <li><a href="career.html#">Join Marketing</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Bagian Links dan Social Media -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Social Media</h3>
+            <ul class="list-unstyled links">
+              <li><a href="contact.html#hubungi">Hubungi Kami</a></li>
+            </ul>
+            <ul class="list-unstyled social d-flex gap-0">
+              <li><a href="https://www.instagram.com/satria_land.id/" target="_blank"><span
+                    class="icon-instagram"></span></a></li>
+              <li><a
+                  href="https://www.facebook.com/people/Satria-Investama/pfbid0YYzhCxgxGQKKGyS2tWqq9xvuTHvP6uM6KygXuGRMdYJYBLNef6tbJspQs6AFaWafl/?ref=ig_profile_ac"
+                  target="_blank"><span class="icon-facebook"></span></a></li>
+              <li><a href="https://www.youtube.com/@SatriaLand" target=""><span class="icon-youtube"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2 mb-0">
+        <div class="col-12 text-center">
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            &mdash; Satria Land
+          </p>
+        </div>
       </div>
     </div>
+  </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tiny-slider.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/counter.js"></script>
-    <script src="js/custom.js"></script>
-    <script>
-      // Ambil elemen tombol panah ke atas
-      const scrollTopBtn = document.getElementById("scrollTopBtn");
-  
-      // Fungsi untuk menampilkan tombol ketika pengguna menggulir
-      window.onscroll = function() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-          scrollTopBtn.style.display = "block"; // Menampilkan tombol
-        } else {
-          scrollTopBtn.style.display = "none"; // Menyembunyikan tombol
-        }
-      };
-  
-      // Fungsi untuk scroll ke atas ketika tombol ditekan
-      scrollTopBtn.addEventListener("click", function() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
-      });
-    </script>
-  </body>
+  <!-- Preloader -->
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/up.js"></script>
+</body>
+
 </html>
